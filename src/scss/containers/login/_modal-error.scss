@@ -1,0 +1,15 @@
+.login-modal-error {
+  .btn-primary,
+  .btn-hyperlink {
+    font-family: $boldFontFamily;
+    width: 100%;
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    .btn-hyperlink {
+      padding-left: 0;
+      width: fit-content;
+      margin-top: 40px;
+    }
+  }
+}

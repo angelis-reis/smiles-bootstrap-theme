@@ -1,0 +1,65 @@
+.fake-focus {
+  &:disabled .chip.color-card.dark,
+  &:disabled:hover .chip.color-card.dark {
+    color: $color-white80;
+    border-color: $color-black80;
+  }
+  
+  &:hover .chip.color-card.dark {
+    border-color: $color-white95;
+  }
+
+  &:focus:not(:disabled):active .chip.color-card.dark {
+    color: $color-white80;
+    border-color: $color-white80;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:disabled .chip.color-card.selected {
+    color: $color-black60;
+    
+    &:hover {
+      color: $color-black60;
+      background: $color-white95;
+      border-color: $color-white95;
+    }
+  }
+
+  &:hover .chip.color-card.selected,
+  &:focus .chip.color-card.selected {
+    color: $color-white100;
+    border-color: $color-orange !important;
+    background: $color-orange;
+  }
+
+  &:focus:not(:disabled) .chip.color-card.selected {
+    color: $color-white100;
+    border-color: $color-orange !important;
+    
+    &:active {
+      color: $color-white95;
+      border-color: $color-orange !important;
+    }
+  }
+
+  &:disabled .chip.color-card.selected.dark,
+  &:disabled:hover .chip.color-card.selected.dark {
+    color: $color-white80;
+    background: $color-black80;
+    border-color: $color-black80;
+  }
+
+  &:hover .chip.color-card.selected.dark,
+  &:focus:not(:disabled) .chip.color-card.selected.dark {
+    color: $color-white100;
+    border-color: $color-orange;
+  }
+
+  &:focus:not(:disabled):active .chip.color-card.selected.dark {
+    color: $color-white95;
+    border-color: $color-orange;
+  }
+}

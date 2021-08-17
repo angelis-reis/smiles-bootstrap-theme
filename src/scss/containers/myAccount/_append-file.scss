@@ -1,0 +1,17 @@
+.my-account-append-file {
+  white-space: pre-line;
+
+  .list-group-item:last-of-type {
+    margin-bottom: 24px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    margin-top: 48px;
+
+    @media (min-width: $bkpoint-tablet) {
+      width: 264px;
+      margin-top: 64px;
+    }
+  }
+}

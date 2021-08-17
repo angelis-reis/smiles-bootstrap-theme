@@ -1,0 +1,90 @@
+.smls-popover-list {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    height: 24px;
+
+    .smls-popover {
+      display: block;
+      position: absolute;
+      color: $color-white100;
+      background-color: $color-black100;
+      border-radius: 16px;
+      padding: 16px;
+      width: calc(100% + 60px);
+      opacity: 0;
+      transition: opacity 0.2s linear;
+      top: 40px;
+      left: -30px;
+    }
+
+    li:hover ~ .smls-popover {
+      opacity: 1;
+      z-index: $zindex-popover;
+    }
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+
+    i.material-icons {
+      transition: color 0.2s linear;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid $color-black100;
+        clear: both;
+        top: 32px;
+        left: 4px;
+        transition: opacity 0.2s linear;
+        opacity: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &.primary {
+        color: $color-orange;
+      }
+    }
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    width: auto;
+
+    ul {
+      justify-content: flex-start;
+      width: auto;
+    }
+
+    li {
+      margin: 0 12px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

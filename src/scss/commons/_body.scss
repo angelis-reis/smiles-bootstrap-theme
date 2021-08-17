@@ -1,0 +1,7 @@
+.unscrollable {
+  overflow:hidden;
+
+  @media (min-width: $bkpoint-tablet) {
+    padding-right: 15px;
+  }
+}

@@ -1,0 +1,42 @@
+.badge {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 34px;
+  border-radius: 16px;
+  padding: 0;
+  
+  &.primary {
+    background-color: $color-orange;
+  }
+
+  &.secondary {
+    background-color: $color-black100;
+
+    span, i.material-icons {
+      color: $color-white100;
+    }
+  }
+
+  &.dark {
+    background-color: $color-white100;
+  }
+
+  i.material-icons {
+    margin: 0 0 0 8px;
+  }
+  
+  span {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: $boldFontFamily;
+    background-color: transparent;
+    padding: 0;
+    margin: 8px 13px 8px 11px;
+    height: 18px;
+
+    &:first-child {
+      margin: 8px 16px;
+    }
+  }
+}

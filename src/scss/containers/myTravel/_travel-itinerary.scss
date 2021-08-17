@@ -1,0 +1,114 @@
+.travel-itinerary-container {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $bkpoint-tablet) { 
+    width: 100%;
+  }
+
+  .itinerary-card-wrapper {
+    height: 100%;
+  }
+
+  .travel-itinerary-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &-has-schedule {
+      position: relative;
+      z-index: -1;
+      margin-bottom: -40px;
+      .itinerary-header-title {
+        h3 {
+          display: inline;
+        }
+
+        span {
+          margin-left: 6px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $color-black60;
+        }
+      }
+    }
+
+    .itinerary-header-title {
+      h3 {
+        display: inline;
+      }
+
+      span {
+        margin-left: 6px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-black60;
+      }
+    }
+    a {
+      margin-top: 0;
+    }
+  }
+
+  a {
+    display: block;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+
+  .travel-itinerary-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 25px;
+
+    .itinerary-card-step {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      margin-top: 32px;
+
+      align-items: center;
+      justify-content: center;
+
+      &-active {
+        width: 24px;
+        height: 4px;
+        background: #ff7020;
+        margin-right: 4px;
+      }
+
+      &-inactive {
+        width: 24px;
+        height: 4px;
+        background: #f2f2f2;
+        margin-right: 4px;
+      }
+    }
+
+  }
+
+  .travel-itinerary-complete-button {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  .itinerary-card-invitation {
+    width: 100%;
+    margin-top: 24px;
+    padding: 24px 28px;
+
+    border: 2px solid #f2f2f2;
+    border-radius: 16px;
+
+    @media (min-width: $bkpoint-tablet) {
+      padding: 32px 36px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.smls-carousel-icons {
+  font-size: 16px;
+}
+.smls-carousel-icons {
+  &:before {
+    content:' ';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(./img/carousel-icons.png);
+    background-repeat: no-repeat;
+    transform: scale(0.8);
+  }
+  &.mid {
+    &:before {
+      transform: scale(1); 
+    }
+  }
+  &.big {
+    &:before {
+      transform: scale(1.2); 
+    }
+  }
+  &.accrual:before {
+    background-position: -0px -0px;
+    width: 24px;
+    height: 24px;
+  }
+  &.redemption:before {
+    background-position: -0px -0px;
+    width: 24px;
+    height: 24px;
+  }
+  &.offer:before {
+    background-position: -0px -0px;
+    width: 24px;
+    height: 24px;
+  }
+  &.location:before {
+    background-position: -24px -0px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+

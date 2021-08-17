@@ -1,0 +1,17 @@
+.smls-topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 56px;
+  width: 100%;
+
+  img {
+    width: 70px;
+    height: 28px;
+  }
+
+  .smls-topbar-middle {
+    display: flex;
+    flex-direction: column;
+  }
+}

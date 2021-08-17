@@ -1,0 +1,37 @@
+// Smiles Typography
+// ----------------
+
+//Fontes
+@font-face {
+  font-family: 'NunitoRegular';
+  src: url(../fonts/Nunito/Nunito-Regular.ttf?v=20210512) format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NunitoBold';
+  src: url(../fonts/Nunito/Nunito-Bold.ttf?v=20210512) format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NunitoLight';
+  src: url(../fonts/Nunito/Nunito-Light.ttf?v=20210512) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NunitoSemiBold';
+  src: url(../fonts/Nunito/Nunito-SemiBold.ttf?v=20210512) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Material/MaterialIcons-Regular.eot?v=20210512); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../fonts/Material/MaterialIcons-Regular.woff2?v=20210512) format('woff2'),
+    url(../fonts/Material/MaterialIcons-Regular.woff?v=20210512) format('woff'),
+    url(../fonts/Material/MaterialIcons-Regular.ttf?v=20210512) format('truetype');
+}

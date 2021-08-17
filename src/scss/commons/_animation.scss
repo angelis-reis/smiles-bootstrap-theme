@@ -1,0 +1,61 @@
+/*https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load*/
+@keyframes fadein {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+// /* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+.fadeIn {
+    -webkit-animation: fadein 0.3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.3s; /* Firefox < 16 */
+    animation: fadein 0.3s;
+}
+
+.fadeIn-late {
+  -webkit-animation: fadein 0.6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.6s; /* Firefox < 16 */
+  animation: fadein 0.6s;
+}
+
+.fadeIn-latest {
+  -webkit-animation: fadein 0.9s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.9s; /* Firefox < 16 */
+  animation: fadein 0.9s;
+}
+
+.fadeIn-contact {
+  :not(.input-contact) {
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    animation: fadein 1s;
+  }
+}

@@ -1,0 +1,45 @@
+// prettier-ignore
+// Color system
+$primary: $color-orange !default;
+$secondary: $color-white100 !default;
+
+$border-width: 2px;
+
+// Typography
+$fontFamily: $regularFontFamily;
+
+// Buttons
+
+$btn-padding-y: $medium;
+$btn-padding-x: $medium;
+$btn-font-family: $fontFamily;
+$btn-border-radius: 1px !default;
+$btn-border-radius-lg: 1px !default;
+$btn-border-radius-sm: 1px !default;
+
+// Input
+
+// Radio
+$component-active-color: $color-black100 !default;
+$component-active-bg: $color-orange !default;
+
+$custom-control-indicator-checked-color: $component-active-color !default;
+$custom-control-indicator-checked-bg: $component-active-bg !default;
+
+$custom-control-indicator-checked-disabled-bg: $color-disabled-bg !default;
+
+$custom-radio-indicator-icon-checked: none !default;
+
+$input-btn-focus-width: 0;
+
+$custom-checkbox-indicator-icon-checked: none;
+
+$transition-base: all 0.5s ease-in-out !default;
+$transition-fade: opacity 0.5s linear !default;
+$transition-collapse: height 0.5s ease !default;
+
+// Pogress
+$progress-height: 2px;
+$progress-bg: $color-white95;
+$progress-border-radius: 0;
+$progress-box-shadow: none;

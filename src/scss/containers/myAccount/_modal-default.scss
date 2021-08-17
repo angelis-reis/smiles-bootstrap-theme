@@ -1,0 +1,96 @@
+.smls-modal-my-account {
+  .modal-dialog .modal-content {
+    .modal-body {
+      padding: 24px;
+
+      .smls-my-account-modal__flexible {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+
+      &.smls-bold {
+        font-family: $boldFontFamily;
+      }
+    }
+
+    .btn {
+      width: 100%;
+
+      &.btn-primary {
+        margin: 32px 0 36px;
+      }
+
+      &.btn-hyperlink {
+        width: auto;
+        margin: 0 auto;
+        font-family: $boldFontFamily;
+        margin-bottom: 24px;
+      }
+    }
+
+    .input-group {
+      & div,
+      & input {
+        width: 100%;
+      }
+    }
+
+    .smls-modal-my-account-content {
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      .modal-body {
+        padding: 38px 56px 40px;
+
+        .smls-my-account-modal__flexible {
+          display: block;
+        }
+      }
+
+      h3 {
+        margin-bottom: 23px;
+      }
+
+      .btn {
+        width: auto;
+
+        &.btn-primary {
+          min-width: 264px;
+          margin: 32px 0 36px;
+        }
+
+        &.btn-hyperlink {
+          margin: 0;
+        }
+      }
+
+      .smls-modal-my-account-content {
+        margin-bottom: 64px;
+      }
+    }
+  }
+}
+
+.smls-my-account-modal__flexible {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  @media (min-width: $bkpoint-tablet) {
+    display: block;
+  }
+}

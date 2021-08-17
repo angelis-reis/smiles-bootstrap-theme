@@ -1,0 +1,386 @@
+// Default class
+@mixin mx-btn-circle() {
+  &.btn-icon {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+
+    i {
+      margin: 0;
+    }
+
+    &:focus {
+      &::after {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.fake-focus {
+  
+  /*
+   * BASE
+  */
+  
+  .btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;  
+    height: 64px !important;  
+    box-shadow: none !important;
+  
+    i {
+      fill: currentColor;
+      margin-right: 8px;
+    }  
+  
+    &.btn-primary {
+      color: $color-black100;
+      @include mx-btn-circle;
+    }
+  
+    &.btn-secondary {
+      color: $color-black80;
+      border: 2px solid $primary;
+      background-color: transparent;  
+      @include mx-btn-circle;
+    }
+  
+    &.btn-hyperlink {
+      display: block;
+      position: relative;
+      background-color: transparent;
+      color: $color-black88;
+      padding: 0;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        border-bottom: 2px solid $primary;
+        border-radius: 1px;
+        transition: all 0.4s ease-out 0s;
+        right: 0;
+      }
+  
+      @include mx-btn-circle;
+  
+      &.dark {
+        color: $color-white100;
+      }
+    }
+  
+    &.btn-pills {
+      height: 42px;
+      padding: 12px;
+      font-size: 14px;
+      border: 2px solid transparent;
+      background-color: transparent;
+      color: $color-black100;
+      border-radius: 24px;
+  
+      @include mx-btn-circle;
+  
+      &.btn-icon {
+        height: 42px !important;
+        width: 42px;
+      }
+  
+      &.dark {
+        color: $color-white100;
+      }
+    }
+  
+    &.btn-pills.with-fill {
+      background: $color-white100;
+      border: 1px solid $color-black100;  
+  
+      i {
+        transition: all 250ms;
+      }  
+  
+      &.dark {
+        border: 2px solid $color-white100;
+
+        i {
+          color: $color-black100;
+        }  
+      }
+    }
+  
+    &.animation {
+      &:focus {
+        div {
+          color: white;
+        }
+      }
+  
+      div {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        margin-top: -10px;
+        color: black;
+      }
+  
+      @keyframes arrows {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(10px);
+        }
+      }
+      
+      span {
+        margin-left: 5px;
+        animation: arrows 1s 0s infinite ease-in;
+  
+        &:nth-child(2n) {
+          animation-delay: -0.1s;
+        }
+
+        &:nth-child(3n) {
+          animation-delay: -0.3s;
+        }
+      }
+    }
+  }
+
+  .btn:not(.btn-icon):not(.btn-hyperlink) {
+    width: 264px;
+  }
+
+  /*
+   * PRIMARY BUTTONS
+  */
+
+  &:focus:not(:active):not(.btn-hyperlink) .btn.btn-primary {
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -8px;
+      bottom: -8px;
+      left: -8px;
+      right: -8px;
+      border-radius: 16px;
+      border: 2px solid $color-white60;
+    }
+  }
+  
+  &:disabled .btn.btn-primary {
+    background-color: $color-white95;
+    color: $color-black60;
+  }
+
+  &:not(:active) .btn.btn-primary {
+    &:focus {
+      color: $color-white100;
+      background-color: $color-black100;
+    }
+  }
+
+  &:hover:not(:disabled) .btn.btn-primary {
+    background-color: $color-black100;
+    color: $color-white100;
+
+    &:active {
+      background-color: $primary;
+      color: $color-black100;
+    }
+  }
+
+  &:hover .btn.btn-primary.dark {
+    background-color: $color-white100;
+    color: $color-black80;
+  }
+
+  &:active .btn.btn-primary.dark {
+    color: $color-black100;
+  }
+
+  &:disabled .btn.btn-primary.dark {
+    background-color: $color-black60;
+    color: $color-white95;
+  }
+
+  &:focus .btn.btn-primary.dark {
+    background-color: $color-white100;
+    color: $color-black80;
+  }
+
+  /*
+   * SECONDARY BUTTONS
+  */
+
+  &:hover .btn.btn-secondary,
+  &:focus .btn.btn-secondary {
+    border: 2px solid transparent;
+    background-color: $color-black100;
+    color: $color-white100;
+
+    &:active {
+      border: 2px solid $primary;
+      background-color: transparent;
+    }
+  }
+
+  &:disabled .btn.btn-secondary {
+    color: $color-black60;
+    border: 2px solid $color-white80;
+    background-color: transparent;
+  }
+
+  &:disabled .btn.btn-secondary.dark {
+    color: $color-white80;
+    border: 2px solid $color-black60;
+    background-color: transparent;
+  }
+
+  /*
+   * HYPERLINK BUTTONS
+  */
+
+  &:disabled .btn.btn-hyperlink {
+    color: $color-black60;
+  }
+  
+  &:hover:not(:disabled)::after .btn.btn-hyperlink {
+    width: 100%;
+  }
+
+  &:active .btn.btn-hyperlink {
+    color: $color-black80;
+  }
+
+  &:disabled .btn.btn-hyperlink.dark {
+    color: $color-white80;
+  }
+
+  &:focus:not(:active) .btn.btn-hyperlink.dark,
+  &:hover:not(:disabled) .btn.btn-hyperlink.dark,
+  &:active .btn.btn-hyperlink.dark {
+    color: $color-white95;
+  }
+
+  /*
+   * PILL BUTTONS
+  */
+
+  &:hover:not(:disabled) .btn.btn-pills {
+    background-color: $color-black100;
+    color: $color-white100;
+
+    &:active {
+      background-color: transparent;
+      color: $color-black100;
+      border: 1px solid $color-black60;
+    }
+  }
+
+  &:focus:not(:active) .btn.btn-pills {
+    background-color: $color-black100;
+    color: $color-white100;
+    border: 2px solid transparent;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -8px;
+      bottom: -8px;
+      left: -8px;
+      right: -8px;
+      border-radius: 32px;
+      border: 2px solid $color-white60;
+    }
+  }
+
+  &:disabled .btn.btn-pills {
+    color: $color-black60;
+    border: 2px solid $color-white80;
+  }
+
+  &:disabled .btn.btn-pills.dark {
+    color: $color-white80;
+  }
+
+  &:focus:not(:active) .btn.btn-pills.dark,
+  &:hover:not(:disabled) .btn.btn-pills.dark {
+    color: $color-black100;
+    background-color: $color-white100;
+
+    &:active {
+      background-color: transparent;
+      color: $color-white100;
+      border: 2px solid $color-black60;
+    }
+  }
+
+  /*
+   * PILL BUTTONS (FILL)
+  */
+
+  &:disabled .btn.btn-pills.with-fill {
+    border-color: $color-white80;
+
+    &.dark {
+      border: 2px solid $color-black60;
+  
+      i {
+        color: $color-white60;
+      }
+    }
+  }
+
+  &:hover:not(:disabled) .btn.btn-pills.with-fill {
+    transform: rotate(-270deg);
+
+    &.dark {
+      transform: none;
+    }
+  }
+
+  &:hover:not(:disabled) .btn.btn-pills.with-fill,
+  &:focus:not(:active) .btn.btn-pills.with-fill {
+    color: $color-black80;
+    transform: rotate(-270deg);
+
+    i {
+      color: $color-white100;
+    }
+
+    &:active i {
+      color: $color-black80;
+    }
+
+    &.dark {
+      &:active {
+        background: $color-white100;
+  
+        i {
+          color: $color-black80;
+        }
+      }
+    }
+  }
+
+  &:active:not(:disabled) .btn.btn-pills.with-fill {
+    transform: rotate(0);
+  }
+
+  &:hover .btn.btn-pills.with-fill.dark i,
+  &:focus:not(:active) .btn.btn-pills.with-fill.dark i {
+    color: $color-black80;
+  }
+}

@@ -1,0 +1,27 @@
+.skeleton-container {
+  width: '100%';
+  min-height: '1em';
+  background-color: $color-white90;
+  color: $color-white90;
+  border-radius: 1rem;
+
+  &.pulse-animation {
+    animation: react-placeholder-pulse 1.5s infinite;
+  }
+
+  .skeleton-content {
+    background-color: $color-white100;
+  }
+}
+
+@keyframes react-placeholder-pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}

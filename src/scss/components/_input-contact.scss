@@ -1,0 +1,165 @@
+.input-contact {
+  input {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  label {
+    font-size: 14px;
+    height: $small;
+    letter-spacing: 0.3px;
+    color: $color-black80;
+    margin: 0;
+  }
+
+  label:first-child {
+    font-family: $boldFontFamily;
+    margin-bottom: $small;
+  }
+
+  &.disabled {
+    color: $color-black60;
+    label {
+      color: $color-black60;
+    }
+  }
+
+  div:first-of-type {
+    padding: 0 24px;
+
+    .smls-flags {
+      position: relative;
+      cursor: pointer;
+      margin-right: 26px;
+
+      &::after {
+        content: '';
+        cursor: pointer;
+        position: absolute;
+        border-radius: 4px;
+        width: 0;
+        height: 0;
+        top: 10px;
+        left: 28px;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid $color-black100;
+      }
+    }
+  }
+}
+
+.contact-modal {
+  .list-group-item:not(:last-child)::after {
+    display: none;
+  }
+
+  .fixed-modal-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 24px;
+    box-shadow: -1px 8px 19px -2px rgba(0, 0, 0, 0.27);
+    z-index: 2;
+    .input-group > div:not(.input-error) {
+      min-width: unset;
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      padding: 12px 56px;
+    }
+    & .input-group {
+      width: unset;
+      flex: 1;
+
+      &.filled:not(.typing):not(.error) > div:not(.input-error) {
+        border: none;
+      }
+    }
+    & .input-group input {
+      padding-left: 0px;
+    }
+
+    & .input-group > div:first-of-type {
+      border: none;
+      &:hover {
+        border: none;
+      }
+    }
+    & .input-group > .input-error {
+      display: none;
+    }
+  }
+  .input-group div {
+    width: 100%;
+  }
+  h3 {
+    margin-bottom: 32px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 0px; /* Remove scrollbar space */
+      background: transparent; /* Optional: just make scrollbar invisible */
+    }
+  }
+
+  .list-group-item {
+    span {
+      b {
+        display: inline-block;
+        margin: 0 8px 0 16px;
+        width: 36px;
+        font-family: $boldFontFamily;
+        font-size: 0.875rem;
+      }
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      span {
+        b {
+          margin: 0 8px 0 11px;
+          width: 39px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  li {
+    padding: 24px 0px;
+    height: 72px;
+    cursor: pointer;
+
+    @media (min-width: $bkpoint-tablet) {
+      padding: 24px;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-white95;
+    }
+
+    &:hover {
+      border-bottom: none;
+      border: 2px solid $color-orange;
+      border-radius: 8px;
+      padding: 22px 22px 23px;
+    }
+  }
+  .country-not-found {
+    display: flex;
+    height: calc(100% - 200px);
+    align-items: center;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    p {
+      color: $color-black60;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.smls-divider {
+  width: 100%;
+  height: 1px;
+  border: 1px solid $color-white60;
+
+  &.very-high {
+    margin: 119px 0;
+    height: 2px;
+  }
+  &.high {
+    margin: 60px 0 59px 0;
+  }
+  &.medium {
+    margin: 36px 0 35px 0;
+  }
+  &.low {
+    margin: 20px 0 19px 0;
+  }
+  &.very-low {
+    margin: 12px 0 11px 0;
+  }
+}

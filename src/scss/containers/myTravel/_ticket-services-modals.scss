@@ -1,0 +1,601 @@
+.tickets-services-modals {
+  &-header {
+    padding: 24px 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &.has-two-buttons {
+      justify-content: space-between;
+    }
+
+    &-back, &-close {
+      background: transparent;
+
+      width: 12px; 
+      height: 12px;
+
+      border-radius: 50%;
+
+      border: 1px solid transparent;
+      outline: 0 !important;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 0.85rem;
+        font-weight: bold;
+      }
+    }
+
+    &-back {
+      i {
+        font-size: 1.125rem;
+      }
+    }
+
+    @media screen and (min-width: $bkpoint-tablet) {
+      padding: 40px 0;
+
+      &-back, &-close {
+        width: 40px; 
+        height: 40px;
+        border-color: #000;
+
+        i {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &-insurances, &-others {
+   padding: 0 56px;
+
+    &-step00, &-step01, &-step02, &-step03, &-step04 {
+     padding-bottom: 32px;
+
+      h1, p {
+        margin-bottom: 0;
+      }
+
+      &-title {
+        margin-top: 24px;
+
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+
+        color: $color-black80;
+
+        letter-spacing: 0 !important;
+
+        &-image {
+          display: block;
+
+          width: 100px;
+          min-height: 48px;
+          
+          margin-top: 16px;
+
+          background-position: top left;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &-text {
+        margin-top: 16px;
+
+        font-size: 16px;
+        line-height: 24px;
+   
+        color: $color-black60 ;
+      }
+
+      &-button {
+        margin-top: 88px;
+
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+
+        button {
+          width: 100%;
+        }
+      }
+
+      &-tooltip {
+        display: flex;
+        justify-content: center;
+        margin-top: 36px;
+      }
+
+      &-inputs {
+        margin-top: 32px;
+
+        &-input {
+          &.margin-top {
+            margin-top: 64px;
+          }
+
+          &.w50 {
+            width: 49% !important;
+          }
+
+          &.float-left {
+            float: left;
+          }
+
+          &.float-right {
+            float: right;
+          }
+
+          &.clear {
+            clear: both;
+          }
+        }
+      }
+
+      @media screen and (min-width: $bkpoint-tablet) {
+        &-text {
+          margin-top: 24px;
+        }
+
+        &-button {
+          margin-top: 64px;
+          justify-content: flex-start;
+        }
+
+        &-tooltip {
+          margin-top: 40px;
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    &-step02 {
+      &-text {
+        margin-top: 24px;
+      }
+
+      @media screen and (min-width: $bkpoint-tablet) {
+        &-button {
+          margin-top: 64px;
+        }
+      }
+    }
+
+    &-step03 {
+      padding-bottom: 128px;
+
+      &-list {
+        margin-top: 48px;
+      }
+
+      &-button {
+        margin-top: 48px;
+      }
+
+      &-tooltip {
+        margin-top: 40px;
+      }
+
+      &-input {
+        &:nth-of-type(1) {
+          margin-top: 48px;
+        }
+
+        &:nth-of-type(4), &.double-input {
+          margin-top: 72px;
+        }
+      }
+
+      &-button {
+        margin-top: 56px;
+      }
+    }
+
+    &-step04 {
+      padding-bottom: 128px;
+
+      &-card {
+        margin-top: 24px;
+      }
+
+      &-title {
+        margin-top: 64px;
+      }
+
+      &-travels {
+        margin-top: 40px;
+      }
+
+      @media screen and (min-width: $bkpoint-tablet) {
+        &-button {
+          &.hyperlink {
+            margin-top: 20px;
+            height: 64px;
+          }
+        }
+      }
+    }
+
+    &-buttonWithTooltip {
+      display: flex;
+
+      &-message {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+
+        color: $color-black88;
+
+        border: 0;
+        padding: 0;
+        outline: 0 !important;
+        background: transparent;
+      }
+
+      &-tooltip {
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+      }
+    }
+
+    &-cardInsurance {
+      max-width: 360px;
+      width: 100%;
+
+      filter: drop-shadow(0px 0px 32px rgba(0, 0, 0, 0.12));
+
+      & + & {
+        margin-top: 48px;
+      }
+
+      &-top {
+        z-index: 5;
+        
+        background: $color-white100;
+
+        width: 100%;
+
+        padding: 24px 28px;
+
+        border: 2px solid #F2F2F2;
+        border-style: solid solid dashed solid;
+        border-radius: 16px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+        &-title {
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: -0.5px;
+
+          color: $color-black80;
+        }
+
+        &-icon {
+          width: 24px;
+          height: 24px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          border: 2px solid $color-black60;
+          border-radius: 16px;
+
+          i {
+            font-size: 1rem;
+          }
+        }
+
+      }
+
+      &-content {
+        z-index: 1;
+
+        background: $color-white100;
+
+        padding: 24px 28px 30px 28px;
+
+        border: 2px solid $color-white95;
+        border-radius: 16px;
+
+        transform: translate3d(0, -2px, 0);
+
+        &-block {
+          display: flex;
+          flex-direction: column;
+
+          & + & {
+            margin-top: 24px;
+          }
+
+          &-values {
+            &-value {
+              width: 100%;
+              margin-bottom: 0;
+
+              &:first-child {
+                font-size: 14px;
+                line-height: 16px;
+                
+                color: color-black60;
+              }
+
+              &:nth-of-type(2) {
+                font-size: 16px;
+                line-height: 24px;
+
+                color: $color-black80 ;
+
+                margin-top: 8px;
+              }
+            }
+
+            & + & {
+              margin-top: 24px;
+            }
+          }
+        }
+
+        &-section {
+          margin-top: 24px;
+
+          &-value {
+            margin-top: 8px;
+
+            &:nth-of-type(1) {
+              font-size: 14px;
+              line-height: 16px;
+              
+              color: color-black60;
+            }
+
+            &:nth-of-type(2), &:nth-of-type(3) {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+      @media screen and (min-width: $bkpoint-tablet) {
+        &-top {
+          padding: 24px 28px;
+        }
+
+        &-content {
+          padding: 22px 36px 32px 36px;
+
+          &-block {
+            flex-direction: row;
+
+            &-values {
+              &-value {
+                width: 132px;
+              }
+
+              &:nth-of-type(2) {
+                margin-left: 24px;
+              }
+
+              & + &  {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-cardTravel {
+      width: 100%;
+      max-width: 360px;
+
+      border: 2px solid $color-white95;
+
+      padding: 0 28px;
+      padding-bottom: 32px;
+
+      border-radius: 16px;
+
+      & + & {
+        margin-top: 24px;
+      }
+
+      &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 24px 0;
+
+        border-bottom: 2px solid #F2F2F2;
+
+        &-title {
+          font-size: 20px;
+          line-height: 32px;
+
+          color: $color-black80;
+        }
+
+        &-icon {
+          width: 24px;
+          height: 24px;
+
+          border: 2px solid #000;
+        }
+      }
+
+      &-content {
+        margin-top: 24px;
+
+        &-miniTitle, &-dates {
+          margin-top: 24px;
+        }
+
+        &-miniTitle {
+          font-size: 14px;
+          line-height: 16px;
+
+          color: $color-black60;
+
+          margin-bottom: 0vh;
+        }
+
+        &-list {
+          &-item {
+            margin-top: 8px;
+            margin-bottom: 0vh;
+
+            font-size: 16px;
+            line-height: 24px;
+
+            color: $color-black80;
+          }
+        }
+
+        &-dates {
+
+          display: flex;
+          align-items: center;
+
+          &-start, &-end {
+            width: 132px;
+
+            span {
+              font-size: 14px;
+              line-height: 16px;
+
+              color: $color-black60;
+            }
+
+            p {
+              margin-top: 8px;
+
+              font-size: 16px;
+              line-height: 24px;
+
+              color: $color-black80;
+            }
+          }
+
+          &-end {
+            margin-left: 16px;
+          }
+        }
+      }
+
+      @media screen and (min-width: $bkpoint-tablet) {
+        padding: 0 36px;
+
+        &-content {
+          margin-top: 0;
+          padding: 24px 0 32px 0;
+
+          &-dates {
+            &-end {
+              margin-left: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-others {
+    padding: 0 56px;
+
+    &-step00 {
+      &-links {
+        max-width: 312px;
+        width: 100%;
+
+        margin: 0 auto;
+        margin-top: 48px;
+  
+        &-link {
+          width: 100%;
+          background: transparent;
+          border: 0;
+          outline: 0;
+  
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          padding: 24px 0;
+
+          & + & {
+            border-top: 1px solid $color-white95;
+          }
+
+          strong {
+            font-weight: 400;
+          }
+  
+          &-icon {
+            width: 24px;
+            height: 24px;
+  
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+
+    &-step01 {
+      &-title {
+        &-image {
+          background-image: url('../assets/logos/seusingressos/seusingressos.svg');
+        }
+      }
+    }
+
+    &-step02 {
+      &-title {
+        &-image {
+          background-image: url('../assets/logos/gray-line/grayline.svg');
+        }
+      }
+    }
+
+    &-step03 {
+      &-title {
+        &-image {
+          background-image: url('../assets/logos/ingressorapido/ingressorapido.svg');
+        }
+      }
+    }
+
+    &-step04 {
+      &-title {
+        margin-top: 24px;
+
+        &-image {
+          background-image: url('../assets/logos/agaxtur/agaxtur.svg');
+        }
+      }
+    }
+
+    @media screen and (min-width: $bkpoint-tablet) {
+      padding: 0 56px;
+    }
+  }
+}

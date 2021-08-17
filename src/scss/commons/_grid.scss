@@ -1,0 +1,10 @@
+// Large devices (desktops)
+@media (min-width: $bkpoint-desktop) {
+  .main-portal {
+    max-width: 1240px;
+    margin: 0 auto;
+    opacity: 1;
+    min-height: 580px;
+    text-align: left;
+  }
+}

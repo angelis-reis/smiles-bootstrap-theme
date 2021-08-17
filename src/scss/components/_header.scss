@@ -1,0 +1,207 @@
+.navbar-container {
+  width: 100%;
+
+  &.icon {
+    .steps,
+    .progress {
+      display: none;
+    }
+  }
+
+  .navbar {
+    padding: 0 24px;
+    height: 64px;
+    &.shadow {
+      box-shadow: 0px 0px 20px #eee;
+    }
+
+    @media (max-width: $bkpoint-desktop) {
+      a {
+        line-height: 18px;
+      }
+      i.material-icons {
+        font-size: 17px;
+        font-weight: bold;
+      }
+    }
+
+    .dropdown:first-child {
+      margin: 0 auto 0 0;
+    }
+
+    .dropdown {
+      height: fit-content;
+      width: fit-content;
+      margin: 0 16px 0 auto;
+
+      .btn.btn-secondary {
+        @media (max-width: $bkpoint-desktop) {
+          font-size: 14px;
+          font-family: $boldFontFamily;
+        }
+
+        border: none;
+        width: auto;
+        margin: 0 8px 0 0;
+        padding: 0;
+        margin-left: auto;
+        height: fit-content;
+
+        &:focus,
+        &:hover {
+          background-color: transparent;
+          color: $color-black100;
+
+          &::after {
+            content: none;
+          }
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          right: -16px;
+          border-radius: 4px;
+          width: 0;
+          height: 0;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-top: 4px solid $color-black100;
+        }
+      }
+
+      .dropdown-menu {
+        overflow-x: hidden;
+        left: -100px;
+        height: 128px;
+      }
+
+      .dropdown-item {
+        height: 64px;
+        margin: 0;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:active {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .navbar-nav {
+      display: none;
+    }
+
+    .progress {
+      display: none;
+      width: calc(100% + 20px);
+    }
+
+    .navbar-brand {
+      margin: 0;
+      padding: 0;
+      width: 60px;
+      height: 24px;
+      cursor: pointer;
+
+      img {
+        width: 60px;
+        height: 24px;
+      }
+    }
+
+    .nav-item {
+      display: none;
+      font-size: 14px;
+
+      &.selected {
+        display: block;
+      }
+    }
+
+    .steps {
+      display: none;
+    }
+
+    @media (min-width: $bkpoint-desktop) {
+      height: 100px;
+
+      .dropdown {
+        display: none;
+      }
+
+      .progress {
+        display: flex;
+  }
+
+      .steps {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      .material-icons {
+        display: none;
+      }
+
+      .navbar-brand {
+        margin: auto 0;
+        width: 70px;
+        height: 28px;
+        cursor: pointer;
+        position: absolute;
+
+        img {
+          width: 70px;
+          height: 28px;
+        }
+      }
+
+      .nav-item {
+        &:not(:last-of-type) {
+          margin-right: 50px;
+        }
+
+        &.active {
+          display: block;
+        }
+      }
+
+      .nav-item:not(.active) {
+        display: block;
+
+        .nav-link {
+          font-family: $boldFontFamily;
+        }
+      }
+
+      .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 0;
+  }
+    }
+  }
+
+  @media (min-width: $bkpoint-desktop) {
+    .progress {
+      display: none;
+  }
+  }
+
+  .only-progress.progress {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+
+    @media (min-width: $bkpoint-desktop) {
+      position: relative;
+      width: auto;
+    }
+  }
+}

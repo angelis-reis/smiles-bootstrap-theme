@@ -1,0 +1,20 @@
+.custom-select {
+    width: 100%;
+    height: 64px;
+    border: 2px solid $color-white80;
+    border-radius: 8px;
+
+    &-label {
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      font-family: $boldFontFamily !important;
+      color: $color-black80;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    &:hover{
+      border-color: $color-orange;
+    }
+
+  }

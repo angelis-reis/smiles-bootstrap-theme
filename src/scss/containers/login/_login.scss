@@ -1,0 +1,170 @@
+.smls-login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .banner {
+    img,
+    h2,
+    .smls-home-header {
+      display: none;
+    }
+  }
+
+  .content {
+    margin: 24px;
+    max-width: 360px;
+
+    h1 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      color: $color-black60;
+    }
+
+    .btn-primary:first-of-type {
+      margin: 48px 0 32px 0;
+    }
+
+    .btn-primary {
+      font-family: $boldFontFamily;
+      width: 100%;
+    }
+
+    .create-account {
+      display: flex;
+      margin-top: 32px;
+
+      a {
+        cursor: pointer;
+        padding-left: 8px;
+      }
+    }
+  }
+
+  @media (min-width: $bkpoint-desktop) {
+    flex-direction: row;
+
+    .banner {
+      position: relative;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+
+      img,
+      h2 {
+        display: block;
+        z-index: -1;
+      }
+
+      .smls-home-header {
+        display: block;
+      }
+
+      img {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(
+          9.44deg,
+          rgba(0, 0, 0, 0.4) 6.14%,
+          rgba(245, 176, 94, 0) 38.51%
+        );
+      }
+
+      h2 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1px;
+        color: $color-white100;
+        margin: auto 56px 36px;
+      }
+    }
+
+    .content {
+      margin: auto;
+      max-width: 360px;
+
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1px;
+      }
+
+      .btn-primary:first-of-type {
+        margin: 40px 0 16px 0;
+      }
+
+      .create-account {
+        margin-top: 48px;
+      }
+    }
+
+    .smls-login-pre-register {
+      .btn-primary {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.modal-pre-register {
+  .btn-primary {
+    font-family: $boldFontFamily;
+    width: 100%;
+  }
+
+  @media (min-width: $bkpoint-desktop) {
+    .btn-primary {
+      width: 264px;
+    }
+  }
+}
+
+.smls-home-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 24px;
+
+  .smls-header-skeleton {
+    display: none;
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    padding: 30px 56px;
+
+    .smls-header-skeleton {
+      display: block;
+    }
+  }
+}
+
+.smls-edit-user {
+  .smls-list-range {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .input-group {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.smls-login-common {
+  .btn-primary {
+    margin-top: 56px;
+  }
+
+  &.bureau {
+    ul {
+      padding: 0;
+    }
+  }
+}

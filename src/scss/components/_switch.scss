@@ -1,0 +1,208 @@
+.custom-switch {
+  padding: 0;
+
+  .smls-switch-out {
+    position: absolute;
+    border-radius: 1.875rem;
+    border: 2px solid #999999;
+    top: 0;
+    height: 2.5rem;
+    width: 3.5rem;
+    visibility: hidden;
+  }
+
+  .custom-control-label {
+    cursor: pointer;
+    z-index: 1;
+    height: 2.5rem;
+    width: 3.5rem;
+
+    &::before {
+      top: 0.5rem;
+      left: 0.5rem;
+      border-color: $color-white60;
+      border-radius: 0.75rem;
+      height: 1.5rem;
+      width: 2.5rem;
+    }
+
+    &::after {
+      top: 0.75rem;
+      left: 0.75rem;
+      height: 1rem;
+      width: 1rem;
+      background-color: $color-black100;
+    }
+  }
+
+  .custom-control-input {
+    &:active ~ .custom-control-label {
+      &::before {
+        background-color: inherit;
+      }
+    }
+
+    &:hover ~ .custom-control-label {
+      &::before {
+        border-color: $color-black100;
+      }
+    }
+
+    &:checked ~ .custom-control-label {
+      &::after {
+        transform: translateX(1rem);
+        background-color: $color-black100;
+      }
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      &:hover:checked ~ .custom-control-label {
+        &::after {
+          transform: translateX(1rem);
+          background-color: $color-white100;
+        }
+
+        &::before {
+          border-color: $color-black100;
+          background-color: $color-black100;
+        }
+      }
+    }
+
+    &:focus ~ .custom-control-label {
+      &::before {
+        border-color: $primary;
+      }
+    }
+
+    &:focus:not(:checked) ~ .custom-control-label {
+      &::before {
+        border-color: $color-black100;
+      }
+    }
+
+    &:focus-visible ~ .smls-switch-out {
+      visibility: visible;
+    }
+
+    &:hover ~ .smls-switch-out {
+      visibility: hidden;
+    }
+
+    &:disabled ~ .custom-control-label {
+      &::before {
+        background-color: $color-white95;
+        border-color: $color-white95;
+      }
+
+      &::after {
+        background-color: $color-white60;
+      }
+    }
+
+    &:disabled:not(:checked) ~ .custom-control-label {
+      &::before {
+        background-color: $color-white100;
+        border-color: $color-white80;
+      }
+
+      &::after {
+        background-color: $color-black60;
+      }
+    }
+  }
+
+  &.dark {
+    .custom-control-label {
+      &::before {
+        background-color: $color-black100;
+      }
+
+      &::after {
+        background-color: $color-white100;
+      }
+    }
+
+    .custom-control-input {
+      &:active ~ .custom-control-label {
+        &::before {
+          background-color: inherit;
+        }
+      }
+
+      &:hover ~ .custom-control-label {
+        &::before {
+          border-color: $color-white100;
+        }
+      }
+
+      &:checked ~ .custom-control-label {
+        &::after {
+          transform: translateX(1rem);
+          background-color: $color-black100;
+        }
+
+        &::before {
+          border-color: $primary;
+          background-color: $primary;
+        }
+      }
+
+      @media (min-width: $bkpoint-tablet) {
+        &:hover:checked ~ .custom-control-label {
+          &::after {
+            transform: translateX(1rem);
+            background-color: $color-black100;
+          }
+
+          &::before {
+            border-color: $color-white100;
+            background-color: $color-white100;
+          }
+        }
+      }
+
+      &:focus ~ .custom-control-label {
+        &::before {
+          border-color: $primary;
+        }
+      }
+
+      &:focus:not(:checked) ~ .custom-control-label {
+        &::before {
+          border-color: $color-white100;
+        }
+      }
+
+      &:focus ~ .smls-switch-out {
+        visibility: visible;
+      }
+
+      &:hover ~ .smls-switch-out {
+        visibility: hidden;
+      }
+
+      &:disabled ~ .custom-control-label {
+        &::before {
+          background-color: $color-black80;
+          border-color: $color-black80;
+        }
+
+        &::after {
+          background-color: $color-white60;
+        }
+      }
+
+      &:disabled:not(:checked) ~ .custom-control-label {
+        &::before {
+          background-color: $color-black100;
+          border-color: $color-black60;
+        }
+
+        &::after {
+          background-color: $color-white60;
+        }
+      }
+    }
+  }
+}

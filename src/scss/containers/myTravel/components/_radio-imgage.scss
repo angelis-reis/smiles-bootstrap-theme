@@ -1,0 +1,62 @@
+.smls-my-travel {
+  .smls-radio-image-content {
+    position: relative;
+    cursor: pointer;
+    width: 126px;
+    height: 126px;
+    transition: all ease .2s;
+    margin-top: 72px;
+
+    &.no-active {
+      opacity: 0.4;
+    }
+    &__radio {
+      position: absolute;
+      right: 0;
+      bottom: .625rem;
+      input[name="list"]:not(:checked) {
+        + label {
+          opacity: 0;
+        }
+      }
+      input[name="list"]:checked {
+        + label {
+          opacity: 1;
+        }
+      }
+      + label {
+        cursor: pointer;
+        > img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+    &__text {
+      position: absolute;
+      left: 1.5rem;
+      bottom: 1rem;
+      color: $white;
+      @include mx-font-size(.875rem, 1rem);
+      max-width: 7rem;
+    }
+    &__degrade {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: linear-gradient(360deg, $color-black100 0%, rgba(0, 0, 0, 0) 100%);
+      border-radius: 0px 0px 1rem 1rem;
+    }
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    .smls-radio-image-content {
+      width: 168px;
+      height: 168px;
+      margin-top: 48px;
+    }
+  }
+}

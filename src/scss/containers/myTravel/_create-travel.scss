@@ -1,0 +1,19 @@
+.after-checkout-ticket {
+   margin-bottom: 40px;
+}
+
+.smls-my-travels-create-travel {
+   .title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+
+    @media screen and (min-width: $bkpoint-tablet) {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1px;
+      }
+   }
+}

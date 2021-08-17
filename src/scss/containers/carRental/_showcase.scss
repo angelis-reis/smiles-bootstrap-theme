@@ -1,0 +1,59 @@
+.carRental-showcase-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media(min-width: $bkpoint-desktop) {
+    flex-direction: row;
+  }
+
+  >.carRental-showcase-text-box {
+    width: 272px;
+    height: 100%;
+    padding-bottom: 48px;
+
+    @media(min-width: $bkpoint-desktop) {
+      flex-direction: column;
+      line-height: 32px;
+      width: 360px;
+      height: 120px;
+      padding-left: 20px;
+    }
+
+    >.carRental-showcase-text {
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.5px;
+      color: $color-black80;
+      opacity: 0.98;
+      padding-bottom: 20px;
+
+      @media(min-width: $bkpoint-desktop) {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1px;
+      }
+    }
+
+    >.carRental-showcase-text-small {
+      font-size: 16px;
+      line-height: 24px;
+
+      @media(min-width: $bkpoint-desktop) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  >.carRental-showcase-carousel-box {
+    width: 100%;
+    
+    @media(min-width: $bkpoint-desktop) {
+      width: 648px;
+      padding-left: 120px;
+    }
+  }
+}

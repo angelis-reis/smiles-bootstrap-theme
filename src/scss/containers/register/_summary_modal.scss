@@ -1,0 +1,75 @@
+.smls-register {
+  @media (max-width: $bkpoint-tablet) {
+    .smls-modal-header {
+      margin-bottom: 24px;
+    }
+    .smls-modal-list {
+      padding-bottom: 40px;
+    }
+    h4 {
+      font-size: 24px;
+    }
+  }
+  .smls-modal-list {
+    hr {
+      height: 1px;
+      margin: 0px 24px;
+      border: none;
+      background-color: $color-white95;
+      color: $color-white95;
+      @media (max-width: $bkpoint-tablet) {
+        margin: 0px;
+      }
+    }
+    .smls-modal-item {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .smls-modal-item .smls-modal-range {
+    &.current {
+      padding: 12px 24px;
+    }
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    .material-icons {
+      color: $color-white80;
+    }
+    .material-icons.checked {
+      color: $color-black100;
+    }
+    &:hover {
+      border: 2px solid $color-orange;
+      cursor: pointer;
+      background-color: transparent;
+    }
+    @media (max-width: $bkpoint-tablet) {
+      &.current {
+        padding: 20px 0px;
+      }
+      padding: 20px 0px;
+      .material-icons {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .smls-modal-text {
+    > label.smls-modal-label {
+      margin: 0px;
+      font-size: 16px;
+    }
+    .smls-modal-sub {
+      font-size: 14px;
+      margin-top: 4px;
+      line-height: 16px;
+      @media (max-width: $bkpoint-tablet) {
+        margin-right: 16px;
+      }
+    }
+  }
+}

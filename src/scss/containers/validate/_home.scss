@@ -1,0 +1,48 @@
+.smls-modal-validate__home {
+  text-align: left;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  b {
+    font-family: $boldFontFamily;
+  }
+
+  span:not(:hover) {
+    color: $color-black100;
+  }
+
+  .recaptcha {
+    margin-bottom: 32px;
+  }
+  
+  .btn:not(.btn-icon):not(.btn-hyperlink) {
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: $bkpoint-tablet) {
+      width: auto;
+      min-width: 264px;
+    }
+  }
+
+  .btn-hyperlink {
+    font-weight: 700;
+  }
+
+  .input-group {
+    padding-bottom: 4rem;
+
+    div {
+      width: 100%;
+    }
+  }
+}

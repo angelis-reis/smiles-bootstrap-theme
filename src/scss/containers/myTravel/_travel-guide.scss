@@ -1,0 +1,690 @@
+.travel-guide {
+  &-container {
+    padding: 0 24px;
+    @media (min-width: 768px) {
+      padding: 0 40px;
+    }
+    .title-travel-api {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.5px;
+      color: $color-black80;
+    }
+  }
+  &-date {
+    line-height: 16px;
+    font-size: 14px;
+    color: $color-black60;
+    margin-bottom: 2.5rem;
+    display: inline-block;
+  }
+  .position_relative_guide {
+    position: relative;
+  }
+  &-without-booking-image {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    transform: translateY(20%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../assets/my-travels/home/create_travel_itinerary.svg');
+    @media (min-width: 1440px) {
+      transform: initial;
+      width: 400px;
+      height: 400px;
+    }
+    @media (max-width: 1024px) {
+      width: 300px;
+      height: 300px;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.travelGuide {
+  &-events {
+    padding-bottom: 80px;
+
+    p,
+    h1,
+    span {
+      margin-bottom: 0 !important;
+    }
+
+    &-day {
+      width: 100%;
+
+      &:nth-of-type(n + 2) {
+        margin-top: 88px;
+      }
+
+      &-fixedHeader {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 72px;
+        background: #fff;
+
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 24px;
+
+        z-index: 10;
+
+        @media screen and (min-width: 768px) {
+          justify-content: space-around;
+        }
+
+        &-title {
+          display: flex;
+          flex-direction: column;
+
+          h1 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+
+            color: $color-black80;
+          }
+
+          p {
+            margin-top: 4px;
+
+            font-size: 14px;
+            line-height: 16px;
+
+            color: $color-black60;
+          }
+        }
+
+        &-calendar {
+          width: 123px;
+          height: 40px;
+
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          border-radius: 16px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          background: transparent;
+
+          &-icon {
+            width: 24px;
+            height: 24px;
+          }
+
+          p {
+            color: #000;
+
+            font-size: 14px;
+            line-height: 16px;
+
+            margin-left: 12px;
+          }
+        }
+      }
+
+      &-top {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+
+          h1 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: -0.5px;
+            color: $color-black80;
+          }
+
+          p {
+            margin-left: 0px;
+            margin-top: 8px;
+            font-size: 14px;
+            letter-spacing: -0.5px;
+            line-height: 16px;
+            color: $color-black60;
+          }
+
+          @media screen and (min-width: $bkpoint-tablet) {
+            flex-direction: row;
+            align-items: center;
+
+            p {
+              margin-left: 8px;
+              margin-top: 0px;
+            }
+          }
+        }
+
+        &-calendar {
+          width: 123px;
+          height: 40px;
+
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          border-radius: 16px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          background: transparent;
+
+          &-icon {
+            width: 24px;
+            height: 24px;
+          }
+
+          p {
+            color: #000;
+
+            font-size: 14px;
+            line-height: 16px;
+
+            margin-left: 12px;
+          }
+
+          &:hover {
+            background: #000;
+            color: #fff;
+            p {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &-list {
+        margin-top: 32px;
+
+        &-item {
+          width: 100%;
+
+          display: flex;
+          justify-content: space-between;
+
+          position: relative;
+
+          &:nth-of-type(n + 2) {
+            margin-top: 24px;
+          }
+
+          &-dot {
+            width: 12px;
+            height: 12px;
+
+            border-radius: 50%;
+
+            margin-top: 34px;
+
+            background: $color-orange;
+          }
+
+          &-content {
+            width: calc(100% - 28px);
+            min-height: 96px;
+            height: auto;
+
+            background: #ffffff;
+
+            border: 2px solid #f2f2f2;
+            border-radius: 16px;
+
+            position: relative;
+
+            padding: 28px;
+            padding-top: 24px;
+
+            &-top {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+
+              &-title {
+                display: flex;
+                align-items: center;
+
+                &-hour {
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: $color-black60;
+                }
+
+                &-icon {
+                  width: 24px;
+                  height: 24px;
+
+                  margin-left: 8px;
+                }
+              }
+
+              &-close {
+                width: 24px;
+                height: 24px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                  font-size: 16px;
+                  cursor: pointer;
+                }
+              }
+            }
+
+            &-title,
+            &-text {
+              margin-bottom: 0 !important;
+              letter-spacing: -0.5px;
+            }
+
+            &-title {
+              margin-top: 16px;
+
+              font-size: 18px;
+              line-height: 26px;
+              font-weight: bold;
+              letter-spacing: -0.5px;
+              color: $color-black80;
+            }
+
+            &-text {
+              margin-top: 8px;
+
+              font-size: 16px;
+              line-height: 24px;
+
+              color: $color-black60;
+            }
+
+            &-button {
+              margin-top: 28px;
+            }
+
+            &::before {
+              content: '';
+
+              position: absolute;
+              top: 30px;
+              left: -8px;
+
+              width: 15px;
+              height: 15px;
+
+              background: #fff;
+
+              border: 2px solid $color-white95;
+              border-right: transparent;
+              border-bottom: transparent;
+
+              transform: rotateZ(-45deg);
+            }
+
+            &.smiles-reservation,
+            &.empty {
+              background: $color-white95;
+
+              &::before {
+                background: $color-white95;
+              }
+            }
+
+            &.empty {
+              .travelGuide-events-day-list-item-content-text {
+                margin-top: 0;
+
+                color: $color-black80;
+              }
+            }
+          }
+
+          &::before {
+            content: '';
+
+            width: 2px;
+            height: calc(100% + 20px);
+
+            position: absolute;
+            top: 44px;
+            left: 5px;
+
+            background: $color-white95;
+
+            z-index: -1;
+          }
+
+          &:last-child {
+            &::before {
+              content: none;
+            }
+          }
+
+          &.empty {
+            &::before {
+              height: 60%;
+            }
+
+            &:last-child {
+              &::before {
+                content: '';
+              }
+            }
+          }
+        }
+
+        @media screen and (min-width: $bkpoint-tablet) {
+          &-item {
+            &-content {
+              width: calc(100% - 37px);
+              min-height: 72px;
+
+              padding: 24px 35px;
+
+              &-title {
+                margin-top: 8px;
+              }
+            }
+
+            &.empty {
+              &::before {
+                height: 46%;
+              }
+            }
+          }
+        }
+      }
+
+      &-button {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 48px;
+
+        @media screen and (min-width: $bkpoint-tablet) {
+          justify-content: flex-start;
+
+          margin-left: 37px;
+        }
+      }
+    }
+
+    &-calendarModal {
+      z-index: 999;
+
+      width: 100%;
+      height: 100%;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      background: rgba(0, 0, 0, 0.6);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .DayPicker {
+        .CalendarDay__selected_span {
+          background: #ececec;
+          border: 0;
+
+          color: #b6b3bb;
+        }
+
+        .CalendarDay__selected {
+          background: #fff;
+          color: #b6b3bb;
+          border: 0;
+        }
+      }
+
+      &-container {
+        padding: 24px 18px;
+        padding-bottom: 16px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+        > p {
+          font-weight: 700;
+        }
+
+        &-button {
+          outline: 0 !important;
+          border: 0 !important;
+
+          width: 104px;
+          height: 40px;
+
+          font-weight: bold;
+
+          background: $color-orange;
+          color: #fff;
+
+          border-radius: 4px;
+        }
+
+        &::before {
+          content: '';
+
+          width: calc(100% - 36px);
+          height: 2px;
+
+          position: absolute;
+          top: 0px;
+          left: 18px;
+
+          border-radius: 5px;
+
+          background: $color-white90;
+        }
+      }
+    }
+
+    &-modal {
+      &-viewPage, &-editPage {
+        padding: 0 24px;
+
+        &-title {
+          margin-top: 24px;
+
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+
+          color: $color-black80;
+        }
+
+        &-text {
+          font-size: 16px;
+          line-height: 24px;
+          color: $color-black60;
+
+          margin-top: 16px;
+        }
+
+        &-titleAndText {
+          margin-top: 32px;
+
+          span {
+            font-size: 14px;
+            line-height: 16px;
+
+            color: $color-black60;
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 24px;  
+
+            color: $color-black80;
+          }
+
+          &:nth-of-type(n + 2) {
+            margin-top: 24px;
+          }
+        }
+
+        &-buttons {
+          width: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          margin-top: 48px;
+
+          &-button {
+            .btn {
+              height: 64px;
+            }
+
+            &:nth-of-type(2) {
+              margin-top: 16px;
+            }
+          }
+        }
+      }
+
+      &-editPage {
+  
+        &-inputs {
+          margin-top: 32px;
+  
+          &-input {
+            .input-group {
+              div {
+                width: 100% !important;
+              }
+            }
+
+            &.w50 {
+              width: 49% !important;
+            }
+  
+            &.input-left {
+              float: left;
+            }
+  
+            &.input-right {
+              float: right;
+            }
+  
+            &.input-clear {
+              clear: both;
+            }
+  
+            
+          }
+        }
+
+        &-button {
+          margin-top: 72px;
+
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      @media screen and (min-width: $bkpoint-tablet) {
+        &-viewPage, &-editPage {
+          padding: 0 56px;
+
+          &-text {
+            margin-top: 24px;
+          }
+
+          &-titleAndText {
+            margin-top: 40px;
+
+            &:nth-of-type(n + 2) {
+              margin-top: 32px;
+            }
+          }
+
+          &-buttons {
+            align-items: flex-start;
+            margin-top: 64px;
+          }
+        }
+
+        &-editPage {
+          padding-bottom: 80px;
+
+          &-button {
+            margin-top: 88px;
+  
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+
+.side-travel-guide-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.side-container {
+  padding: 10px;
+
+  .side-travel-guide-container {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+
+    .description {
+      font-size: 16px;
+      font-family: $semiBoldFontFamily;
+
+      .count {
+        font-size: 14px;
+        margin-left: 8px;
+        font-family: $regularFontFamily;
+        color: $color-black60;
+      }
+    }
+
+    .material-icons {
+      &.first {
+        margin-right: 10px;
+        font-size: 22px;
+      }
+
+      &.last {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}

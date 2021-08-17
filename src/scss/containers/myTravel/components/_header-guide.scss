@@ -1,0 +1,56 @@
+.travel-guide-header {
+  width: 100%;
+  background: #ffeade;
+  padding: 24px 24px;
+
+  @media (min-width: 768px) {
+    padding: 40px 40px;
+  }
+
+  .travel-guide-header-back {
+    width: 24px;
+    padding: 0;
+    height: 24px;
+    font-size: 24px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: transparent;
+
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #000;
+      border-radius: 50%;
+      margin: 0;
+    }
+  }
+
+  .travel-guide-content-header {
+    display: flex;
+    align-items: baseline;
+    margin-top: 100px;
+
+    h1.travel-guide-title {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: -0.5px;
+      color: $color-black100;
+    }
+
+    button.travel-guide-button-without-styles {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1e1e1e;
+      margin-left: 30px;
+      border: 0;
+      outline: 0;
+      background: transparent;
+    }
+  }
+}

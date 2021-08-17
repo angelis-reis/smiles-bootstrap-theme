@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+    />
+
+    <meta name="description" content="" />
+
+    <link rel="icon" href="/images/favicon.ico" />
+
+    <title>{{ headerTitle }} | Smiles</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="/css/smls-base-theme.min.css"
+      media="all"
+      async
+    />
+    <link
+      rel="stylesheet"
+      href="/css/smls-header-footer.min.css"
+      media="all"
+      async
+    />
+  </head>
+
+  <body>
+    <header class=""></header>
+
+    <main role="main">
+      <div class="main-portal"></div>
+    </main>
+
+    <footer class="">{{contents | raw}}</footer>
+
+    <!-- JS -->
+    <script>
+      //TO REMOVE
+
+      // The debounce function receives our function as a parameter
+      const debounce = (fn) => {
+        // This holds the requestAnimationFrame reference, so we can cancel it if we wish
+        let frame;
+
+        // The debounce function returns a new function that can receive a variable number of arguments
+        return (...params) => {
+          // If the frame variable has been defined, clear it now, and queue for next frame
+          if (frame) {
+            cancelAnimationFrame(frame);
+          }
+
+          // Queue our function call for the next frame
+          frame = requestAnimationFrame(() => {
+            // Call our function and pass any params we received
+            fn(...params);
+          });
+        };
+      };
+
+      // Reads out the scroll position and stores it in the data attribute
+      // so we can use it in our stylesheets
+      const storeScroll = () => {
+        // document.documentElement.dataset.scroll = window.scrollY;
+        let scroll = document.getElementById('modal-scroll').scrollTop;
+        // if (scroll <script 24) scroll = 0;
+        document.documentElement.dataset.scroll_modal = scroll;
+      };
+
+      // Listen for new scroll events, here we debounce our `storeScroll` function
+      // document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+      document
+        .getElementById('modal-scroll')
+        .addEventListener('scroll', debounce(storeScroll), { passive: true });
+
+      // Update scroll position for first time
+      storeScroll();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

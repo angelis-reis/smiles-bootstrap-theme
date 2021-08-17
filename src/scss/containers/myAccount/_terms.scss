@@ -1,0 +1,83 @@
+.smls-my-account-terms {
+  .modal-body  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: $color-black80;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-family: $boldFontFamily;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black80;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black60;
+    margin-bottom: 24px;
+  }
+
+  .switch {
+    height: 64px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    label {
+      margin: 0;
+    }
+
+    & > .custom-switch {
+      margin-left: auto;
+    }
+
+    &:not(:first-of-type) {
+      border-top: 2px solid $color-white95;
+    }
+  }
+
+  .smsls-custom-toast-container {
+    right: calc(50vw - 316px / 2);
+  }
+
+  .btn:not(.btn-icon):not(.btn-hyperlink) {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    .modal-body {
+      display: block;
+    }
+
+    h1 {
+      margin-bottom: 33px;
+    }
+
+    p {
+      margin-bottom: 32px;
+    }
+
+    .switch {
+      height: 72px;
+    }
+
+    .smsls-custom-toast-container {
+      right: 70px;
+    }
+
+    .btn:not(.btn-icon):not(.btn-hyperlink) {
+      width: 264px;
+    }
+  }
+}

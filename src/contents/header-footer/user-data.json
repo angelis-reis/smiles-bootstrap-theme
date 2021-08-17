@@ -1,0 +1,23 @@
+{
+  "data": {
+    "firstName": "ISABELLA NEIRA",
+    "lastName": "LIMA",
+    "status": "ACTIVE",
+    "birthDate": "1961-01-24",
+    "memberTier": "Ouro",
+    "milesBalance": "36912",
+    "signatureClubStatus": "",
+    "phoneDDINumber": "1",
+    "phoneDDDNumber": "1",
+    "phoneNumber": "1",
+    "verifiedPhoneNumber": "",
+    "email": "siebelsmiles@gmail.com",
+    "verifiedEmail": "",
+    "partnerSourceAlias": "",
+    "partnerSourceName": "VRG Linhas Aereas S.A.",
+    "channel": "Partner",
+    "memberNumber": "600000166",
+    "typeDocument": "CPF",
+    "valueDocument": "24441414153"
+  }
+}

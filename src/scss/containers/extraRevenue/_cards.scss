@@ -1,0 +1,277 @@
+.extraRevenue-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 0;
+  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @media(min-width: $bkpoint-large) {
+    width: 991px;
+    padding-left: 0;
+    justify-content: flex-end;
+    overflow: initial;
+  }
+
+  .extraRevenue-card {
+    outline: none;
+    list-style: none;
+    width: 264px;
+    height: 256px;
+    display: table;
+    text-decoration: none;
+    outline: none;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    &:focus:not(.disabled),
+    &:hover:not(.disabled),
+    &:hover:not(.disabled):active {
+      .card-title,
+      .card-content {
+        transform: translateY(-5px);
+      }
+
+      .card.extraRevenue .card-body {
+        .card-title {
+          color: $color-black80;
+        }
+            
+        .card-content {
+          .line-first,
+          .line-third,
+          .line-fourth {
+            color: $color-black80;
+          }
+        }
+      }
+
+      .card.extraRevenue.dark .card-body {
+        border: 1px solid $color-white60;
+
+        .card-title {
+          color: $color-white80;
+        }
+
+        .card-content {
+          .line-first,
+          .line-third,
+          .line-fourth {
+            color: $color-white80;
+          }
+      
+          .line-third {
+            color: $color-white60;
+          }
+        }
+      }
+    }
+
+    &:hover:not(.disabled):active {
+      .card-body {
+        animation: 250ms light-gradient;
+      }
+
+      .card.extraRevenue.card.extraRevenue.dark {
+        background-color: $color-black88;
+
+        .card-body {
+          border: 1px solid $color-black60;
+        }
+      }
+    }
+
+    &:focus:not(.disabled) {
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -8px;
+        bottom: -8px;
+        left: -8px;
+        right: -8px;
+        border-radius: 24px;
+        border: 2px solid $color-white60;
+      }
+    }
+
+    &.disabled {
+      cursor: pointer;
+      pointer-events: none;
+
+      .card.extraRevenue .card-body {
+        .card-title {
+          color: $color-white60;
+        }
+            
+        .card-content {
+          .line-first,
+          .line-third,
+          .line-fourth {
+            color: $color-black60;
+          }
+        }
+      }
+
+      .card.extraRevenue.dark .card-body {
+        border: 1px solid $color-black80;
+
+        .card-title {
+          color: $color-white60;
+        }
+
+        .card-content {
+          .line-first,
+          .line-third,
+          .line-fourth {
+            color: $color-white60;
+          }
+      
+          .line-third {
+            color: $color-black60;
+          }
+        }
+      }
+    }
+
+    &:focus .extraRevenue-card {
+      text-decoration: none;
+    }
+
+    @import "../../components/card";
+
+    .card.extraRevenue {
+      width: 100%;
+      height: inherit;
+      padding: 0;
+      border: 0;
+      box-shadow: none;
+      margin-bottom: 0;
+
+      &:focus {
+        outline: 0;
+      }
+
+      .card-body {
+        width: inherit;
+        height: inherit;
+        max-height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        border: 1px solid $color-white80;
+        border-radius: 16px;
+        box-sizing: border-box;
+        text-align: left;
+
+        .card-icon {
+          width: auto;
+          display: flex;
+          align-items: flex-start;
+          height: 24px;
+          margin-bottom: 40px;
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-left: 0px;
+          pointer-events: none;
+        }
+
+        .card-title {
+          color: $color-black100 !important;
+          font-family: $boldFontFamily;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: left;
+          pointer-events: none;
+          transition: 250ms;
+        }
+        
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: auto;
+          pointer-events: none;
+          transition: 250ms;
+          
+          .line-first {
+            color: $color-black95;
+            font-family: $regularFontFamily;
+            font-size: 14px;
+            line-height: 16px;
+            
+            b,
+            strong {
+              font-family: $boldFontFamily;
+            }
+          }
+          
+          .line-second {
+            color: $color-black60;
+            font-family: $regularFontFamily;
+            font-size: 14px;
+            line-height: 16px;
+            margin-top: 4px;
+          }
+          
+          .line-third {
+            color: $color-black95;
+            font-family: $boldFontFamily;
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 4px;
+          }
+          
+          .line-fourth {
+            color: $color-black100;
+            font-family: $regularFontFamily;
+            font-size: 14px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            margin-top: 8.5px;
+
+            > img,
+            > svg {
+              margin: 0 13px 0 0;
+            }
+          }
+        }
+      }           
+    }
+
+    .card.extraRevenue.dark {
+      background: transparent;
+
+      .card-body {
+        .card-title {
+          color: $color-white100;
+        }
+
+        .card-content {
+          .line-first,
+          .line-third,
+          .line-fourth {
+            color: $color-white100;
+          }
+      
+          .line-third {
+            color: $color-white60;
+          }
+        }
+      }
+    }  
+  }
+}

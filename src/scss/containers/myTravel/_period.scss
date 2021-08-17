@@ -1,0 +1,68 @@
+.period-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $bkpoint-large) {
+    margin-bottom: 136px;
+  }
+
+  .material-icons {
+    &.md-24 {
+      font-size: 24px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  .period-content {
+    width: 100%;
+    max-width:272px;
+    min-width: 250px;  
+  }
+
+  .period-input {
+    & + .period-input {
+      margin-top: 1.5rem;
+    }
+  }
+    
+  .period-bottom {
+    width:100%;
+    margin-bottom: 2.25rem;
+    min-width: 250px; 
+    display: flex;
+    justify-content: center;   
+}
+
+@media (min-width: $bkpoint-tablet) {
+
+  .period-content{
+      max-width:100%
+  }
+
+  .period-bottom-container {
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .period-bottom {
+          max-width:264px;
+      }
+  }
+    .period-input-container {
+        display: flex;
+        flex-direction: row;
+        align-items:top;
+        justify-content: space-between;
+
+        .period-input {
+            width: 48%;
+            margin-top:0;
+        }
+    }
+  }
+}

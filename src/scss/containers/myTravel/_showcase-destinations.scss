@@ -1,0 +1,93 @@
+.smls-my-travels-panel {
+  .showcase-destinations-container {
+    margin-top: 115px;
+    .vitrine-text {
+      > p {
+        font-size: 14px;
+        color: $color-black60;
+      }
+    }
+    .app {
+      .swiper-container {
+        height: auto;
+        padding: initial;
+        margin: initial;
+        padding-bottom: 20px;
+        .swiper-wrapper {
+          .card {
+            transition: all .2 ease;
+            &:hover {
+              .card-bg {
+                transform: scale(1.1);
+              }
+              .card-info {
+                transform: translateY(-6px);
+              }
+            }
+            &.swiper-slide {
+              width: 297px !important;
+              height: 366px;
+              cursor: pointer;
+              border: 0;
+              padding: 0;
+              a {
+                height: 100%;
+                width: 100%;
+                .card-structure {
+                  padding: 25px;
+                  .card-info {
+                    .card-title {
+                      font-size: 20px;
+                    }
+                    .card-support-text {
+                      span {
+                        &:first-child {
+                          font-size: 14px;
+                          font-family: $lightFontFamily;
+                        }
+                        &:last-child {
+                          font-size: 16px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .app-wrapper-title {
+        margin: initial;
+        margin-bottom: 43px;
+        display: flex;
+        align-items: center;
+        &::before {
+          width: 40px;
+          height: 40px;
+          margin: 0 30px 0 0;
+          content: '';
+          background-image: url('../assets/my-travels/icon-flight.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          display: block;
+        }
+        .app-container-title {
+          h1 {
+            letter-spacing: .015em;
+            .app-title {
+              font-size: 25px;
+              color: #7c7c7c;
+              font-family: $lightFontFamily;
+              > span {
+                font-size: 25px;
+                font-family: $boldFontFamily;
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

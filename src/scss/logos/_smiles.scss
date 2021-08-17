@@ -1,0 +1,44 @@
+$logo-path: '../assets/logos/smiles';
+
+.smls-logos {
+  @include mx-logos();
+  &.smiles {
+      min-width: 60px;
+      min-height: 24px;
+      background-image: url(#{$logo-path}/lg-smiles-orange.svg);
+    &.black {
+      background-image: url(#{$logo-path}/lg-smiles-black.svg);
+    }
+    &.white {
+      background-image: url(#{$logo-path}/lg-smiles-white.svg);
+    }
+  }
+}
+.smls-logos {
+  @include mx-logos();
+  &.smiles-slogan {
+    min-width: 100px;
+    min-height: 56px;
+    background-image: url(#{$logo-path}/lg-smiles-slogan-orange.svg);
+    &.white {
+      background-image: url(#{$logo-path}/lg-smiles-slogan-white.svg);
+    }
+    &.black {
+      background-image: url(#{$logo-path}/lg-smiles-slogan-black.svg);
+    }
+  }
+}
+.smls-logos {
+  @include mx-logos();
+  &.smiles-symbol {
+    min-width: 40px;
+    min-height: 10px;
+    background-image: url(#{$logo-path}/lg-smiles-symbol-orange.svg);
+    &.white {
+      background-image: url(#{$logo-path}/lg-smiles-symbol-white.svg);
+    }
+    &.black {
+      background-image: url(#{$logo-path}/lg-smiles-symbol-black.svg);
+    }
+  } 
+}

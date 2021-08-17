@@ -1,0 +1,115 @@
+.smls-content {
+  padding-top: 72px;
+  display: flex;
+  justify-content: space-around;
+
+  .smls-central-header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0 6.45%;
+    margin: 0;
+    max-width: 268px;
+    white-space: pre-line;
+
+    @media (min-width: $bkpoint-tablet) {
+      font-size: 3rem;
+      line-height: 3rem;
+      margin-bottom: 40px;
+      max-width: 360px;
+      padding: 0 24px;
+      margin-top: 44px;
+    }
+  }
+
+  .smls-image {
+    width: 360px;
+    min-width: 360px;
+    height: 360px;
+    border-radius: 8px;
+    margin-left: 12.26%;
+    margin-right: 9.67%;
+    border: 1px solid black;
+    display: none;
+
+    @media (min-width: $bkpoint-tablet) {
+      display: initial;
+    }
+  }
+
+  .smls-number-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    width: 100%;
+    height: 72px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: $color-black60;
+    background: $color-white95;
+    border: transparent;
+    letter-spacing: 1rem;
+
+    &:focus {
+      outline: transparent;
+    }
+  }
+
+  .smls-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 24px;
+
+    .smls-number-options {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 65px;
+
+      .btn {
+        width: 100%;
+      }
+    }
+
+    .smls-options {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 65px;
+    }
+
+    h1 {
+      display: flex;
+      font-size: 24px;
+      line-height: 32px;
+      width: 100%;
+      padding: 0;
+      max-width: none;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      h1 {
+        display: block;
+        font-size: 32px;
+        line-height: 40px;
+        padding: 0;
+      }
+
+      display: block;
+      padding-right: 6.45%;
+
+      .smls-number-options {
+        flex-direction: row;
+      }
+    }
+  }
+}

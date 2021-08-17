@@ -1,0 +1,44 @@
+.smls-login-common {
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+  }
+
+  .input-group div,
+  .btn-primary,
+  .btn-hyperlink {
+    width: 100%;
+  }
+
+  .input-group {
+    margin-bottom: 80px;
+  }
+
+  .btn-primary {
+    font-family: $boldFontFamily;
+  }
+
+  .btn-hyperlink {
+    font-family: $boldFontFamily;
+    padding-top: 36px;
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    .input-group {
+      margin-top: 45px;
+      margin-bottom: 69px;
+    }
+
+    .btn-primary {
+      width: 264px;
+    }
+
+    .btn-hyperlink {
+      padding-top: 40px;
+      padding-left: 0;
+      width: fit-content;
+    }
+  }
+}

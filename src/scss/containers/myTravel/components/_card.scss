@@ -1,0 +1,85 @@
+.my-travels-card {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 272px;
+    width: 100%;
+
+    border: 2px solid $color-white95;
+    border-radius: 16px;
+
+    margin: 0 auto;
+    padding: 32px 28px;
+
+    h1, span, strong {
+      margin-bottom: 0;
+    }
+
+    &-title {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: $color-black80;
+      text-align: left;
+    }
+
+    &-edit {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: $color-black88;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    &-subTitle {
+      margin-top: 8px;
+
+      font-size: 16px;
+      line-height: 24px;
+
+      color: $color-black80;
+
+    }
+
+    &-line {
+      width: 100%;
+      height: 2px;
+      background: $color-white95;
+      margin: 24px 0;
+    }
+
+    &-travels {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      &-miniTitle {
+        font-size: 14px;
+        line-height: 16px;
+        color: $color-black60;
+      }
+  
+      &-text {
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-black80;
+      }
+    }
+
+  @media screen and (min-width: $bkpoint-tablet) {
+      max-width: 324px;
+
+      &-title {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      &-travels {
+        width: 100%;
+      }
+    }
+}

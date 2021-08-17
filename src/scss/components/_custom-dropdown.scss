@@ -1,0 +1,10 @@
+.smls-dropdown {
+  cursor: pointer;
+  .smls-dropdown-toggle {
+    justify-content: space-between;
+
+    .smls-placeholder {
+      margin-left: 20px;
+    }
+  }
+}

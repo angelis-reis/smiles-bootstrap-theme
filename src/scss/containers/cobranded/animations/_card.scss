@@ -1,0 +1,35 @@
+@keyframes light-gradient {
+  0% {
+    background: radial-gradient(circle at center, rgba(242, 242, 242, 0) 0%, $color-white100 0%, $color-white100 100%);
+  }
+  25% {
+    background: radial-gradient(circle at center, rgba(242, 242, 242, 0.3) 24%, $color-white100 25%, $color-white100 100%);
+  }
+  50% {
+    background: radial-gradient(circle at center, rgba(242, 242, 242, 0.5) 49%, $color-white100 50%, $color-white100 100%);
+  }
+  75% {
+    background: radial-gradient(circle at center, rgba(242, 242, 242, 0.8) 74%, $color-white100 75%, $color-white100 100%);
+  }
+  100% {
+    background: radial-gradient(circle at center, rgba(242, 242, 242, 1) 99%, $color-white100 100%, $color-white100 100%);
+  }
+}
+
+@keyframes dark-gradient {
+  0% {
+    background: radial-gradient(circle at center, rgba(15, 15, 14, 0) 0%, $color-black80 0%, $color-black80 100%);
+  }
+  25% {
+    background: radial-gradient(circle at center, rgba(15, 15, 14, 0.3) 24%, $color-black80 25%, $color-black80 100%);
+  }
+  50% {
+    background: radial-gradient(circle at center, rgba(15, 15, 14, 0.5) 49%, $color-black80 50%, $color-black80 100%);
+  }
+  75% {
+    background: radial-gradient(circle at center, rgba(15, 15, 14, 0.8) 74%, $color-black80 75%, $color-black80 100%);
+  }
+  100% {
+    background: radial-gradient(circle at center, rgba(15, 15, 14, 1) 99%, $color-black80 100%, $color-black80 100%);
+  }
+}

@@ -1,0 +1,146 @@
+---
+headerTitle: CarsSearchMobile
+layout: base.html
+version: 1.0.0
+---
+
+<div class="smls-cars-search-mobile">
+  <div class="wrapper">
+    <div class="content">
+      <div class="input-group filled icon">
+        <div data-toggle="modal" data-target="#myModal3">
+          <input
+            id="Label"
+            autocomplete="off"
+            type="text"
+            class="form-control"
+            value="Buscar carros"
+          /><i class="material-icons">search</i>
+        </div>
+        <div class="input-error"></div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="myModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel3"
+    >
+      <div class="modal-dialog full" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="smls-btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="material-icons"> close </i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="smls-modal-header">
+              <h3>Buscar carros</h3>
+            </div>
+            <h4 class="withdrawal">Retirada</h4>
+            <div class="autocomplete-search expanded input-group">
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <i class="material-icons">place</i
+                  ><input
+                    placeholder="Local de retirada"
+                    autocomplete="false"
+                    type="text"
+                    class="form-control"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="autocomplete-seaarch expanded input-container">
+            <div class="autocomplete-search expanded input-group  date-picker">
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <i class="material-icons">event</i
+                  ><input
+                    placeholder="Data"
+                    autocomplete="false"
+                    type="text"
+                    class="form-control"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="autocomplete-search expanded input-group clock-picker">
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <i class="material-icons">schedule</i
+                  ><input
+                    placeholder="Hora"
+                    autocomplete="false"
+                    type="text"
+                    class="form-control"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+        </div>
+        <h4>Devolução</h4>
+        <div class="autocomplete-search expanded input-group">
+          <div class="dropdown">
+            <div class="dropdown-toggle">
+              <i class="material-icons">place</i
+              ><input
+                placeholder="Local de devolução"
+                autocomplete="false"
+                type="text"
+                class="form-control"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="autocomplete-seaarch expanded input-container">
+        <div class="autocomplete-search expanded input-group  date-picker">
+          <div class="dropdown">
+            <div class="dropdown-toggle">
+              <i class="material-icons">event</i
+              ><input
+                placeholder="Data"
+                autocomplete="false"
+                type="text"
+                class="form-control"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="autocomplete-search expanded input-group clock-picker">
+          <div class="dropdown">
+            <div class="dropdown-toggle">
+              <i class="material-icons">schedule</i
+              ><input
+                placeholder="Hora"
+                autocomplete="false"
+                type="text"
+                class="form-control"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+    </div>
+            <button type="button" class="btn btn-primary">Buscar</button>
+          </div>
+        </div>
+        <!-- modal-content -->
+      </div>
+      <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
+  </div>
+</div>

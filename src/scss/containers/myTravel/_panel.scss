@@ -1,0 +1,15 @@
+.smls-my-travels-panel {
+    @media screen and (max-width: $bkpoint-tablet) {
+        margin: 0;
+
+        &__content, &__actions {
+            padding: 0;
+        }
+    }
+
+    @media screen and (min-width: $bkpoint-desktop) {
+        .travels-history-actions {
+            margin-top: 6%;
+        }
+    }
+}

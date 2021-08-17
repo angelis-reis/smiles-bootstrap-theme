@@ -1,0 +1,58 @@
+.my-account-select-document {
+  white-space: pre-line;
+
+  h4 {
+    margin-bottom: 16px;
+  }
+
+  .modal-body > p {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black60;
+  }
+
+  @media (max-width: $bkpoint-tablet) {
+    .list-group {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      .list-group-item {
+        div {
+          margin-left: 0;
+        }
+
+        .material-icons {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    h4 {
+      margin-bottom: 24px;
+    }
+
+    .list-group {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .list-group-item {
+      padding: 2px;
+
+      & > div:first-child:hover {
+        background-color: transparent;
+      }
+
+      &:hover {
+        padding: 0;
+        border: 2px solid $color-orange;
+        border-radius: 16px;
+      }
+    }
+  }
+}

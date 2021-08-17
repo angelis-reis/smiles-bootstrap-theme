@@ -1,0 +1,122 @@
+.smls-associated-accounts {
+  .modal-body {
+    padding: 24px 0 24px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: $bkpoint-tablet) {
+      padding: 56px;
+      padding-top: 38px;
+      display: block;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.5px;
+      color: $color-black80;
+      margin-bottom: 23px;
+      padding: 0 24px;
+
+      @media (min-width: $bkpoint-tablet) {
+        padding: 0;
+      }
+    }
+
+    p {
+      padding: 0 24px;
+
+      @media (min-width: $bkpoint-tablet) {
+        padding: 0;
+      }
+    }
+
+    .smls-modal-my-account-buttons {
+      padding: 0 24px;
+    }
+
+    .btn:not(.btn-icon):not(.btn-hyperlink) {
+      width: 100%;
+      margin-top: 68px;
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      .smls-modal-my-account-buttons {
+        padding: 0;
+      }
+
+      .btn:not(.btn-icon):not(.btn-hyperlink) {
+        width: 264px;
+      }
+    }
+  }
+
+  .list-group {
+    width: 100%;
+    padding: 0;
+
+    .list-group-item {
+      &.high {
+        height: 72px;
+
+        @media (min-width: $bkpoint-tablet) {
+          height: 88px;
+        }
+
+        button {
+          height: 100%;
+        }
+      }
+
+      p {
+        color: $color-black100;
+        padding: 0;
+      }
+
+      &:not(:last-child) {
+        &::after {
+          top: 2px;
+        }
+      }
+    }
+  }
+}
+
+.choose-account {
+  .modal-body > p {
+    margin: 16px 0 32px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black60;
+  }
+
+  @media (max-width: $bkpoint-tablet) {
+    h3 {
+      margin-bottom: 16px;
+    }
+
+    .list-group .list-group-item {
+      .material-icons {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.account-data {
+  h3 + ul {
+    margin-top: 32px;
+  }
+
+  .btn-secondary {
+    margin-top: 40px;
+    font-family: $boldFontFamily;
+  }
+
+  @media (max-width: $bkpoint-tablet) {
+    .list-group-item > div div:first-child {
+      margin: 0;
+    }
+  }
+}

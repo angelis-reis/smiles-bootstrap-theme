@@ -1,0 +1,109 @@
+.smls-hotel-search-mobile {
+  height: 100%;
+  .wrapper {
+    height: 100%;
+    background-image: url('../../../assets/hotel-search-background.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content {
+      height: 100%;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.5) 52.72%,
+        rgba(0, 0, 0, 0.75) 100.34%,
+        rgba(0, 0, 0, 0.7) 100.34%
+      );
+      .input-group > div:not(.input-error) {
+        height: 56px;
+        cursor: pointer;
+        margin: 100px auto 0px;
+      }
+      .input-group.filled:not(.typing):not(.error) > div:not(.input-error) {
+        border: none;
+        border-radius: 8px;
+      }
+      .input-group > div {
+        padding-right: 0px;
+        border: none;
+        i.material-icons {
+          background-color: $primary;
+          height: 100%;
+          width: 56px;
+          color: $color-black100;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .modal-body {
+    .navbar {
+      width: 100vw;
+      padding-left: 0px;
+      margin-left: -24px;
+      padding-bottom: 48px;
+      .steps {
+        width: 100%;
+        .navbar-nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+        .progress {
+          width: 100vw;
+          .progress-bar {
+            margin-left: 24px;
+          }
+        }
+      }
+    }
+    .autocomplete-search .dropdown {
+      width: 100%;
+    }
+    .autocomplete-search:nth-child(4) .dropdown-toggle {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    .date-picker {
+      margin: 24px 0px;
+    }
+    ul.list-group {
+      width: 100%;
+      padding-left: 0px;
+      margin-bottom: 32px;
+      .list-group-item {
+        width: 100%;
+        .smls-ignore-click {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          margin-left: 0px;
+          i {
+            margin: 0px 16px 0px 0px;
+            color: $primary;
+          }
+          .smls-list-main-content p {
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-black80;
+          }
+          .smls-list-text {
+            margin: auto 0px auto auto;
+            i {
+              color: $color-black95;
+            }
+          }
+        }
+      }
+    }
+    .btn:not(.btn-icon):not(.btn-hyperlink) {
+      width: 100%;
+    }
+  }
+}

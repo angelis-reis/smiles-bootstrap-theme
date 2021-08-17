@@ -1,0 +1,58 @@
+.smls-register {
+	&.validate-phone {
+    p {
+      white-space: pre-line;
+    }
+
+    .btn-primary {
+      width: 100%;
+    }
+
+	  .btn-hyperlink {
+      width: auto;
+      padding-left: 0;
+      padding-right: 0;
+      font-family: $boldFontFamily;
+    }
+
+    .switch-buttons {
+      margin-top: 80px;
+    }
+
+		@media (min-width: $bkpoint-tablet) {
+      .btn-primary {
+        width: auto;
+      }
+		}
+	}
+}
+
+.modal-phone  {
+  .modal-body{
+    h3 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    
+    .btn-primary {
+      margin-top: 65px;
+    }
+    
+    .btn-hyperlink {
+      padding-top: 36px;
+      font-family: $boldFontFamily;
+    }
+    
+    @media (min-width: $bkpoint-tablet) {
+      h3 {
+        margin-bottom: 24px;
+      }
+    }
+    @media (max-width: $bkpoint-tablet) {
+      .btn.btn-hyperlink {
+        margin: 0px auto;
+      }
+    }
+
+  }
+}

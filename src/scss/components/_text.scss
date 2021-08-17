@@ -1,0 +1,83 @@
+.sml-text {
+  font-stretch: normal;
+  font-variant: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+
+  span {
+    display: inline-block;
+  }
+
+  &:hover {
+    color: inherit;
+  }
+  &.click {
+    cursor: pointer;
+  }
+  &.no-block {
+    display: inline;
+  }
+  &.regular {
+    font-weight: normal !important;
+    font-family: $regularFontFamily !important;
+  }
+  &.bold {
+    font-weight: 700 !important;
+    font-family: $boldFontFamily !important;
+  }
+  &.light {
+    font-weight: lighter !important;
+    font-family: $lightFontFamily !important;
+  }
+  &.black {
+    color: $black;
+  }
+  &.black-100 {
+    color: $color-black100;
+  }
+  &.black-80 {
+    color: $color-black80 !important;
+  }
+  &.black-88 {
+    color: $color-black88 !important;
+  }
+  &.black-60 {
+    color: $color-black60;
+  }
+  &.white {
+    color: $white !important;
+  }
+  &.white-95 {
+    color: $color-white95 !important;
+  }
+  &.color-club {
+    color: $color-product-club !important;
+  }
+  .club & {
+    &.club {
+      color: $color-product-club !important;
+    }
+  }
+  &.yellow {
+    color: $color-yellow;
+  }
+  &.color-diamond {
+    color: $color-diamond !important;
+  }
+  &.wine {
+    color: $color-wine !important;
+  }
+  &.first-letter {
+    span {
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+  &.border-top,
+  &.border-bottom {
+    border-bottom: 1px solid #F2F2F2;
+    padding: 16px 0;
+  }
+}

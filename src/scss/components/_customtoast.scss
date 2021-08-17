@@ -1,0 +1,86 @@
+.smsls-custom-toast-container {
+  position: absolute;
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 24px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  @media (max-width: $bkpoint-tablet) {
+    padding: 0 9px;
+  }
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0px);
+  }
+}
+@keyframes showDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+}
+
+.smsls-custom-toast {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: $color-black88;
+  opacity: 0.9;
+  border-radius: 16px;
+  padding: 16px 24px;
+
+  max-width: 285px;
+
+  margin: 0px auto 24px auto;
+
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: space-between;
+
+  span,
+  i {
+    color: $color-white100;
+    font-size: 16px;
+  }
+
+  i {
+    padding-left: 30px;
+  }
+
+  div {
+    max-width: 224px;
+  }
+
+  animation: showUp 1s;
+
+  &.hidden {
+    animation: showDown 1s forwards;
+  }
+}
+
+.smsls-custom-toast.float-right {
+  margin-left: auto;
+}
+.smsls-custom-toast.float-left {
+  margin-right: auto;
+}
+@media (max-width: $bkpoint-tablet) {
+  .smsls-custom-toast.float-left,
+  .smsls-custom-toast.float-right,
+  .smsls-custom-toast.float-center {
+    max-width: 100%;
+    margin: 0px 0px 24px;
+  }
+}

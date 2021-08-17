@@ -1,0 +1,340 @@
+.myTravels-nextTravels {
+  margin: 0 auto;
+  padding: 0 0 0 1rem;
+
+  &-noTravels {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    border: 2px solid $color-white95;
+
+    &-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 16px;
+
+      &-item {
+        max-width: 272px;
+        width: 100%;
+        height: 276px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 32px 0 40px 0;
+
+        & + & {
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 50%;
+            transform: translate3d(-50%, 0, 0);
+            width: 80px;
+            height: 2px;
+            border-radius: 8px;
+            background: $color-white95;
+          }
+        }
+
+        &-image {
+          width: 144px;
+          height: 144px;
+
+          &.chair {
+            background-image: url('../assets/misc/beach-chair.svg');
+          }
+
+          &.suitcase {
+            background-image: url('../assets/misc/suitcase.svg');
+          }
+
+          &.profile {
+            background-image: url('../assets/misc/profile.svg');
+          }
+
+          &.phone {
+            background-image: url('../assets/misc/cell-phone.svg');
+          }
+
+          background-size: contain;
+          background-position: center;
+        }
+
+        &-text {
+          margin: 0;
+          margin-top: 24px;
+          max-width: 140px;
+          text-align: center;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 700;
+          color: #000;
+        }
+      }
+    }
+
+    &-button {
+      width: 228px;
+      display: none;
+    }
+  }
+
+  &-card {
+    max-width: 264px;
+    width: 100%;
+    min-height: 382px;
+    height: auto;
+    border: 2px solid #f2f2f2;
+    border-radius: 16px;
+    padding: 32px 28px 16px 28px;
+
+    &-empty {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &-title {
+        display: inline-block;
+        max-width: 192px;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 !important;
+        font-family: $boldFontFamily;
+        color: $color-black80;
+      }
+
+      &-image {
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/misc/beach-chair.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 40px;
+      }
+
+      &-button {
+        margin-top: 28px;
+        height: 64px !important;
+      }
+
+      &-button-larger {
+        width: 324px !important;
+        height: 64px !important;
+      }
+    }
+
+    &.full {
+      max-width: 100%;
+      margin-bottom: 24px;
+
+      .dates {
+        display: flex;
+        flex-direction: row;
+
+        .begin,
+        .end {
+          flex: 1;
+
+          label {
+            display: block;
+            color: $color-black60;
+            font-size: 14px;
+            margin-bottom: 8px;
+          }
+
+          span {
+            font-size: 16px;
+            color: $color-black80;
+          }
+        }
+      }
+    }
+
+    strong {
+      font-size: 18px;
+      line-height: 26px;
+      color: $color-black80;
+      letter-spacing: -0.5px;
+      word-break: break-word;
+    }
+
+    .date {
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-black60;
+      margin-top: 16px;
+    }
+
+    .destinations {
+      flex: 0.7;
+      margin-top: 30px;
+      
+      min-height: 72px;
+
+      span {
+        font-size: 14px;
+        line-height: 16px;
+        color: $color-black60;
+      }
+
+      .list {
+        margin-top: 8px;
+
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          color: $color-black80;
+          margin-bottom: 4px;
+
+          &:last-child {
+            margin-bottom: 32px;
+          }
+        }
+      }
+    }
+
+    .icons {
+      margin: 40px 0 20px;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin: 0;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+        & + .icon {
+          margin-left: 16px;
+        }
+
+        &.selected,
+        &:hover {
+          .material-icons {
+            color: $color-orange;
+          }
+        }
+      }
+    }
+
+    .more-details {
+      &-button {
+        height: 64px;
+        color: $color-black88;
+      }
+    }
+  }
+
+  @media screen and (min-width: $bkpoint-tablet) {
+    padding: 0;
+    &-card {
+      max-width: 360px;
+      height: 424px;
+      padding: 40px 36px 16px 36px;
+
+      .destinations {
+        flex: 0.7;
+        position: relative;
+        margin-top: 48px;
+
+        .list {
+          margin-top: 16px;
+
+          p + p {
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .icons {
+        margin-top: 48px;
+        margin-bottom: 32px;
+      }
+
+      &.full {
+        height: auto;
+
+        .destinations {
+          flex: 0.7;
+          margin-bottom: 32px;
+
+          .list {
+            &-custom {
+              margin-top: 8px;
+              display: flex;
+              &-span {
+                margin-top: 8px;
+              }
+              p {
+                width: 50%;
+              }
+            }
+            p:last-child {
+              position: absolute;
+              top: 35%;
+              left: 50%;
+            }
+          }
+        }
+
+        .icons {
+          margin-top: 36px;
+        }
+      }
+    }
+
+    &-noTravels {
+      width: 100%;
+      height: 318px;
+
+      &-list {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+        &-item {
+          max-width: 168px;
+          height: 196px;
+          padding: 32px 0 24px 0;
+
+          &-image {
+            width: 80px;
+            height: 80px;
+          }
+
+          & + & {
+            position: relative;
+
+            &::before {
+              top: 50%;
+              left: -2px;
+              width: 2px;
+              height: 80px;
+              transform: translate3d(0, -50%, 0);
+            }
+          }
+        }
+      }
+
+      &-button {
+        display: block;
+        margin: 24px 0 32px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,239 @@
+$logo-path: '../assets/logos/air-lines';
+
+.smls-container-slide {
+  max-width: 836px;
+}
+
+.smls-card-add-travels {
+  max-width: 360px;
+  margin: 40px 0;
+
+  .card-destiny {
+    margin: 0 -15px;
+    margin-top: 8px;
+  
+    p {
+      & + p {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .slide-internal-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: $white;
+    box-shadow: none;
+  }
+
+  @media screen and (min-width: $bkpoint-tablet) {
+
+    .card-destiny {
+      .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+
+        p {
+          display: inline-block;
+          grid-column: 1;
+
+          @for $i from 1 through 5 {
+            &:nth-of-type(n + #{5 + $i}) {
+              margin: 0;
+
+              @if $i == 1 {
+                margin-top: 0;
+              } @else {
+                margin-top: 4px;
+              }
+              
+              grid-column: 2;
+              grid-row: $i;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.select-card {
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+  }
+
+  &.defaultWidth {
+    max-width: 100% !important;
+  } 
+}
+
+.smls-card-check-box {
+  border: 2px solid $color-white95;
+  padding: 20px 28px !important;
+}
+
+.smls-header-card-add-travels {
+  border-top: 2px solid $color-white95;
+  border-left: 2px solid $color-white95;
+  border-right: 2px solid $color-white95;
+  border-radius: 16px;
+  padding: 24px 28px;
+
+  &.defaultBottomBorder {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  &.with-box-shadow {
+    border: none;
+    box-shadow: 0px -16px 32px 0px #0000001f;
+  }
+
+  &.with-border-bottom {
+    border-bottom: 2px solid $color-white95;
+  }
+
+  .line {
+    border-bottom: 2px solid $color-white95;
+  }
+
+  .title-area {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-black80;
+
+    &-title-text {
+      line-height: 32px;
+      color: $color-black80;
+      font-size: 20px;
+      font-weight: bold;
+      h5 {
+        @include mx-font-size(18px, 1.25rem);
+      }
+    }
+
+    .title-after-checkout {
+      @include mx-font-size(18px, 1.25rem);
+    }
+
+    i {
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .mytravels-tooltip {
+      width: unset !important;
+    }
+  }
+
+  &-small-title {
+    font-size: 14px;
+    color: $color-black60;
+    @include mx-line-height(16px, 24px);
+  }
+
+  &-text {
+    font-size: 16px;
+    color: $color-black80;
+    line-height: 24px;
+  }
+}
+
+.smls-body-card-add-travels {
+  width: 100%;
+  border-top: 2px dashed $color-white95;
+  border-bottom: 2px solid $color-white95;
+  border-left: 2px solid $color-white95;
+  border-right: 2px solid $color-white95;
+  border-radius: 16px;
+  padding: 24px 28px;
+
+  &.with-box-shadow {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0px 16px 32px 0px #0000001f;
+  }
+
+  &.hideDashed {
+    border-top: none !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+
+  &-text-title {
+    font-size: 14px;
+    color: $color-black60;
+    @include mx-line-height(16px, 24px);
+    margin-bottom: 8px;
+  }
+
+  &-text {
+    line-height: 24px;
+    color: $color-black80;
+    font-size: 16px;
+  }
+
+  &-airLine-logo {
+    &-gol {
+      width: 24px;
+      height: 24px;
+      background-image: url(#{$logo-path}/lg-gol.svg);
+    }
+  }
+
+  &-airLine-name {
+    margin-left: 12px;
+  }
+
+  &-button {
+    a {
+      cursor: pointer;
+    }
+  }
+
+  &.mini-card-notification-active {
+    & > * {
+      opacity: 0.3;
+    }
+  }
+
+  .mini-card-ticket-block-information {
+    background: #1e1e1e;
+    opacity: 0.9;
+    border-radius: 16px;
+
+    padding: 24px;
+    margin-bottom: 24px;
+
+    button,
+    p {
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #ffffff;
+    }
+
+    button {
+      font-weight: 700;
+
+      background: transparent;
+
+      outline: 0;
+      border: 0;
+      margin: 0;
+      padding: 0;
+
+      text-align: left;
+    }
+  }
+}
+
+.icon-airplane {
+  transform: rotate(90deg);
+  margin: 0 18px;
+  display: flex;
+  align-items: center;
+}

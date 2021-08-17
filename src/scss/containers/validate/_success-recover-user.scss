@@ -1,0 +1,44 @@
+.success-email-send-wrapper {
+  height: 80%;
+}
+
+.success-email-send {
+  width: 100%;
+  max-width: 900px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: flex-start;
+
+  .btn:not(.btn-icon):not(.btn-hyperlink) {
+    width: 100%;
+  }
+
+  img {
+    display: none;
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    align-items: center;
+
+    img {
+      display: block;
+    }
+    > div > .btn:not(.btn-icon):not(.btn-hyperlink) {
+      width: 264px;
+    }
+  }
+
+  > div {
+    padding: 24px;
+
+    @media (min-width: $bkpoint-tablet) {
+      padding-left: 9.68%;
+    }
+    p {
+      padding-bottom: 64px;
+      padding-top: 24px;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.my-account-info {
+  white-space: pre-line;
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 24px;
+
+    .btn-hyperlink {
+      padding: 20px 0;
+    }
+
+    .smls-modal-my-account-buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      padding-top: 38px;
+      display: block;
+    }
+  }
+
+  .input-group {
+    margin-top: 24px;
+    & div,
+    & input {
+      width: 100%;
+    }
+  }
+
+  h4 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black60;
+    margin: 0;
+  }
+
+  .btn:not(.btn-icon):not(.btn-hyperlink) {
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .btn-hyperlink {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .btn-primary,
+  .btn-hyperlink {
+    font-family: $boldFontFamily;
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    .input-group {
+      & div,
+      & input {
+        width: 100%;
+      }
+    }
+
+    h4 {
+      margin-bottom: 24px;
+    }
+
+    .btn:not(.btn-icon):not(.btn-hyperlink) {
+      margin-top: 65px;
+      width: 264px;
+    }
+
+    .btn-hyperlink {
+      padding-top: 40px;
+      padding-left: 0;
+      width: fit-content;
+    }
+  }
+}

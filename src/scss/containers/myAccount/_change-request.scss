@@ -1,0 +1,55 @@
+.smls-my_account-finish-account-change {
+  white-space: pre-line;
+
+  padding: 24px;
+
+  h4 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    line-height: 32px;
+  }
+
+  > p {
+    color: $color-black60;
+    margin-bottom: 32px;
+  }
+
+  > .smls-dropdown-radio {
+    padding: 0px;
+    margin-left: -24px;
+    .dropdown-item {
+      height: 64px;
+      border-radius: 16px;
+      border: 2px solid transparent;
+      &:hover {
+        border-color: $primary;
+      }
+    }
+  }
+
+  .btn-primary {
+    margin-top: 32px;
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    padding: 40px 56px 84px;
+    h4 {
+      margin-bottom: 23px;
+    }
+    > .smls-dropdown-radio {
+      padding: 0px;
+      margin-left: 0px;
+      .dropdown-item {
+        height: 72px;
+      }
+    }
+    .btn-primary {
+      margin-top: 64px;
+    }
+  }
+  @media (max-width: $bkpoint-tablet) {
+    .btn.btn-primary {
+      width: 100%;
+    }
+  }
+}

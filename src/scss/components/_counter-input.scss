@@ -1,0 +1,312 @@
+.smls-counter-input {
+  .mobile-card {
+    height: 88px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 21px;
+
+    .icon {
+      color: $color-orange;
+    }
+
+    .arrow {
+      cursor: pointer;
+    }
+
+    div {
+      flex: 1;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 16px;
+      justify-content: center;
+
+      h3 {
+        font-family: $boldFontFamily;
+        font-size: 16px;
+        color: $color-black80;
+        height: 34px;
+        margin-bottom: -7px;
+      }
+
+      p {
+        font-family: $regularFontFamily;
+        font-size: 14px;
+        margin: 0;
+        color: $color-black60;
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    box-sizing: border-box;
+    height: 100vh;
+
+    @media (min-width: $bkpoint-desktop) {
+      height: auto;
+    }
+
+    header {
+      display: none;
+
+      @media (min-width: $bkpoint-desktop) {
+        display: flex;
+        align-items: center;
+        min-width: 170px;
+        height: 24px;
+        cursor: pointer;
+        background-color: $color-white100;
+      }
+
+      h1 {
+        font-family: $boldFontFamily;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        color: $color-black80;
+        margin: 0px 12px 0 8px;
+      }
+
+      .icon {
+        color: $color-orange;
+      }
+
+      .arrow {
+        color: $color-black100;
+      }
+    }
+
+    main {
+      box-sizing: border-box;
+      background-color: $color-white100;
+      z-index: 4;
+      display: flex;
+      flex-direction: column;
+      border-radius: 16px;
+      box-shadow: 0px 0px 16px rgba($color-black100, 0.12);
+      opacity: 1;
+      transition: all 0.25s ease-in-out;
+      width: 100vw;
+      min-width: auto;
+      min-height: auto;
+      height: 100vh;
+      justify-content: space-between;
+      padding: 0;
+      margin: -0.5rem;
+
+      @media (min-width: $bkpoint-desktop) {
+        position: absolute;
+        height: auto;
+        justify-content: center;
+        padding: 0 32px 24px 32px;
+        margin: 24px 0 0 0;
+        width: 280px;
+      }
+
+      .submit {
+        background: $color-orange;
+        border: none;
+        outline: none;
+        font-weight: 700;
+        color: $color-black100;
+        font-family: $boldFontFamily;
+
+        height: 64px;
+        width: 85%;
+        border-radius: 8px;
+        font-size: 16px;
+        padding: 0;
+        align-self: center;
+        margin: 0 21px 24px;
+
+        @media (min-width: $bkpoint-desktop) {
+          width: 101px;
+          height: 40px;
+          border-radius: 16px;
+          font-size: 14px;
+          padding: 11px 14px;
+          align-self: flex-end;
+          margin: 0;
+        }
+      }
+
+      section {
+        height: 90%;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 24px 32px;
+
+        @media (min-width: $bkpoint-desktop) {
+          padding: 28px 0 32px;
+        }
+
+        .close {
+          align-self: flex-start;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          margin-bottom: 54px;
+          margin-left: -5px;
+          cursor: pointer;
+          display: block;
+
+          @media (min-width: $bkpoint-desktop) {
+            display: none;
+          }
+
+          i {
+            font-size: 25px;
+          }
+        }
+
+        h1 {
+          font-size: 24px;
+          font-weight: 600;
+          color: $color-black80;
+          line-height: normal;
+          font-family: $boldFontFamily;
+          display: block;
+
+          @media (min-width: $bkpoint-desktop) {
+            display: none;
+          }
+        }
+
+        .description {
+          font-family: $regularFontFamily;
+          font-size: 16px;
+          line-height: 24px;
+          color: $color-black60;
+          margin: 15px 0px 53px;
+        }
+
+        .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0;
+
+          & + .container {
+            margin-top: 20px;
+            padding-top: 21px;
+            border-top: 1px solid $color-white95;
+          }
+
+          i {
+            font-size: 12px;
+          }
+
+          div {
+            display: flex;
+            align-items: center;
+          }
+
+          div button {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            color: $color-black80;
+          }
+
+          div .value {
+            margin: 0 22px 0;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-black100;
+          }
+
+          div .disabled {
+            cursor: default;
+            color: $color-white80;
+          }
+
+          .container-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            margin-right: 5px;
+
+            .counter-name {
+              font-size: 14px;
+              color: $color-black100;
+              margin-bottom: -3px;
+            }
+
+            span {
+              font-size: 14px;
+              font-family: $lightFontFamily;
+              color: $color-black60;
+              margin-top: 14px;
+              line-height: 16px;
+            }
+          }
+
+          .container-text div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: relative;
+
+            i {
+              margin-left: 8px;
+              font-size: 20px;
+              color: $color-white60;
+            }
+
+            .warning-container i:hover + .warning {
+              display: flex;
+            }
+
+            .warning {
+              position: absolute;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              padding: 16px;
+
+              left: 44px;
+
+              min-height: 64px;
+              min-width: 242px;
+              background: $color-black100;
+              border-radius: 16px;
+
+              .triangle {
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                left: -8px;
+                transform: rotate(45deg);
+                background: $color-black100;
+              }
+
+              p {
+                font-family: $regularFontFamily;
+                font-size: 14px;
+                color: $color-white100;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .hidden {
+      display: flex;
+      opacity: 1;
+
+      @media (min-width: $bkpoint-desktop) {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}

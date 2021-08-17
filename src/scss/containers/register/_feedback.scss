@@ -1,0 +1,55 @@
+.feedback-loading {
+  background-color: $color-orange;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    margin: 0 0 148px 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $boldFontFamily;
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    h1 {
+      margin: 0 0 36px 0;
+    }
+  }
+}
+
+.modal .modal-feedback .modal-body {
+	h3 {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  p {
+    color: $color-black60;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .btn-primary {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    h3 {
+      margin-bottom: 31px;
+    }
+
+    .btn-primary {
+      margin-top: 40px;
+      width: 264px;
+    }
+  }
+}

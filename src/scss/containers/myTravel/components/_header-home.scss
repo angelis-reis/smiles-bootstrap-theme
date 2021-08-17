@@ -1,0 +1,57 @@
+.my-travels-home {
+  &-header {
+    height: 100%;
+    background: no-repeat center;
+    background-size: cover;
+    margin-bottom: 64px;
+    .container, .row {
+      height: 100%;
+    }
+  }
+  &-header-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
+  &-header-title-with-travel {
+    display: flex;
+    align-items: flex-end;
+    color: $white;
+    font-family: $semiBoldFontFamily;
+    @include mx-font-size(24px, 32px);
+    @include mx-line-height(32px, 40px);
+    @include mx-letter-spacing(-0.5px, 1px);
+    margin-bottom: 40px;
+    margin-left: 10px;
+    @media screen and (min-width: $bkpoint-tablet) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &-header-title-no-travels {
+    color: $white;
+    font-family: $semiBoldFontFamily;
+    @include mx-font-size(24px, 32px);
+    @include mx-line-height(32px, 40px);
+    @include mx-letter-spacing(-0.5px, 1px);
+    margin-top: 48px;
+    @media screen and (min-width: $bkpoint-tablet) {
+      margin-top: 64px;
+    }
+  }
+
+  &-header-sub-title-no-travels {
+    color: $white;
+    font-family: $semiBoldFontFamily;
+    @include mx-font-size(32px, 48px);
+    @include mx-line-height(32px, 48px);
+    @include mx-letter-spacing(-0.5px, 1px);
+    margin-bottom: 48px;
+    @media screen and (min-width: $bkpoint-tablet) {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 64px;
+    }
+  }
+}

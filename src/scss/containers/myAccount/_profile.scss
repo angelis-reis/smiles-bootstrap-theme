@@ -1,0 +1,285 @@
+.smls-my_account {
+  .smls-profile {
+    .smls-profile-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 24px 0;
+
+      @media (min-width: $bkpoint-tablet) {
+        padding-top: 72px;
+        padding-bottom: 131px;
+      }
+
+      .smls-profile-header {
+        width: 100%;
+        height: 146px;
+        background-color: #f4f1f1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .smls-column {
+        width: 100%;
+        margin-bottom: 80px;
+
+        .smls-icon-profile {
+          width: 40px;
+          min-width: 40px;
+          height: 100%;
+          background-size: 48px 48px;
+          background-position: center;
+          background-repeat: no-repeat;
+          margin-right: 16px;
+        }
+
+        .smls-profile-edit-warning {
+          display: none;
+          flex-direction: row;
+          align-items: center;
+          background-color: $color-white95;
+          color: $color-black60;
+          padding: 17px 24px;
+          border-radius: 16px;
+          margin-bottom: 32px;
+
+          .material-icons {
+            color: $primary;
+            margin-right: 17.5px;
+          }
+        }
+
+        .smls-row {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          height: 96px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $color-white100;
+          z-index: 50;
+          box-shadow: 0px 2px 32px rgba(0, 0, 0, 0.12);
+          width: 100%;
+          padding: 0 24px;
+
+          .btn-primary {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+
+        .list-group {
+          padding: 0;
+          width: auto;
+
+          .list-group-item {
+
+            &:not(:last-child) {
+              &::after {
+                top: 4px;
+              }
+            }
+
+            .high {
+              height: 90px;
+
+              p {
+                margin-bottom: 6px;
+                color: $color-black80;
+              }
+
+              label {
+                line-height: 1rem;
+                font-size: 0.875rem;
+              }
+
+              &:disabled {
+                border: solid 2px transparent;
+                cursor: default;
+
+                p {
+                  color: $color-black60;
+                }
+
+                label {
+                  cursor: default;
+                  color: $color-black60;
+                }
+              }
+            }
+
+            &.readonly:hover {
+              cursor: default;
+              border: solid 2px transparent;
+
+              * {
+                cursor: default;
+              }
+            }
+          }
+        }
+
+        header {
+          width: 100%;
+          padding: 0 24px 0;
+          margin-bottom: 40px;
+
+          h3 {
+            margin: 0;
+          }
+
+          .material-icons {
+            display: none;
+            font-size: 1.5rem;
+            position: absolute;
+            height: auto;
+            left: 32px;
+          }
+
+          &.scrolled {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-white100;
+            z-index: 50;
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
+
+            h3 {
+              font-size: 0.875rem;
+            }
+
+            .material-icons {
+              display: block;
+            }
+          }
+        }
+
+        &.edit {
+          header {
+            margin-bottom: 22px;
+          }
+
+          .smls-profile-edit-warning {
+            display: flex;
+            margin: 0 16px 22px;
+          }
+        }
+      }
+
+      @media (min-width: $bkpoint-tablet) {
+        flex-direction: row;
+        justify-content: space-around;
+
+        .smls-profile-header {
+          height: 100%;
+          width: auto;
+          max-width: 470px;
+          background-color: #ffffff;
+          display: flex;
+          justify-content: center;
+        }
+
+        .smls-profile-image {
+          width: 360px;
+          min-width: 360px;
+          height: 360px;
+          border-radius: 8px;
+          margin-left: 4.516%;
+          margin-right: 4.355%;
+          display: block;
+        }
+
+        .smls-column {
+          width: 100%;
+          margin-left: 4.03%;
+          padding-right: 12.258%;
+
+          .smls-icon-profile {
+            width: 92px;
+            min-width: 92px;
+            height: 100%;
+            background-size: 108px 108px;
+            background-position: center;
+          }
+
+          .smls-row {
+            width: 100%;
+            padding: 0 24px;
+            position: relative;
+            height: auto;
+            display: block;
+            box-shadow: unset;
+
+            .btn-primary {
+              width: 264px;
+              margin-top: 77px;
+            }
+          }
+
+          .list-group {
+            .list-group-item {
+              .high {
+                height: 128px;
+
+                p {
+                  font-size: 1.25rem;
+                  margin-bottom: 8px;
+                }
+
+                label {
+                  font-size: 1rem;
+                  line-height: 1.5rem;
+                }
+              }
+            }
+          }
+
+          header {
+            margin-bottom: 50px;
+            padding: 0;
+
+            &.scrolled {
+              position: relative;
+              height: auto;
+              display: block;
+              background-color: $color-white100;
+              box-shadow: unset;
+
+              h3 {
+                font-size: 2rem;
+                height: 40px;
+              }
+
+              .material-icons {
+                display: none;
+              }
+            }
+          }
+
+          &.edit {
+            header {
+              margin-bottom: 22px;
+            }
+
+            .smls-profile-edit-warning {
+              margin-bottom: 11px;
+            }
+          }
+        }
+      }
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+}

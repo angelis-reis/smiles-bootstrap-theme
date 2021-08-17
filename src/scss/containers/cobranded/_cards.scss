@@ -1,0 +1,177 @@
+@import "./animations/card.scss";
+@import "./slider.scss";
+
+.coBranded-cards-wrapper {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  will-change: transform;
+  user-select: none;
+  padding: 26.4px 0 23px 0;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  
+  @media(min-width: $bkpoint-desktop) {
+    overflow: hidden;
+    padding: 32px 0 48px 0;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.fake-card.fake-focus {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  &:focus {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -8px;
+      bottom: -8px;
+      left: -8px;
+      right: -8px;
+      border-radius: 16px;
+      border: 2px solid $color-white60;
+    }
+  }
+
+  .coBranded-card {
+    min-width: 200px;
+    width: 200px;
+    height: 112px;
+    display: flex;
+    align-items: flex-end;
+    transition: all .25s;
+  
+    @media(min-width: $bkpoint-desktop) {
+      min-width: auto;
+      width: calc((100% - (24px * 3)) / 4);
+    }
+  
+    @media(min-width: $bkpoint-large) {
+      width: calc((884px - (24px * 3)) / 4);
+    }
+
+    &:focus {
+      outline: none;
+    }
+    
+    &:hover {
+      transform: translateY(-10px);
+    }
+  
+    &.disabled {    
+      .coBranded-card-link,
+      .coBranded-card-link:hover {
+        color: $color-black60;
+        border-color: $color-white95;
+      }
+    }
+  
+    &:not(.disabled):active {
+      .coBranded-card-link {
+        background: $color-white95;
+        color: $color-black60;
+  
+        &:active  {
+          animation: 250ms light-gradient;
+        }
+      }
+    }
+  
+    .coBranded-card-link {
+      color: $color-black88;
+      background: $color-white100;
+      padding: 30px 20px 24px 20px;
+      border: 1px solid $color-white80;
+      border-radius: 16px;
+      box-sizing: border-box;    
+      transition: background 2s;
+      width: inherit;
+      height: inherit;
+      display: flex;
+      align-items: flex-end;
+      text-decoration: none;
+  
+      &:focus {
+        text-decoration: none;
+        outline: none;
+      }
+    }
+    
+    .coBranded-card-link:hover {
+      color: $color-black80;
+      text-decoration: none;
+      cursor: default;
+    }
+  
+    .coBranded-card-clamp {
+      font-family: $regularFontFamily;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 18px;
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      pointer-events: none;
+  
+      *:not(sup, sub) {
+        font-size: 14px;
+      }
+  
+      sup,
+      sub,
+      sup *,
+      sub * {
+        font-family: $regularFontFamily;
+        font-style: normal;
+        font-size: 10px; 
+        line-height: normal;
+      }
+    }
+  }
+  
+  /*
+  * DARK
+  */
+  
+  .coBranded-card.dark {
+    &.disabled {
+      .coBranded-card-link,
+      .coBranded-card-link:hover {
+        color: $color-white60;
+        background: $color-black95;
+        border-color: $color-black60;
+      }
+    }
+    
+    &:not(.disabled):active {
+      .coBranded-card-link {
+        color: $color-white80;
+        background: $color-black95;      
+        animation: 250ms dark-gradient;
+      }
+    }
+    
+    .coBranded-card-link {
+      color: $color-white100;
+      background: $color-black80;
+      border-color: $color-white60;
+  
+      &:hover {
+        background: $color-black88;
+      }
+    }
+  }
+}

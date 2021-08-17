@@ -1,0 +1,65 @@
+---
+headerTitle: cpf
+layout: base.html
+version: 1.0.0
+---
+<div class="smls-register">
+  <header class="smls-topbar">
+    <p><span class='smls-logos smiles'><b>Smiles</b></span></p>
+  </header>
+  <div class=" smls-content">
+    <h3>Qual é seu CPF?</h3>
+    <p>
+      Usamos esse dado pra validar seu cadastro (e te deixar um pouquinho mais perto do seu próximo destino).
+    </p>
+
+
+    <div class="input-group">
+      <div>
+        <input id="input-cpf" placeholder="000.000.000-00" />
+      </div>
+    </div>
+
+    <div class="row">
+
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+        Continuar cadastro
+      </button>
+
+      <button type="button" class="btn btn-hyperlink">
+        Não tenho CPF
+      </button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog right" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="smls-btn-close" data-dismiss="modal" aria-label="Close">
+            <i class="material-icons">
+              close
+            </i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="smls-modal-header">
+            <h4>Seu CPF já está cadastrado na Smiles</h4>
+          </div>
+          <div class="smls-modal-text">
+            <p>Identificamos que já existe uma conta associada ao e-mail **37@gmail.com</p>
+          </div>
+          <button type="button" class="btn btn-primary">Recuperar senha</button>
+
+          <button type="button" class="btn btn-hyperlink smls-register-hyperlink" data-toggle="modal"
+            data-target="#myModal2">
+            Entrar na minha conta
+          </button>
+        </div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+</div>

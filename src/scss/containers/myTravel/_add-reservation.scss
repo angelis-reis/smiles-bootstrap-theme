@@ -1,0 +1,134 @@
+.smls-my-travels-add-reservation {
+  margin: 40px 27px 40px 26px;
+  border: 2px solid $color-white95;
+  border-radius: 16px;
+  padding: 32px 28px;
+
+  &__cta-title {
+    font-size: 16px;
+    font-family: $boldFontFamily;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 992px) {
+      width: 84%;
+    }
+  }
+
+  .btn {
+    &.btn-add-reservation {
+      padding: 11px 16px;
+      height: 40px;
+      background: $color-black100;
+      border-radius: 16px;
+      width: auto;
+      color: #fff;
+      font-family: $semiBoldFontFamily;
+
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .smlms-my-travels-add-reservation-modal {
+    .smls-modal-header {
+      h3 {
+        font-size: 24px;
+      }
+    }
+
+    .modal-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .reservations-count {
+      cursor: pointer;
+      border-bottom: 1px solid $color-white95;
+      display: flex;
+      width: 95%;
+      padding: 20px 0;
+      position: relative;
+
+      .description {
+        font-size: 16px;
+        font-family: $semiBoldFontFamily;
+
+        .count {
+          font-size: 14px;
+          margin-left: 8px;
+          font-family: $regularFontFamily;
+          color: $color-black60;
+        }
+      }
+
+      .material-icons {
+        &.first {
+          margin-right: 10px;
+          font-size: 22px;
+        }
+
+        &.last {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+.default_modal_reservation {
+  .smls-btn-close:last-child {
+    margin-left: auto;
+  }
+
+  .smls-btn-close.left {
+    margin-right: auto;
+  }
+  @media (max-width: 425px) {
+    .dropdown-mobile .dropdown-menu {
+      padding: 0 20px;
+      max-height: calc(100vh - 64px);
+    }
+
+    .tickets-services-modals-others-step00-links {
+      max-width: 100%;
+    }
+
+    .tickets-services-modals-header-back,
+    .tickets-services-modals-header-close {
+      padding: 15px;
+    }
+
+    .smls-modal-header h4 {
+      font-size: 24px;
+    }
+
+    button.btn_primary_modal {
+      width: 100% !important;
+    }
+
+    .button-with-tooltip {
+      justify-content: center !important;
+    }
+
+    .btn_modal_reservation {
+      margin: 0 auto;
+    }
+
+    .smls-card-add-travels {
+      max-width: 100%;
+    }
+
+    .mytravels-tooltip-message {
+      width: 238px;
+      transform: translate3d(-85%, 0, 0);
+
+      .popover.down::after {
+        left: calc(85% - 8px);
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+#car-rental {
+  @import "extra-import";
+  @import "utilities";
+  @import "grid";
+  @import "transitions";
+  @import "input-group";
+  @import "pagination";
+  @import "tooltip";
+  @import "tables";
+  @import "./components/_animation";
+  @import "./components/_modal";
+  @import "./components/_input-text";
+  @import "./components/_input-contact";
+  @import "./components/_dropdown";
+  @import "./icons/_country-flags";
+}

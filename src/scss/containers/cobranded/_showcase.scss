@@ -1,0 +1,103 @@
+.coBranded-recommendation {
+  width: 100%;
+
+  @media(min-width: $bkpoint-desktop) {
+    width: calc(100% - (200px * 4) + (24px * 3));
+    margin-right: 96px;
+  }
+
+  .coBranded-recommendation-flags {
+    margin-bottom: 40px;
+    display: flex;
+    
+    @media(min-width: $bkpoint-desktop) {
+      margin-bottom: 60px;
+    } 
+
+    .chip:first-child {
+      margin-right: 24px;
+    }
+  }
+
+  .coBranded-recommendations-card {
+    display: none;
+    
+    @media(min-width: $bkpoint-desktop) {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      transform: rotate(0.99deg);
+    } 
+
+    .coBranded-recommendations-card-image {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.coBranded-content {
+  display: flex;
+  flex-direction: column;
+
+  > .fake-focus {
+    align-self: center;
+
+    @media(min-width: $bkpoint-desktop) {
+      align-self: flex-start;
+    }
+  }
+
+  .coBranded-content-title {
+    color: $color-black80;
+    font-family: $boldFontFamily;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    max-width: 550px;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    @media(min-width: $bkpoint-desktop) {
+      line-height: 32px;
+    }
+  }
+
+  .coBranded-content-description {
+    color: $color-black80;
+    font-family: $regularFontFamily;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 550px;
+    margin: 16px 0 0 0;
+
+    @media(min-width: $bkpoint-desktop) {
+      margin: 8px 0 0 0;
+    }
+  }
+
+  .coBranded-content-footer {
+    color: $color-black60;
+    font-family: $regularFontFamily;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    
+    @media(min-width: $bkpoint-desktop) {
+      margin-top: 48px;
+    }
+    
+    .highlightedText {
+      color: $color-black100;
+      font-family: $boldFontFamily;
+      font-size: 14px;
+      margin-left: 3.5px;
+      text-decoration: none;
+    }
+  }
+}
+

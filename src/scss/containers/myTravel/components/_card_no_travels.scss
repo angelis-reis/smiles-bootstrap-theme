@@ -1,0 +1,41 @@
+.smls-container-card-no-travels {
+  max-width: 744px;
+
+}
+
+p.smls-text-bold-14 {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 140px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.buttonPlanTravel {
+  margin-top: 48px;
+}
+
+.img-bg {
+  height: 80px;
+  width: 80px;
+  margin: 8px auto 24px;
+  background-size: cover;
+  
+  &.smls-plan-travels {
+    background-image: url("../assets/my-travels/home/img_plan_travels.svg");
+  }
+
+  &.smls-organize-tickets {
+    background-image: url("../assets/my-travels/home/organize_tickets.svg");
+  }
+
+  &.smls-create-travel-itinerary {
+    background-image: url("../assets/my-travels/home/create_travel_itinerary.svg");
+  }
+
+  &.smls-access-your-plans {
+    background-image: url("../assets/my-travels/home/access_your_plans.svg");
+  }
+}

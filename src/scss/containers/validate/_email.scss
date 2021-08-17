@@ -1,0 +1,50 @@
+.smls-modal-validate__email {
+  text-align: left;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+  }
+
+  p {
+    margin-bottom: 4rem;
+    b {
+      font-family: $boldFontFamily;
+    }
+    &:last-child {
+      font-weight: 700;
+    }
+  }
+  .recaptcha {
+    margin-bottom: 32px;
+  }
+  .bottom-buttons {
+    > span {
+      color: $color-black100;
+    }
+    @media (max-width: $bkpoint-tablet) {
+      text-align: center;
+    }
+  }
+
+  .btn:not(.btn-icon):not(.btn-hyperlink) {
+    width: 100%;
+    margin-bottom: 27px;
+
+    @media (min-width: $bkpoint-tablet) {
+      width: auto;
+      min-width: 264px;
+      margin-bottom: 72px;
+    }
+  }
+
+  .btn.btn-hyperlink {
+    height: auto !important;
+    font-family: $boldFontFamily;
+    @media (max-width: $bkpoint-tablet) {
+      margin: 0px auto;
+    }
+  }
+}

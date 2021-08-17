@@ -1,0 +1,125 @@
+// Breakpoints
+$bkpoint-tablet: '768px';
+$bkpoint-desktop: '992px';
+$bkpoint-large: '1240px';
+$bkpoint-largest: '3840px';
+
+// Fonts
+$regularFontFamily: 'NunitoRegular', Arial, sans-serif;
+$boldFontFamily: 'NunitoBold', 'Arial Bold', sans-serif;
+$semiBoldFontFamily: 'NunitoSemiBold', 'Arial Bold', sans-serif;
+$lightFontFamily: 'NunitoLight', Arial, sans-serif;
+
+
+// COLORS DESIGN SYSTEM
+
+/* BRAND COLORS */
+
+// Primary
+$color-brand-primary-100: #FFEADE;
+$color-brand-primary-500: #FF7020;
+$color-brand-primary-700: #E65200;
+
+// Secondary
+$color-brand-secondary-500: #1B3BAD;
+
+
+
+/* FEEDBACK COLORS */
+$color-feedback-success: #478331; 
+$color-feedback-error: #a7022a;
+$color-feedback-warning: #ffc845;
+
+
+/* NEUTRAL COLORS */
+
+$color-neutral-100: #ffffff;
+$color-neutral-200: #f2f2f2;
+$color-neutral-300: #cccccc;
+$color-neutral-400: #999999;
+$color-neutral-500: #666666;
+$color-neutral-600: #333333;
+$color-neutral-700: #1e1e1e;
+$color-neutral-800: #0f0f0e;
+$color-neutral-900: #000000;
+
+$color-neutral-modal: #000000, 60%;
+
+
+/* CATEGORY COLORS */
+
+$color-category-bronze: #8B734B;
+$color-category-silver: #737373;
+$color-category-gold: #C6A76E;
+$color-category-diamond: #231f20;
+
+/* PRODUCTS COLORS */ 
+
+$color-product-club: #663399;
+$color-product-cards: #7C7C7C;
+$color-product-gold: #3372ca;
+
+
+/* PRICING COLORS */
+
+$color-pricing-100: #E6F1EB;
+$color-pricing-500: #007134;
+
+/* SHADOWS */
+
+$shadow-level-100: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 24px rgba(0, 0, 0, 0.08);
+$shadow-level-150: 0px 0px 16px rgba(0, 0, 0, 0.12);
+$shadow-level-200: 0px 0px 32px rgba(0, 0, 0, 0.12);
+$shadow-level-300: 0px 0px 48px rgba(0, 0, 0, 0.16);
+
+/* BORDERS */
+$border-radius-x-small: 4px;
+$border-radius-small: 8px;
+$border-radius-medium: 16px;
+$border-radius-big: 24px;
+$border-radius-calendar: 14px;
+$border-radius-circle: 100px;
+$border-radius-pill: 16px;
+
+/* SPACING */
+
+$x-small: 8px;
+$small: 16px;
+$medium: 24px;
+$big: 40px;
+$large: 72px;
+$x-large: 120px;
+
+/*
+
+  DEPRECIED
+
+*/
+
+$color-white100: #ffffff; // -- $color-neutral-100
+$color-white95: #f2f2f2; // - $color-neutral-200
+$color-white90: #e5e5e5;
+$color-white80: #cccccc; // -- $color-neutral-300
+$color-white60: #999999; // -- $color-neutral-400
+
+$color-black100: #000000; // -- $color-neutral-900
+$color-black95: #0f0f0e; // -- $color-neutral-800
+$color-black88: #1e1e1e; // -- $color-neutral-700
+$color-black80: #333333; // -- $color-neutral-600
+$color-black60: #666666; // -- $color-neutral-500
+$color-black50: #3c3c3c;
+
+$color-orange: #ff7020; // -- $color-brand-primary-500
+$color-green: #478331; // -- $color-feedback-success
+$color-wine: #a7022a; // -- $color-feedback-error
+$color-yellow: #ffc845; // -- $color-feedback-warning
+$color-blue: #1020c2; // -- $color-brand-secondary-500
+
+$color-bronze: #8a7422; // -- $color-category-bronze
+$color-silver: #bbbcbc; // -- $color-category-silver
+$color-gold: #d1b888; // -- $color-category-gold
+$color-diamond: #231f20; // -- $color-category-diamond
+
+$color-disabled-bg: #e9ecef;
+$color-disabled-border: $color-white80;
+

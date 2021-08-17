@@ -1,0 +1,811 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+    />
+
+    <meta
+      name="description"
+      content="Conheça o programa de milhas Smiles e saiba como acumular, trocar por passagens, produtos e mais. Confira também as vantagens do Clube Smiles!"
+    />
+
+    <link rel="icon" href="/images/favicon.ico" />
+
+    <title>Teste header and Footer | Smiles</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="/css/smls-base-theme.min.css"
+      media="all"
+      async
+    />
+    <link
+      rel="stylesheet"
+      href="/css/smls-header-footer.min.css"
+      media="all"
+      async
+    />
+
+    <style>
+      #sspa-content {
+        padding-top: 20pt;
+        padding-bottom: 20pt;
+        padding-left: 20pt;
+        padding-right: 20pt;
+      }
+    </style>
+  </head>
+
+  <body><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.14'><\/script>".replace("HOST", location.hostname));
+
+    var smlsNotificationConfig = {
+      identityIdAws: "us-east-1:352a84cb-b7e5-4128-a4ae-846485af4c9b",
+      tokenAws: "eyJraWQiOiJ1cy1lYXN0LTExIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy1lYXN0LTE6MzUyYTg0Y2ItYjdlNS00MTI4LWE0YWUtODQ2NDg1YWY0YzliIiwiYXVkIjoidXMtZWFzdC0xOjk5ZmJiZWMwLWQyNzYtNDg4YS1hMjhjLWIyMGRhMmEzOGMyYyIsImFtciI6WyJhdXRoZW50aWNhdGVkIiwibG9naW4uc21pbGVzLmN1c3RvbSIsImxvZ2luLnNtaWxlcy5jdXN0b206dXMtZWFzdC0xOjk5ZmJiZWMwLWQyNzYtNDg4YS1hMjhjLWIyMGRhMmEzOGMyYzo3MTg4MTc4NDIiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJleHAiOjE2MTc3MzQwMjIsImlhdCI6MTYxNzcxOTYyMn0.bjlugUoTblcPUG-YXBinPKqBdhN5QuV_SCUaOfk5PzSY8UGZgnZVbzbx0mht60yCma-kgqsvDjwDvrE_j6wCzG0xyjAeqpwF0Gbuv1IcEUi5T8_STNtSYxuk42u-n6RNbdiDztfY0j-6BAUyryXEgp4Ha3fOub1kzuzzH2qmcTRf1wJfl2Yaj-kLZN7YUbCEWz2GXCwxF3CZLBSmvTs83_xT63m2KD74VXFjR8PiZMa7Lpy6W05JlJ2R1V64VGer1q_WDb1plkgioQpW862yp-uxPFvPFSXc7tjwfZ0IA9P0nlCd9iHXQI6wp9rt4D_cVgns4LHK-Nxnoo6zENHlOA",
+      appsyncEndpoint: "https://li2dsp7n3zdntiic53u5pr2bgy.appsync-api.us-east-1.amazonaws.com/graphql"
+    };
+//]]></script>
+
+    <div class="main-portal">
+      <div id="sspa-header">
+        <header class="">
+          <div class="smls-hf-logged" id="smls-hf-header-default">
+            <div class="" id="smls-hf-blackout"></div>
+            <div class="smls-hf-main">
+              <a
+                href="https://www.smiles.com.br/home"
+                title="Site Smiles"
+                id="smls-logo-smiles"
+              >
+                <span class="smls-logos smiles"><strong>Smiles</strong></span>
+              </a>
+              <div class="smls-hf-actions">
+                <i
+                  class="smls-hf-icon hamburger-black"
+                  id="smls-hf-header-drawer"
+                ></i>
+              </div>
+            </div>
+            <div class="smls-hf-divider smls-hf-full smls-hf-header"></div>
+            <div class="smls-hf-content">
+              <div class="smls-hf-content-header smls-hf-padding-horizontal-24">
+                <i
+                  class="smls-hf-icon close-black"
+                  id="smls-hf-header-drawer-close"
+                ></i>
+              </div>
+              <div class="smls-hf-routes">
+                <div class="smls-hf-info">
+                  <span>Acesse ou crie sua conta</span>
+                  <a
+                    class="smls-hf-btn-hyperlink-border smls-hf-profile"
+                    href="javascript:smls.hf.Controller.callLogin()"
+                    title="Entrar"
+                    id="smls-hf-btn_toEnter"
+                  >
+                    <i class="smls-hf-icon profile-black"></i> Entrar
+                  </a>
+                  <div class="smls-hf-divider smls-hf-full"></div>
+                </div>
+                <div
+                  class="smls-hf-list smls-hf-router smls-hf-padding-vertical-24"
+                >
+                  <ul>
+                    <li class="smls-hf-btn-hyperlink" data-smls-main-menu="passagens">
+                      <a
+                        href="https://www.smiles.com.br/passagens"
+                        title="Passagens"
+                        id="smls-hf-opt_passages"
+                      >
+                        Passagens
+                      </a>
+                    </li>
+                    <li class="smls-hf-btn-hyperlink" data-smls-main-menu="hoteis">
+                      <a
+                        href="https://www.smiles.com.br/hoteis"
+                        title="Hotéis"
+                        id="smls-hf-opt_hotels"
+                      >
+                        Hotéis
+                      </a>
+                    </li>
+                    <li class="smls-hf-btn-hyperlink" data-smls-main-menu="carros">
+                      <a
+                        href="https://www.smiles.com.br/carros"
+                        title="Carros"
+                        id="smls-hf-opt_cars"
+                      >
+                        Carros
+                      </a>
+                    </li>
+                    <li class="smls-hf-btn-hyperlink" data-smls-main-menu="shopping">
+                      <a
+                        href="https://www.smiles.com.br/login?product=smiles-shopping&t=true"
+                        title="Shopping"
+                        id="smls-hf-opt_shopping"
+                      >
+                        Shopping
+                      </a>
+                    </li>
+                    <li class="smls-hf-btn-hyperlink" data-smls-main-menu="more">
+                      <a title="Mais" id="smls-hf-drop_plus"
+                        >Mais<i
+                          class="smls-hf-icon arrow-black"
+                          id="smls-hf-routes-more"
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="smls-hf-divider"></div>
+                <div class="smls-hf-list smls-hf-padding-vertical-24">
+                  <ul>
+                    <li data-smls-main-menu="cartao-de-credito">
+                      <a
+                        class="smls-hf-heading-exception"
+                        href="https://www.smiles.com.br/cartao-de-credito"
+                        title="Cartão de Crédito GOL Smiles"
+                        id="smls-hf-opt_creditCard"
+                      >
+                        Cartão de Crédito GOL Smiles
+                      </a>
+                    </li>
+                    <li data-smls-main-menu="clube-smiles">
+                      <a
+                        class="smls-hf-heading-exception"
+                        href="https://www.smiles.com.br/clube-smiles/beneficios-clube"
+                        title="Clube Smiles"
+                        id="smls-hf-opt_ClubSmiles"
+                      >
+                        Clube Smiles
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div id="smls-hf-box-login" class="smls-hf-align-itens"></div>
+              </div>
+              <div id="smls-hf-account-user" class="smls-hf-user"></div>
+            </div>
+            <div class="smls-hf-content-more" id="smls-hf-content-more">
+              <div class="smls-hf-content-more-header">
+                <i class="smls-hf-icon arrow-black" id="smls-hf-more-back"></i>
+                <div class="smls-hf-btn-hyperlink"><span>Mais</span></div>
+                <i class="smls-hf-icon close-black" id="smls-hf-more-close"></i>
+              </div>
+              <div class="smls-hf-content-more-container">
+                <div class="smls-hf-more-experience">
+                  <div class="smls-hf-more-info">
+                    <span
+                      id="smls-hf-lbl_moreExperiences"
+                      class="smls-hf-heading-06"
+                      >Mais experiências pra você</span
+                    >
+                  </div>
+                  <div class="smls-hf-list smls-hf-underline">
+                    <ul>
+                      <li class="smls-hf-active">
+                        <a
+                          class="smls-hf-heading-06"
+                          href="https://www.smiles.com.br/parceiros/cruzeiros"
+                          title="Cruzeiros"
+                          id="smls-hf-opt_cruises"
+                        >
+                          Cruzeiros
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="smls-hf-heading-06"
+                          href="https://www.smiles.com.br/parceiros/ingresso-rapido"
+                          title="Shows, Eventos e Teatros"
+                          id="smls-hf-opt_showsEvents"
+                        >
+                          Shows, Eventos e Teatros
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="smls-hf-heading-06"
+                          href="https://atracoes.smiles.com.br/smiles_atracoes/index.jsf"
+                          title="Atrações e Parques"
+                          id="smls-hf-opt_attractionsParks"
+                        >
+                          Atrações e Parques
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="smls-hf-heading-06"
+                          href="https://www.smiles.com.br/passeios"
+                          title="Passeios"
+                          id="smls-hf-opt_tours"
+                        >
+                          Passeios
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="smls-hf-heading-06"
+                          href="https://www.smiles.com.br/parceiros/creditos-uber"
+                          title="Créditos Uber"
+                          id="smls-hf-opt_uberCredits"
+                        >
+                          Créditos Uber
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="smls-hf-heading-06"
+                          href="https://www.smiles.com.br/parceiro/sulamerica"
+                          title="Seguro viagem"
+                          id="smls-hf-opt_travelInsurance"
+                        >
+                          Seguro viagem
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="smls-hf-heading-06"
+                          href="https://www.smiles.com.br/promocao"
+                          title="Promoções"
+                          id="smls-hf-opt_promotions"
+                        >
+                          Promoções
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="smls-hf-divider"></div>
+                <div class="smls-hf-more-start">
+                  <div class="smls-hf-more-info">
+                    <span
+                      class="smls-hf-heading-06"
+                      id="smls-hf-lbl_whereToStart"
+                      >Por onde começar</span
+                    >
+                    <i
+                      class="smls-hf-icon close-black"
+                      id="smls-hf-btn_close"
+                    ></i>
+                  </div>
+                  <div class="smls-hf-list smls-hf-underline">
+                    <ul>
+                      <li class="smls-hf-active">
+                        <a
+                          class="smls-hf-heading-06"
+                          href="https://www.smiles.com.br/dicas-smiles/acumular-e-resgatar"
+                          title="Como ganhar e usar milhas"
+                          id="smls-hf-opt_useMiles"
+                        >
+                          Como ganhar e usar milhas
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="smls-hf-heading-06"
+                          href="https://www.smiles.com.br/categorias-smiles"
+                          title="Categorias Smiles"
+                          id="smls-hf-opt_smilesCategories"
+                        >
+                          Categorias Smiles
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="smls-hf-heading-06"
+                          href="https://www.smiles.com.br/produtos/compra/bonus-110-18-01-2021"
+                          title="Comprar milha"
+                          id="smls-hf-opt_buyMiles"
+                        >
+                          Comprar milhas
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="smls-hf-heading-06"
+                          href="https://www.smiles.com.br/transferir-pontos-cartao"
+                          title="Transferir pontos do cartão de crédito"
+                          id="smls-hf-opt_transferPoints"
+                        >
+                          Transferir pontos do cartão de crédito
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="smls-hf-divider smls-hf-full"></div>
+                <div class="smls-hf-tips smls-hf-btn-hyperlink">
+                  <a
+                    href="https://www.smiles.com.br/dicas-smiles"
+                    title="Conheça o Dicas Smiles"
+                    id="smls-hf-opt_smilesTips"
+                  >
+                    <span
+                      ><i class="smls-hf-icon world-orange"></i> Planejando seu
+                      próximo destino?</span
+                    >
+                    <span
+                      >Conheça o Dicas Smiles
+                      <i class="smls-hf-icon arrow-orange"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div id="sspa-content">
+        <h3>Fake content</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          pharetra vitae odio eu porta. Pellentesque semper, enim eget aliquam
+          faucibus, diam quam egestas augue, nec iaculis enim est eget dolor.
+          Duis pellentesque neque non risus rutrum tincidunt eu pretium lorem.
+          In imperdiet, mi eu interdum viverra, justo velit molestie risus, nec
+          elementum diam dolor non mauris. Aliquam vulputate sodales risus, sed
+          ultrices erat. Aliquam nibh urna, interdum quis commodo ac, volutpat
+          venenatis justo. Nunc eu luctus augue, vel varius sapien. Aliquam ut
+          est eu leo eleifend imperdiet et eget massa. Donec vestibulum diam id
+          nunc ultrices, non pulvinar eros eleifend.
+        </p>
+        <p>
+          Curabitur eu leo magna. Aenean eu auctor ex. Nunc iaculis commodo
+          volutpat. Sed in eleifend dolor, non finibus risus. Pellentesque in
+          accumsan arcu. Nam euismod massa quis arcu sagittis, et euismod odio
+          commodo. Curabitur in tortor ullamcorper, posuere ligula sit amet,
+          iaculis sapien. Nulla lectus odio, vulputate sed metus fringilla,
+          aliquet pulvinar nisi. Suspendisse lacus ex, laoreet quis rhoncus
+          vitae, egestas ac quam. Curabitur lobortis velit nec orci scelerisque
+          pellentesque. Duis venenatis faucibus luctus. Nunc egestas quam sit
+          amet diam pretium dictum.
+        </p>
+        <p>
+          Pellentesque sollicitudin diam nec tellus dictum ultrices. Ut egestas
+          accumsan enim vel convallis. Fusce sed maximus ante. Integer ut nisl
+          varius, maximus ante non, rutrum neque. Class aptent taciti sociosqu
+          ad litora torquent per conubia nostra, per inceptos himenaeos. Cras
+          volutpat rutrum laoreet. Nullam sit amet elit eu mauris commodo
+          elementum. Proin enim neque, blandit non magna vel, iaculis maximus
+          dolor. In pharetra tincidunt risus, in scelerisque sapien tempus eu.
+          Suspendisse in mi sed magna suscipit pulvinar id in ipsum. Nunc
+          pharetra justo sed leo lobortis facilisis. Integer a sollicitudin
+          nulla. Integer vel augue nec orci dapibus scelerisque vel sed ipsum.
+          Ut non mattis sapien, consectetur commodo orci. In eget purus ac dui
+          commodo pellentesque. Vivamus pharetra eros nisi, nec facilisis risus
+          facilisis in.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          potenti. Cras in consectetur risus, et euismod erat. Duis eleifend,
+          ipsum sit amet venenatis maximus, quam orci ultrices arcu, a egestas
+          magna turpis ac est. Curabitur mattis cursus ex nec feugiat. Nulla vel
+          nibh at felis elementum elementum. Aliquam erat volutpat.
+        </p>
+        <p>
+          Nam eu mattis diam. Etiam laoreet feugiat erat. Nulla dictum vehicula
+          augue rhoncus maximus. Nullam maximus massa ac nibh pulvinar, sit amet
+          eleifend lacus interdum. Nunc et interdum purus. Curabitur tempor enim
+          et mauris fermentum pharetra. Nunc ornare ipsum non sem dictum
+          dapibus. Sed sit amet orci nulla. Mauris ac hendrerit est. Mauris
+          vitae pellentesque mi, non auctor lectus. Nullam rhoncus pulvinar
+          metus, vitae ultrices odio pharetra cursus. Suspendisse sed mattis
+          turpis, ut porta ante.
+        </p>
+        <p>
+          Pellentesque sollicitudin diam nec tellus dictum ultrices. Ut egestas
+          accumsan enim vel convallis. Fusce sed maximus ante. Integer ut nisl
+          varius, maximus ante non, rutrum neque. Class aptent taciti sociosqu
+          ad litora torquent per conubia nostra, per inceptos himenaeos. Cras
+          volutpat rutrum laoreet. Nullam sit amet elit eu mauris commodo
+          elementum. Proin enim neque, blandit non magna vel, iaculis maximus
+          dolor. In pharetra tincidunt risus, in scelerisque sapien tempus eu.
+          Suspendisse in mi sed magna suscipit pulvinar id in ipsum. Nunc
+          pharetra justo sed leo lobortis facilisis. Integer a sollicitudin
+          nulla. Integer vel augue nec orci dapibus scelerisque vel sed ipsum.
+          Ut non mattis sapien, consectetur commodo orci. In eget purus ac dui
+          commodo pellentesque. Vivamus pharetra eros nisi, nec facilisis risus
+          facilisis in.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          potenti. Cras in consectetur risus, et euismod erat. Duis eleifend,
+          ipsum sit amet venenatis maximus, quam orci ultrices arcu, a egestas
+          magna turpis ac est. Curabitur mattis cursus ex nec feugiat. Nulla vel
+          nibh at felis elementum elementum. Aliquam erat volutpat.
+        </p>
+        <p>
+          Nam eu mattis diam. Etiam laoreet feugiat erat. Nulla dictum vehicula
+          augue rhoncus maximus. Nullam maximus massa ac nibh pulvinar, sit amet
+          eleifend lacus interdum. Nunc et interdum purus. Curabitur tempor enim
+          et mauris fermentum pharetra. Nunc ornare ipsum non sem dictum
+          dapibus. Sed sit amet orci nulla. Mauris ac hendrerit est. Mauris
+          vitae pellentesque mi, non auctor lectus. Nullam rhoncus pulvinar
+          metus, vitae ultrices odio pharetra cursus. Suspendisse sed mattis
+          turpis, ut porta ante.
+        </p>
+      </div>
+      <div id="sspa-footer">
+        <footer class="">
+          <div class="" id="smls-hf-footer-default">
+            <div>
+              <div class="smls-hf-block-inital">
+                <div class="smls-hf-block-inital-gol">
+                  <p class="smls-hf-heading-04" id="smls-hf-lbl_travelPlatform">
+                    Smiles. A mais completa Plataforma de Viagens
+                  </p>
+                  <p class="smls-hf-heading-06" id="smls-hf-lbl_travelPlatformMessage">
+                    Suas milhas podem fazer seus sonhos decolarem para mais de 1.600
+                    destinos!
+                  </p>
+                  <div>
+                    <div>
+                      <a
+                        href="https://www.smiles.com.br/gol-linhas-aereas-inteligentes"
+                        title="Gol"
+                        id="smls-hf-opt_gol"
+                      >
+                        <i class="smls-hf-icon logo-gol"><strong>Gol</strong></i>
+                      </a>
+                    </div>
+                    <div class="smls-hf-btn-hyperlink-small-border" role="button">
+                      <a
+                        href="https://www.smiles.com.br/companhias-aereas-parceiras"
+                        title="Outras Companhias aéreas"
+                        id="smls-hf-opt_airlines"
+                      >
+                        + 58 companhias aéreas
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="smls-hf-block-inital-create" id="smls-dynamic-msg01">
+                  <p class="smls-hf-heading-04" id="smls-hf-lbl_withoutAccount">
+                    Ainda não tem uma conta? É hora de embarcar na Smiles
+                  </p>
+                  <p class="smls-hf-heading-06" id="smls-hf-lbl_withoutAccountMessage">
+                    Receba ofertas personalizadas pra você viver muito mais experiências.
+                  </p>
+                  <div class="smls-hf-btn-hyperlink-small-border" role="button">
+                    <a
+                      href="https://www.smiles.com.br/cadastro"
+                      title="Crie sua conta agora"
+                      id="smls-hf-btn_createAccount"
+                    >
+                      Crie sua conta agora
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="smls-hf-block-faq">
+                <div class="smls-hf-block-faq-central">
+                  <p id="smls-hf-lbl_helpCenter" class="smls-hf-heading-03">Como podemos ajudar?</p>
+                </div>
+                <div class="smls-hf-block-faq-links">
+                  <ul>
+                    <li>
+                      <a
+                        class="smls-hf-heading-04"
+                        href="https://www.smiles.com.br/fale-com-a-gente"
+                        title="Atendimento Smiles"
+                        id="smls-hf-opt_frequentlyAskedQuestions"
+                      >
+                        <i class="smls-hf-icon help-black"></i> Atendimento Smiles
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="smls-hf-heading-04"
+                        href="https://www.smiles.com.br/fale-com-a-gente"
+                        title="Fale com a gente no chat"
+                        id="smls-hf-opt_chat"
+                      >
+                        <i class="smls-hf-icon chat-black"></i> Fale com a gente no chat
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="smls-hf-block-general">
+                <div class="smls-hf-accordion">
+                  <input type="checkbox" id="smls-hf-general-about" aria-hidden="true" />
+                  <label for="smls-hf-general-about" id="smls-hf-lbl_aboutSmiles">
+                    <span class="smls-hf-heading-04"
+                      >Sobre a Smiles <i class="smls-hf-icon arrow-black"></i
+                    ></span>
+                  </label>
+                  <ul>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://www.smiles.com.br/programa-smiles"
+                        title="Programa Smiles"
+                        id="smls-hf-opt_smilesProgram"
+                        >Programa Smiles</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://www.smiles.com.br/regulamento-do-programa-smiles"
+                        title="Regulamento"
+                        id="smls-hf-opt_regulation"
+                        >Regulamento</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://ri.smiles.com.br/"
+                        title="Investidores"
+                        id="smls-hf-opt_investors"
+                        >Investidores</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://imprensa.smiles.com.br/"
+                        title="Imprensa"
+                        id="smls-hf-opt_press"
+                        >Imprensa</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://www.smiles.com.br/milhas-do-bem"
+                        title="Milhas do Bem"
+                        id="smls-hf-opt_milesOfGood"
+                        >Milhas do Bem</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="smls-hf-accordion">
+                  <input
+                    type="checkbox"
+                    id="smls-hf-general-how-works"
+                    aria-hidden="true"
+                  />
+                  <label for="smls-hf-general-how-works" id="smls-hf-lbl_howItWorks">
+                    <span class="smls-hf-heading-04"
+                      >Como funciona <i class="smls-hf-icon arrow-black"></i
+                    ></span>
+                  </label>
+                  <ul>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://www.smiles.com.br/destaques1"
+                        title="Destaques"
+                        id="smls-hf-opt_highlights"
+                        >Destaques</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://www.smiles.com.br/regra/bagagem-gol"
+                        title="Regras de Bagagem"
+                        id="smls-hf-opt_baggage"
+                        >Regras de Bagagem</a
+                      >
+                    </li>                    
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://www.smiles.com.br/dicas-smiles/mercado-de-fidelidade"
+                        title="Mercado de Fidelidade"
+                        id="smls-hf-opt_loyaltyMarket"
+                        >Mercado de Fidelidade</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://www.smiles.com.br/validade-de-milhas"
+                        title="Validade de milhas"
+                        id="smls-hf-opt_milesValidity"
+                        >Validade de milhas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://www.smiles.com.br/reativar-milhas"
+                        title="Reativar milhas"
+                        id="smls-hf-opt_reactivateMiles"
+                        >Reativar milhas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://www.smiles.com.br/transferir-milhas"
+                        title="Transferir milhas entre contas"
+                        id="smls-hf-opt_transferMiles"
+                        >Transferir milhas entre contas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://www.smiles.com.br/produtos/extensao-validade-milhas-promo"
+                        title="Extensão de milhas"
+                        id="smls-hf-opt_milesExtension"
+                        >Extensão de milhas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="smls-hf-heading-06"
+                        href="https://www.smiles.com.br/smiles-money"
+                        title="Smiles & Money"
+                        id="smls-hf-opt_smilesAndMoney"
+                        >Smiles & Money</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="">
+                  <p class="smls-hf-heading-04" id="smls-hf-lbl_socialNetwork">Redes Sociais</p>
+                  <div class="smls-hf-medias">
+                    <a
+                      href="https://www.facebook.com/smilesoficial"
+                      title="Facebook"
+                      rel="nofollow noreferrer"
+                      target="_blank"
+                      id="smls-hf-opt_facebook"
+                    >
+                      <i class="smls-hf-icon facebook-black"><strong>Facebook</strong></i>
+                    </a>
+                    <a
+                      href="https://twitter.com/smilesoficial"
+                      title="Twitter"
+                      rel="nofollow noreferrer"
+                      target="_blank"
+                      id="smls-hf-opt_twitter"
+                    >
+                      <i class="smls-hf-icon twitter-black"><strong>Twitter</strong></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/smiles.oficial/"
+                      title="Instagram"
+                      rel="nofollow noreferrer"
+                      target="_blank"
+                      id="smls-hf-opt_instagram"
+                    >
+                      <i class="smls-hf-icon instagram-black"
+                        ><strong>Instagram</strong></i
+                      >
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/smiles/?originalSubdomain=br"
+                      title="Linkedin"
+                      rel="nofollow noreferrer"
+                      target="_blank"
+                      id="smls-hf-opt_linkedin"
+                    >
+                      <i class="smls-hf-icon linkedin-black"><strong>Linkedin</strong></i>
+                    </a>
+                    <a
+                      href="https://www.youtube.com/channel/UC59HK2HLcg5mtdePe4uCpVQ"
+                      title="Youtube"
+                      rel="nofollow noreferrer"
+                      target="_blank"
+                      id="smls-hf-opt_youtube"
+                    >
+                      <i class="smls-hf-icon youtube-black"><strong>Youtube</strong></i>
+                    </a>
+                    <a
+                      href="https://open.spotify.com/user/nwlniija6bhxjqdd2iusmzu9g"
+                      title="Spotify"
+                      rel="nofollow noreferrer"
+                      target="_blank"
+                      id="smls-hf-opt_spotify"
+                    >
+                      <i class="smls-hf-icon spotify-black"><strong>Spotify</strong></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="smls-hf-stores">
+                  <p class="smls-hf-heading-04" id="smls-hf-lbl_getTheApp">Baixe o aplicativo</p>
+                  <div>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.pontomobi.smiles&referrer=utm_source=site&utm_medium=smiles&utm_campaign=download_app_android_site_footer&anid=admob"
+                      title="Goolgle Play"
+                      rel="nofollow noreferrer"
+                      target="_blank"
+                      id="smls-hf-opt_googlePlay"
+                    >
+                      <i class="smls-hf-icon google-play-pt"
+                        ><strong>Goolgle Play</strong></i
+                      >
+                    </a>
+                    <a
+                      href="https://apps.apple.com/br/app/smiles/id1085931838?l=en&mt=8"
+                      title="Apple Store"
+                      rel="nofollow noreferrer"
+                      target="_blank"
+                      id="smls-hf-opt_appStore"
+                    >
+                      <i class="smls-hf-icon apple-store-pt"
+                        ><strong>Apple Store</strong></i
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="smls-hf-block-last">
+                <div class="">
+                  <p class="smls-hf-heading-small" id="smls-hf-lbl_addressData_1">
+                    Smiles Fidelidade S.A. | CNPJ/MF 05.730.375/0001-20
+                  </p>
+                  <p class="smls-hf-heading-small" id="smls-hf-lbl_addressData_2">
+                    Alameda Rio Negro, 585 - 2º andar Bloco B - Barueri/SP | CEP:
+                    06454-000
+                  </p>
+                </div>
+                <div class="smls-hf-change-country">
+                  <div class="smls-hf-btn-hyperlink-small">
+                    <a href="https://www.smiles.com.br/mapa-do-site" title="Mapa do site" id="smls-hf-opt_siteMap">
+                      <strong>Mapa do site</strong>
+                    </a>
+                  </div>
+                  <div class="smls-hf-accordion">
+                    <input type="checkbox" id="smls-hf-general-map" aria-hidden="true" />
+                    <label for="smls-hf-general-map" id="smls-hf-drop_language">
+                      <i class="smls-hf-icon flag-brasil"></i>
+                      <i class="smls-hf-icon arrow-black"></i>
+                    </label>
+                    <ul>
+                      <li>
+                        <a href="https://www.smiles.com.ar" title="Smiles Argentina">
+                          <i class="smls-hf-icon flag-argentina"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </footer>
+      </div>
+    </div>
+
+    <script
+      src="https://localhost:8888/header.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

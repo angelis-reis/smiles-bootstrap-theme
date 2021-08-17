@@ -1,0 +1,30 @@
+---
+headerTitle: Header
+layout: base-header.html
+version: 1.0.0
+---
+<style>
+  .smls-hf-icon.close-black{
+    font-size: 16px;
+  }
+  .smls-hf-icon.apple-store-pt {
+    font-size: 32px;
+  }
+  .invert {
+    background-color: black;
+    padding: 5pt;
+  }
+  .invert .profile-black:before {
+    filter: invert(100%) brightness(200%);
+  }
+  .invert .smiles-orange:before {
+    filter: invert(100%) sepia(0%) saturate(0%) brightness(200%) contrast(200%);
+  }
+</style>
+
+<div>
+  <p>Teste de alinhamento <i class="smls-hf-icon apple-store-pt"></i> de texto com os icones <i class="smls-hf-icon close-black"></i> para centralização</p>
+  <p>Perfil: <i class="smls-hf-icon profile-black"></i></p>
+  <p>Perfil Invert: <span class="invert"><i class="smls-hf-icon profile-black"></i></p></span>
+  <p>Logo Smiles Invert: <span class="invert"><i class="smls-hf-icon smiles-orange"></i></p></span>
+</div>

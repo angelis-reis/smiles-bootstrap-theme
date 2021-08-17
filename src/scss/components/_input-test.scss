@@ -1,0 +1,22 @@
+.smls-test-container {
+  height: 64px;
+
+  .smls-text-input {
+    position: absolute;
+  }
+
+  &.open {
+    position: fixed;
+    height: 100%;
+    // top: 0;
+    // left: 0;
+    animation-name: mymove;
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+}
+
+@keyframes mymove {
+  from {top: 200px;}
+  to {top: 0px;}
+}

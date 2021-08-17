@@ -1,0 +1,26 @@
+.smls-my_account .change-name-modal {
+  padding: 24px;
+  h3 {
+    margin-bottom: 33px;
+  }
+  .input-group {
+    margin-bottom: 8px;
+    & > div {
+      width: 100%;
+    }
+  }
+  .btn {
+    width: 100%;
+    margin-top: 39px;
+  }
+  @media (min-width: $bkpoint-tablet) {
+    padding: 0px 56px;
+    h3 {
+      margin-top: 40px;
+    }
+    .btn {
+      width: 264px;
+      margin-top: 39px;
+    }
+  }
+}

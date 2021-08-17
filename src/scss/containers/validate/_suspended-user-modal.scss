@@ -1,0 +1,121 @@
+.smls-suspended-user .smls-suspended-user-main-content .suspended-user-modal {
+  @media (max-width: $bkpoint-tablet) {
+    .btn:not(.btn-icon) {
+      width: 100%;
+    }
+  }
+  & .default-modal-message {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    justify-content: flex-start;
+
+    h4 {
+      color: $color-black80;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    p {
+      color: $color-black60;
+      margin-bottom: 48px;
+    }
+
+    > button.hyperlink {
+      align-self: flex-start;
+      font-family: $boldFontFamily;
+      margin-top: 36px;
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      padding: 0 56px;
+      h4 {
+        margin-bottom: 23px;
+        margin-top: 40px;
+      }
+      p {
+        margin-bottom: 80px;
+      }
+    }
+
+    &.error {
+      h4 {
+        margin-top: 24px;
+        margin-bottom: 16px;
+      }
+      p {
+        margin-bottom: 94px;
+      }
+      @media (min-width: $bkpoint-tablet) {
+        h4 {
+          margin-top: 40px;
+          margin-bottom: 24px;
+        }
+        p {
+          margin-bottom: 64px;
+        }
+      }
+    }
+  }
+
+  & > .modal-dialog > .modal-content > div > .modal-header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 31px;
+    button {
+      margin-left: auto;
+      margin-bottom: 32px;
+    }
+    h4 {
+      width: 100%;
+    }
+  }
+
+  & > .modal-dialog > .modal-content > div > .modal-header-fixed {
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 32px 0px #0000001f;
+    padding: 0px 56px;
+    h4 {
+      font-size: 1.125rem;
+      margin: 0px;
+    }
+    z-index: 1;
+  }
+
+  & .suspended-user-form-wrapper {
+    padding: 0px 56px;
+    p {
+      color: $color-black60;
+    }
+    p.fixed {
+      padding-top: 183px;
+    }
+    @media (max-width: $bkpoint-tablet) {
+      padding: 0 24px;
+    }
+    & form {
+      padding-bottom: 32px;
+    }
+    & form > button[type='submit'] {
+      margin-top: 48px;
+    }
+    & form > .input-group:nth-child(1) {
+      margin-top: 56px;
+    }
+    & form > .input-group {
+      margin-bottom: 8px;
+    }
+    & form > .input-group > div {
+      width: 100%;
+    }
+  }
+}

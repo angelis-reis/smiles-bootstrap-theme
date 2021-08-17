@@ -1,0 +1,65 @@
+.smls-my-travel {
+  .smls-choosepath {
+    ul {
+      &.list-group {
+        width: auto;
+        padding-inline-start: 0;
+        li {
+          &.list-group-item {
+            &:not(:last-child) {
+              &::after {
+                width: 100%;
+                height: 1px;
+              }
+            }
+            &::after {
+              content: '';
+              display: block;
+              background-color: $color-white95;
+              height: 1px;
+              overflow: visible;
+              margin: 0 auto;
+            }
+            a {
+              &.smls-link-choose {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 0;
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: $bkpoint-tablet) {
+    .smls-choosepath {
+      ul {
+        &.list-group {
+          li {
+            &.list-group-item {
+              &:not(:last-child) {
+                &::after {
+                  width: calc(100% - 24px);
+                }
+              }
+              &::after {
+                width: calc(100% - 24px);
+              }
+              a {
+                &.smls-link-choose {
+                  padding: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

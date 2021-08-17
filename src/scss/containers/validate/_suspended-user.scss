@@ -1,0 +1,51 @@
+.smls-suspended-user .smls-suspended-user-wrapper {
+  width: 100%;
+  max-width: 938px;
+  margin: 0px auto;
+  display: flex;
+  height: 100%;
+  padding-top: 65px;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: $bkpoint-tablet) {
+    padding-top: 23.5px;
+    img {
+      display: none;
+    }
+  }
+  div:first-of-type {
+    max-width: 454px;
+
+    @media (max-width: $bkpoint-tablet) {
+      width: 100%;
+      max-width: unset;
+      padding: 0px 24px;
+      .buttons {
+        width: 100%;
+        padding: 0px;
+      }
+      .btn {
+        margin: 0px auto;
+      }
+      .btn-primary {
+        width: 100%;
+      }
+    }
+    h3 {
+      padding-bottom: 24px;
+    }
+    p {
+      color: $color-black60;
+      font-weight: 400;
+    }
+    > :nth-child(3) {
+      margin-top: 20px;
+      margin-bottom: 64px;
+    }
+
+    .btn-hyperlink {
+      margin-top: 47px;
+      font-family: $boldFontFamily;
+    }
+  }
+}

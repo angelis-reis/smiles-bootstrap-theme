@@ -1,0 +1,41 @@
+.fake-focus {
+  &:disabled .btn.color-card.btn-primary {
+    color: $color-black60;
+    background: $color-white95;
+    border: none;
+  }
+
+  &:active .btn.color-card.btn-primary,
+  &:hover:not(:disabled):active .btn.color-card.btn-primary {
+    background: $color-orange;
+    border-color: $color-orange;
+  }
+
+  &:hover .btn.color-card.btn-primary.dark,
+  &:focus .btn.color-card.btn-primary.dark {
+    background: $color-white100;
+    color: $color-black80;
+  }
+
+  &:active .btn.color-card.btn-primary.dark {
+    color: $color-white80;
+  }
+  
+  &:disabled .btn.color-card.btn-primary.dark {
+    background: $color-black60;
+    color: $color-white95;
+  }
+
+  &:focus:not(:active)::after .btn.color-card.btn-primary.dark {
+    border-color: $color-white60;
+  }
+
+  .btn.color-card.btn-primary {
+    font-family: $boldFontFamily;
+    background: $color-orange;
+    border: none;
+    text-decoration: none;
+    transition: all 250ms;
+  }
+}
+

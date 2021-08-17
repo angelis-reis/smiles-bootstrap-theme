@@ -1,0 +1,208 @@
+ .chip {
+  display: flex;
+  align-items: center;
+	width: fit-content;
+  height: 40px;
+  padding: 0 16px;
+  border: 2px solid $color-black60;
+  border-radius: 20px;
+  background-color: $color-white100;
+  color: $color-black80;
+  position: relative;
+  transition: all 250ms;
+
+  &:focus {
+    outline: none;
+     &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -8px;
+      bottom: -8px;
+      left: -8px;
+      right: -8px;
+      border-radius: 26px;
+      border: 2px solid $color-white60;
+    }
+  }
+
+  &:disabled {
+    border: 2px solid $color-white80;
+    background-color: $color-white100;
+    color: $color-black60;
+  }
+
+  &:hover:not(:disabled):active {
+    border-color: $color-black60;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:hover:not(:disabled), &:focus {
+    border: 2px solid $color-black100;
+    color: $color-black100;
+  }
+
+  i.material-icons:last-child {
+    display: none;
+  }
+
+  span {
+    font-family: $boldFontFamily;
+    font-size: 14px;
+    line-height: 18px;
+    align-self: center;
+    margin-right: 14px;
+  }
+
+  &.selected {
+    border: 2px solid $color-black100;
+    background-color: $color-black100;
+    color: $color-white100;
+
+    i.material-icons {
+      display: none;
+    }
+
+    i.material-icons:last-child {
+      display: inline;
+    }
+
+    &:hover, &:focus {
+      border: 2px solid $color-orange;
+      background-color: $color-orange;
+      color: $color-black100;
+    }
+
+    &:disabled {
+      background-color: $color-white95;
+      color: $color-black60;
+      border: 2px solid $color-white95;
+    }
+
+    &:hover:not(:disabled):active {
+      color: $color-black80;
+      border-color: $color-orange;
+    }
+  }
+
+  &.dark {
+    background-color: $color-black100;
+    color: $color-white100;
+    border: 2px solid $color-white80;
+
+    &:hover {
+      border: 2px solid $color-white100;
+      color: $color-white100;
+    }
+
+    &:disabled {
+      border: 2px solid $color-black80;
+      color: $color-white80;
+    }
+
+    &:hover:not(:disabled):active {
+      color: $color-white80;
+      border-color: $color-white80;
+    }
+
+    &.selected {
+      background-color: $color-white100;
+      color: $color-black100;
+      border: 2px solid $color-white100;
+
+      &:hover, &:focus {
+        background-color: $color-orange;
+        border: 2px solid $color-orange;
+      }
+
+      &:disabled {
+        background-color: $color-black80;
+        color: $color-white80;
+        border: 2px solid $color-black80;
+      }
+
+      &:hover:not(:disabled):active {
+        color: $color-black80;
+        border-color: $color-orange;
+      }
+    }
+  }
+}
+
+/*
+  * ONLY TEXT
+  */
+
+.chip.text-only {
+  font-family: $boldFontFamily;
+  font-size: 14px;
+  line-height: 18px;
+  height: 34px;
+  align-items: center;    
+  transition: all 250ms;
+  
+  &:focus:not(:disabled):active {
+    border-color: $color-white60;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &.selected {
+    &:focus:not(:disabled) {
+      color: $color-black80;
+      border-color: $color-orange;
+    }
+
+    &.dark {
+      color: $color-black100;
+      border-color: $color-white100;
+
+      &:disabled:hover {
+        border-color: $color-black80;
+      }
+
+      &:hover {
+        border-color: $color-orange;
+      }
+
+      &:focus:not(:disabled) {
+        color: $color-black100;
+        border-color: $color-orange;
+
+        &:active {
+          color: $color-black80;
+          border-color: $color-orange;
+        }
+      }
+    }
+  }
+
+  &.dark {
+    color: $color-white100;
+    border-color: $color-white60;
+
+    &:hover {
+      border-color: $color-white100;
+    }
+
+    &:focus:not(:disabled) {
+      color: $color-white80;
+      border-color: $color-white100;
+
+      &:active {
+        border-color: $color-white60;
+      }
+    }
+
+    &:disabled,
+    &:disabled:hover {
+      color: $color-white80;
+      border-color: $color-black80;
+    }
+  }
+}

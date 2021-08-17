@@ -1,0 +1,107 @@
+---
+headerTitle: Counter
+layout: base.html
+version: 1.0.0
+---
+
+<div class="container">
+  <h2>Smiles - Counter</h2>
+
+  <div>
+      <section className="mobile-card">
+        <i className="material-icons icon">{icon}</i>
+      <div>
+        <h3>{name}</h3>
+        <p>{webTitle}</p>
+      </div>
+      <i
+      onClick={() => setModalContainerIsOpen(true)}
+      className="material-icons arrow notranslate"
+      >
+        chevron_right
+      </i>
+    </section>
+    
+    
+    <div class="content">
+      <main id="id">
+        <section>
+          <div class="container">
+            <div class="container-text">
+              <div>
+                <p class="counter-name">counter name</p>
+                <div class="warning-container">
+                  <i class="material-icons">info</i>
+                  <div class="warning">
+                    <div class="triangle"></div>
+                    <p>warning message</p>
+                  </div>
+                </div>
+              </div>
+              <span>description</span>
+            </div>
+            <div>
+              <button type="button">
+                <i class="material-icons">remove</i>
+              </button>
+
+              <p class="value">value</p>
+              
+              <button type="button">
+                <i class="material-icons">add</i>
+              </button>
+            </div>
+          </div>
+        </section>
+        
+        <button class="submit" type="submit">Confirmar</button>
+      </main>
+    </div>
+  </div>
+  <br />
+  <br />
+  
+  
+  
+
+  <div class="content">
+    <header>
+      <i class="material-icons icon">icon</i>
+      <h1>Title</h1>
+      <i class="material-icons arrow">arrow_drop_down</i>
+    </header>
+    <main id="id">
+      <section>
+        <div class="container">
+          <div class="container-text">
+            <div>
+              <p class="counter-name">counter name</p>
+              <div class="warning-container">
+                <i class="material-icons">info</i>
+                <div class="warning">
+                  <div class="triangle"></div>
+                  <p>warning message</p>
+                </div>
+              </div>
+            </div>
+            <span>description</span>
+          </div>
+          <div>
+            <button type="button">
+              <i class="material-icons">remove</i>
+            </button>
+
+            <p class="value">value</p>
+
+            <button type="button">
+              <i class="material-icons">add</i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <button class="submit" type="submit">Confirmar</button>
+    </main>
+  </div>
+</div>
+

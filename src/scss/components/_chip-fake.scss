@@ -1,0 +1,215 @@
+.fake-focus {
+  &:focus .chip {
+    outline: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -8px;
+      bottom: -8px;
+      left: -8px;
+      right: -8px;
+      border-radius: 26px;
+      border: 2px solid $color-white60;
+    }
+  }
+
+  &:disabled .chip {
+    border: 2px solid $color-white80;
+    background-color: $color-white100;
+    color: $color-black60;
+  }
+
+  &:hover:not(:disabled):active .chip {
+    border-color: $color-black60;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:hover:not(:disabled) .chip,
+  &:focus .chip {
+    border: 2px solid $color-black100;
+    color: $color-black100;
+  }
+
+  .chip {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 40px;
+    padding: 0 16px;
+    border: 2px solid $color-black60;
+    border-radius: 20px;
+    background-color: $color-white100;
+    color: $color-black80;
+    position: relative;
+    transition: all 250ms;
+    outline: none;
+  
+    i.material-icons:last-child {
+      display: none;
+    }
+  
+    span {
+      font-family: $boldFontFamily;
+      font-size: 14px;
+      line-height: 18px;
+      align-self: center;
+      margin-right: 14px;
+    }
+
+    &:hover .chip.selected,
+    &:focus .chip.selected {
+      border: 2px solid $color-orange;
+      background-color: $color-orange;
+      color: $color-black100;
+    }
+
+    &:disabled .chip.selected {
+      background-color: $color-white95;
+      color: $color-black60;
+      border: 2px solid $color-white95;
+    }
+
+    &:hover:not(:disabled):active .chip.selected {
+      color: $color-black80;
+      border-color: $color-orange;
+    }
+  
+    &.selected {
+      border: 2px solid $color-black100;
+      background-color: $color-black100;
+      color: $color-white100;
+  
+      i.material-icons {
+        display: none;
+      }
+  
+      i.material-icons:last-child {
+        display: inline;
+      }
+    }
+  
+    &:hover .dark {
+      border: 2px solid $color-white100;
+      color: $color-white100;
+    }
+
+    &:disabled .dark {
+      border: 2px solid $color-black80;
+      color: $color-white80;
+    }
+
+    &:hover:not(:disabled):active .dark {
+      color: $color-white80;
+      border-color: $color-white80;
+    }
+
+    &:hover .dark.selected,
+    &:focus .dark.selected {
+      background-color: $color-orange;
+      border: 2px solid $color-orange;
+    }
+
+    &:disabled .dark.selected {
+      background-color: $color-black80;
+      color: $color-white80;
+      border: 2px solid $color-black80;
+    }
+
+    &:hover:not(:disabled):active .dark.selected {
+      color: $color-black80;
+      border-color: $color-orange;
+    }
+
+    &.dark {
+      background-color: $color-black100;
+      color: $color-white100;
+      border: 2px solid $color-white80;  
+  
+      &.selected {
+        background-color: $color-white100;
+        color: $color-black100;
+        border: 2px solid $color-white100;  
+      }
+    }
+  }
+
+  /*
+    * ONLY TEXT
+    */
+  
+  &:focus:not(:disabled):active .chip.text-only {
+    border-color: $color-white60;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:focus:not(:disabled) .chip.text-only.chip.selected {
+    color: $color-black80;
+    border-color: $color-orange;
+  }
+
+  &:disabled:hover .chip.text-only.chip.selected.dark {
+    border-color: $color-black80;
+  }
+
+  &:hover .chip.text-only.chip.selected.dark {
+    border-color: $color-orange;
+  }
+
+  &:focus:not(:disabled) .chip.text-only.chip.selected.dark {
+    color: $color-black100;
+    border-color: $color-orange;
+
+    &:active {
+      color: $color-black80;
+      border-color: $color-orange;
+    }
+  }
+
+  .chip.text-only.chip.selected.dark {
+    color: $color-black100;
+    border-color: $color-white100;
+  }
+
+  &:hover .chip.text-only.dark {
+    border-color: $color-white100;
+  }
+
+  &:focus:not(:disabled) .chip.text-only.dark {
+    color: $color-white80;
+    border-color: $color-white100;
+
+    &:active {
+      border-color: $color-white60;
+    }
+  }
+
+  &:disabled .chip.text-only.dark,
+  &:disabled:hover .chip.text-only.dark {
+    color: $color-white80;
+    border-color: $color-black80;
+  }
+
+  &.chip.text-only.dark {
+    color: $color-white100;
+    border-color: $color-white60;
+  }
+
+  .chip.text-only {
+    font-family: $boldFontFamily;
+    font-size: 14px;
+    line-height: 18px;
+    height: 34px;
+    align-items: center;    
+    transition: all 250ms;
+  }
+}
+

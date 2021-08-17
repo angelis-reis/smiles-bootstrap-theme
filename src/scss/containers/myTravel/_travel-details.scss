@@ -1,0 +1,78 @@
+.travel-details {
+  &-tips {
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 448px;
+    right: 0;
+    background-position: center center;
+
+    &-name {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &-title {
+      font-family: $semiBoldFontFamily;
+      @include mx-font-size(24px, 32px);
+      @include mx-line-height(32px, 40px);
+      @include mx-letter-spacing(-0.5px, 1px);
+    }
+
+    &-cta {
+      font-family: $boldFontFamily;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .smls-my-travel {
+      margin-left: 0;
+    }
+
+    #travel_details_banner {
+      height: 100%;
+      .smls-my-travel {
+        margin-top: 0;
+        .smls-content {
+          position: absolute;
+          bottom: 20px;
+        }
+      }
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+        max-height: 344px;
+      #travel_details_banner {
+      }
+    }
+  }
+}
+
+.modal-body .card-hotel-info > p {
+  color: $color-black80;
+}
+
+.modal-body .divider-details-modal {
+  border-color: $color-white95;
+}
+
+@media (min-width: $bkpoint-tablet) {
+  .sidebar-details {
+    margin-top: 5rem;
+  }
+}
+
+.smls-card-hotel-radio {
+  & .smls-header-card-add-travels:first-child {
+    margin-top: 5rem;
+  }
+
+  & .smls-body-card-add-travels + .smls-header-card-add-travels {
+    margin-top: 3rem;
+  }
+}

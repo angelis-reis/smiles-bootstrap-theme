@@ -1,0 +1,16 @@
+  .botton-bottom-mobile {
+    &.botton {
+      width: 100% !important;
+      height: 72px !important;
+      padding: 16px 28px 16px 28px;
+      border-radius: 0 !important;
+    }
+  
+    &-container {
+      width: 100%;
+      z-index: 99;
+      height: 72px;
+      bottom: 0;
+      position: fixed;
+    } 
+  }

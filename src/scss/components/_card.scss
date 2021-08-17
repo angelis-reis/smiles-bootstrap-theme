@@ -1,0 +1,124 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2.1875rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.12);
+
+  width: 168px;
+  height: 200px;
+
+  color: $color-black80;
+
+  cursor: pointer;
+
+  transition: ease all 100ms;
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: inherit;
+    width: auto;
+    border: none;
+    border-radius: 50%;
+    background-color: $color-white80;
+    width: 4rem;
+    height: 4rem;
+
+    .material-icons {
+      font-size: 2.625rem;
+    }
+  }
+
+  .card-body {
+    display: contents;
+    text-align: center;
+    padding: 0;
+    max-height: 3rem;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+  &.horizontal {
+    padding: 1.25rem 1.5rem;
+    flex-direction: row;
+    width: 274px;
+    height: 88px;
+
+    .card-header {
+      background-color: inherit;
+      width: auto;
+      height: auto;
+      span {
+        margin-right: 1.5rem;
+        font-size: 1rem;
+      }
+    }
+
+    .card-body {
+      width: 184px;
+      max-width: 184px;
+      padding: 0;
+      text-align: start;
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      width: 360px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .card-body {
+        max-width: 184px;
+      }
+    }
+  }
+
+  &:active {
+    background-color: $color-white95;
+    box-shadow: none;
+  }
+
+  &.disabled {
+    &:active {
+      background-color: $color-white95;
+    }
+    cursor: initial;
+    color: $color-black60;
+    background-color: $color-white95;
+    box-shadow: none;
+  }
+
+  &.dark {
+    background-color: $color-black80;
+
+    &:active {
+      background-color: $color-black95;
+    }
+
+    &.disabled {
+      &:active {
+        background-color: inherit;
+      }
+      color: $color-white60;
+      background-color: inherit;
+      border-color: $color-black50;
+    }
+
+    .card-header {
+      color: $color-black80;
+    }
+
+    .card-body {
+      color: $color-white100;
+    }
+  }
+}

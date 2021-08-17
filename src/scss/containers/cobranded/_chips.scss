@@ -1,0 +1,71 @@
+.chip.color-card {
+  &.dark {
+    &:disabled,
+    &:disabled:hover {
+      color: $color-white80;
+      border-color: $color-black80;
+    }
+    
+    &:hover {
+      border-color: $color-white95;
+    }
+
+    &:focus:not(:disabled):active {
+      color: $color-white80;
+      border-color: $color-white80;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &.selected {
+    &:disabled {
+      color: $color-black60;
+      
+      &:hover {
+        color: $color-black60;
+        background: $color-white95;
+        border-color: $color-white95;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-white100;
+      border-color: $color-orange !important;
+      background: $color-orange;
+    }
+
+    &:focus:not(:disabled) {
+      color: $color-white100;
+      border-color: $color-orange !important;
+      
+      &:active {
+        color: $color-white95;
+        border-color: $color-orange !important;
+      }
+    }
+
+    &.dark {      
+      &:disabled,
+      &:disabled:hover {
+        color: $color-white80;
+        background: $color-black80;
+        border-color: $color-black80;
+      }
+
+      &:hover,
+      &:focus:not(:disabled) {
+        color: $color-white100;
+        border-color: $color-orange;
+      }
+
+      &:focus:not(:disabled):active {
+        color: $color-white95;
+        border-color: $color-orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.smls-modal-validation-code {
+  .btn-hyperlink {
+    padding: 0;
+    justify-content: flex-start;
+
+    margin-top: 64px;
+  }
+  .btn:focus:not(:active)::after {
+    border: 0;
+  }
+
+  .btn-primary {
+    margin-top: 40px;
+  }
+
+  h4 {
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 36px;
+  }
+
+  .input-group.token {
+    div:first-child {
+      width: 100%;
+    }
+  }
+
+  .smls-modal-my-account-content {
+    span.smls-bold {
+      font-family: $boldFontFamily;
+    }
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    .input-group.token {
+      div:first-child {
+        width: 272px;
+      }
+    }
+  }
+}

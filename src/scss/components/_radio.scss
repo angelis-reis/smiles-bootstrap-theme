@@ -1,0 +1,272 @@
+.custom-radio {
+  cursor: pointer;
+  padding-top: 0.5rem;
+  padding-left: 3rem;
+  min-height: 4rem;
+
+  &.without-error {
+    min-height: 2.5rem;
+  }
+
+  .custom-control-label {
+    cursor: pointer;
+    font-size: 0.875rem;
+
+    &::after {
+      top: 0;
+      left: -2.25rem;
+      overflow: visible;
+      content: '\e876'; /*done*/
+      font-family: 'Material Icons';
+      color: $color-white80;
+      font-size: 1rem;
+      font-weight: 600;
+      z-index: 10;
+    }
+
+    &::before {
+      top: 0;
+      left: -2.5rem;
+      border-color: $color-white60;
+
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  .custom-control-input {
+    left: 12px !important;
+    bottom: 7px !important;
+    position: absolute !important;
+    z-index: 20 !important;
+    width: 1rem !important;
+    height: 1.65rem !important;
+    opacity: 0 !important;
+    cursor: pointer !important;
+  }
+  
+  .custom-control-input {
+    &:active {
+      &::before {
+        border-color: $color-white60;
+      }
+    }
+
+    &:focus ~ .custom-control-label {
+      &::before {
+        border-color: $color-white60;
+      }
+    }
+
+    &:hover:not(:checked) ~ .custom-control-label {
+      &::after {
+        color: $color-black100;
+      }
+
+      &::before {
+        border-color: $color-black100;
+      }
+    }
+
+    &:checked:not(:disabled) ~ .custom-control-label {
+      &::after {
+        color: $color-black100;
+      }
+
+      &:hover::after {
+        color: $color-white100;
+      }
+
+      &::before {
+        border-color: $primary;
+      }
+
+      &:hover::before {
+        background-color: $color-black100;
+        border-color: $color-black100;
+      }
+    }
+
+    &:checked:not(:disabled) ~ .smls-radio-out {
+      border: 0;
+    }
+
+    &:disabled ~ .custom-control-label {
+      &::after {
+        color: $color-white80;
+      }
+
+      &::before {
+        border-color: $color-disabled-border;
+      }
+    }
+
+    &:disabled:not(:checked) ~ .custom-control-label {
+      &::after {
+        visibility: hidden;
+      }
+
+      &:hover::before {
+        border-color: $color-disabled-border;
+      }
+    }
+
+    &:focus:not(:hover) ~ .smls-radio-out {
+      visibility: visible;
+    }
+  }
+
+  &.dark {
+    color: $color-white95;
+    .custom-control-label {
+      &::before {
+        background-color: inherit;
+      }
+    }
+
+    &:hover::after {
+      color: $color-white100;
+    }
+
+    &:hover::before {
+      background-color: $color-white100;
+    }
+
+    .custom-control-input {
+      &:hover:not(:checked) ~ .custom-control-label {
+        &::after {
+          color: $color-white100;
+        }
+
+        &::before {
+          border-color: $color-white100;
+          background-color: $color-black100;
+        }
+      }
+
+      &:checked:not(:disabled) ~ .custom-control-label {
+        &::after {
+          color: $color-white100;
+        }
+
+        &:hover::after {
+          color: $color-black100;
+        }
+
+        &::before {
+          background-color: $primary;
+          border-color: $primary;
+        }
+
+        &:hover::before {
+          border-color: $color-white100;
+          background-color: $color-white100;
+        }
+      }
+
+      &:disabled ~ .custom-control-label {
+        &::after {
+          color: $color-disabled-border;
+        }
+
+        &::before {
+          background-color: $color-disabled-bg;
+          border-color: $color-disabled-border;
+        }
+      }
+
+      &:disabled:not(:checked) ~ .custom-control-label {
+        &::after {
+          visibility: hidden;
+        }
+
+        &:hover::before {
+          background-color: $color-disabled-bg;
+          border-color: $color-disabled-border;
+        }
+      }
+
+      &:focus:not(:hover) ~ .smls-radio-out {
+        visibility: visible;
+      }
+
+      &:focus ~ .custom-control-label {
+        &::before {
+          border-color: $color-white60;
+        }
+      }
+    }
+    &.error {
+      .smls-radio-error {
+        visibility: visible;
+      }
+
+      .custom-control-label {
+        &::after {
+          color: transparent;
+        }
+        &::before {
+          border-color: $color-wine;
+        }
+      }
+
+      .custom-control-input {
+        &:checked ~ .custom-control-label {
+          &::after {
+            color: $color-white100;
+          }
+
+          &::before {
+            background-color: $color-wine;
+            border-color: $color-wine;
+          }
+        }
+      }
+    }
+  }
+
+  &.error {
+    .smls-radio-error {
+      visibility: visible;
+    }
+
+    .custom-control-label {
+      &::after {
+        color: transparent;
+      }
+      &::before {
+        border-color: $color-wine;
+      }
+    }
+
+    .custom-control-input {
+      &:checked ~ .custom-control-label {
+        &::after {
+          color: $color-white100;
+        }
+
+        &::before {
+          background-color: $color-wine;
+          border-color: $color-wine;
+        }
+      }
+    }
+  }
+}
+
+.smls-radio-error {
+  color: $color-wine;
+  visibility: hidden;
+  font-size: 0.875rem;
+}
+
+.smls-radio-out {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #999999;
+  top: 1px;
+  left: 1px;
+  width: 2.375rem;
+  height: 2.375rem;
+  visibility: hidden;
+}

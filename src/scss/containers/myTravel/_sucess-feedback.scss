@@ -1,0 +1,167 @@
+.successFeedback-wrapper {
+  max-width: $bkpoint-tablet;
+
+  .successFeedback-card {
+    border: 2px solid #F2F2F2;
+    border-radius: 16px;
+
+    span {
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-black60;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    &-top-background {
+      border-radius: 16px 16px 0 0;
+      padding: 32px 28px 0px 28px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 20% 50%;
+
+      h5 {
+        @include mx-font-size(18px, 1.25rem);
+      }
+
+      strong {
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-black80;
+      }
+
+      &.has-background {
+        padding-bottom: 24px;
+        
+        strong {
+          color: $color-white100;
+        }
+      }
+
+      @media screen and (min-width: $bkpoint-tablet) {
+        padding: 32px 36px 0px 36px;
+
+        &.has-background {
+          padding-top: 64px;
+          padding-bottom: 32px;
+        }
+
+        strong {
+          font-size: 20px;
+          line-height: 32px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &-content {
+      padding: 0px 28px 16px 28px;
+      border-radius: 16px;
+
+      .card-destiny {
+        margin-top: 32px;
+  
+        .list {
+          margin-top: 8px;
+  
+          p {
+            & + p {
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+  
+      .card-dates {
+        display: flex;
+        align-items: center;
+        margin-top: 32px;
+        
+        .date {
+          & + .date {
+            margin-left: 16px;
+          }
+        }
+      }
+
+      .card-button {
+          margin-top: 24px;
+
+        .button {
+          max-width: 272px;
+          height: 64px;
+        }
+      }
+
+      @media screen and (min-width: $bkpoint-tablet) {
+        padding: 0px 36px 16px 36px;
+
+        .card-destiny {
+          .list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 24px;
+
+            p {
+              display: inline-block;
+              grid-column: 1;
+
+              @for $i from 1 through 5 {
+                &:nth-of-type(n + #{5 + $i}) {
+                  margin: 0;
+
+                  @if $i == 1 {
+                    margin-top: 0;
+                  } @else {
+                    margin-top: 4px;
+                  }
+                  
+                  grid-column: 2;
+                  grid-row: $i;
+                }
+              }
+            }
+          }
+        }
+
+        .card-dates {
+          .date {
+            display: inline-block;
+            max-width: 227px;
+            width: 100%;
+
+            & + .date {
+              margin-left: 21px;
+            }
+          }
+        }
+
+        .card-button {
+
+          .button {
+            max-width: 206px;
+          }
+        }
+      }
+    }
+  }
+
+  .successFeedback-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 48px;
+
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+
+    .button {
+      max-width: 272px;
+      width: 100%;
+    }
+
+  }
+}

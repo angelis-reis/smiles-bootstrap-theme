@@ -1,0 +1,40 @@
+.btn.color-card.btn-primary {
+  font-family: $boldFontFamily;
+  background: $color-orange;
+  border: none;
+  text-decoration: none;
+  transition: all 250ms;
+
+  &:disabled {
+    color: $color-black60;
+    background: $color-white95;
+    border: none;
+  }
+
+  &:active,
+  &:hover:not(:disabled):active {
+    background: $color-orange;
+    border-color: $color-orange;
+  }
+
+  &.dark {
+    &:hover,
+    &:focus {
+      background: $color-white100;
+      color: $color-black80;
+    }
+  
+    &:active {
+      color: $color-white80;
+    }
+    
+    &:disabled {
+      background: $color-black60;
+      color: $color-white95;
+    }
+  
+    &:focus:not(:active)::after {
+      border-color: $color-white60;
+    }
+  }
+}

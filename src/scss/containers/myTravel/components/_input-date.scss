@@ -1,0 +1,107 @@
+.custom-input-date {
+    width: 100%;
+
+    &-label {
+      color: $color-black80;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 14px !important;
+    }
+
+    .datepicker-wrapper {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 2px solid $color-white80;
+      border-radius: 8px;
+
+      &:hover {
+        border-color: $color-orange;
+      }
+
+      &.has-icon {
+        padding-right: 22px;
+      }
+
+      .SingleDatePicker,
+      .SingleDatePickerInput  {
+        flex: 1;
+        width: 100%;
+        background: transparent;
+        border-radius: 8px;
+
+        .DateInput {
+          background: transparent;
+
+          &_input {
+            height: 60px;
+            border-radius: 8px 0 0 8px;
+            background: transparent;
+            padding-left: 24px;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-black80;
+            font-weight: 400;
+            border: 0 !important;
+            outline: 0 !important;
+            border-color: red;
+
+            &::placeholder {
+              font-size: 16px;
+              line-height: 24px;
+              color: $color-black80;
+            }
+          }
+        }
+
+        .CalendarDay__selected {
+          background: $color-orange;
+        }
+      }
+
+      .datepicker-icon {
+        width: 20px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .md-22 {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .datepicker-error {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 8px;
+      color: $color-wine;
+
+      .material-icons {
+        &.md-16 {
+          font-size: 16px;
+        }
+      }
+
+      &-message {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0;
+        margin-left: 8px;
+      }
+    }
+
+
+    &.has-error {
+      .custom-input-date-label {
+        color: $color-wine;
+      }
+
+      .datepicker-wrapper {
+        border-color: $color-wine;
+      }
+    }
+  }

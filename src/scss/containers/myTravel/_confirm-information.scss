@@ -1,0 +1,25 @@
+.smls-my-travel {
+  .smls-confirm-information-main {
+    margin-top: 4rem;
+    .smls-confirm-information-content {
+      &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: $color-black100;
+        font-family: $boldFontFamily;
+        &-edit {
+          color: $color-black100;
+          font-family: $boldFontFamily;
+          cursor: pointer;
+        }
+      }
+      .smls-confirm-information-date {
+        &__legend {
+          color: $color-black60;
+          font-size: .88rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+---
+headerTitle: HotelSearchMobile
+layout: base.html
+version: 1.0.0
+---
+
+<div class="smls-hotel-search-mobile">
+  <div class="wrapper">
+    <div class="content">
+      <div class="input-group filled icon">
+        <div data-toggle="modal" data-target="#myModal3">
+          <input id="Label" autocomplete="off" type="text" class="form-control" value="Buscar hospedagem" /><i
+            class="material-icons">search</i>
+        </div>
+        <div class="input-error"></div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+      <div class="modal-dialog full" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="smls-btn-close" data-dismiss="modal" aria-label="Close">
+              <i class="material-icons"> close </i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="smls-modal-header">
+              <h3>Buscar hospedagens</h3>
+            </div>
+            <div class="autocomplete-search expanded input-group">
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <i class="material-icons">place</i>
+                  <input placeholder="Local de hospedagem" autocomplete="false" type="text" class="form-control" value="" />
+                </div>
+              </div>
+            </div>
+            <div class="autocomplete-search expanded input-group date-picker">
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <i class="material-icons">event</i><input placeholder="Datas" autocomplete="false" type="text"
+                    class="form-control" value="" />
+                </div>
+              </div>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <button type="button" class="high label caption">
+                  <div class="smls-ignore-click" tabindex="-1">
+                    <i class="material-icons">dns</i>
+                    <div class="smls-list-main-content">
+                      <p>Formas de reserva</p>
+                      <label>Ganhar milhas</label>
+                    </div>
+                    <div class="smls-list-text">
+                      <i class="material-icons">chevron_right</i>
+                    </div>
+                  </div>
+                </button>
+              </li>
+              <li class="list-group-item">
+                <button type="button" class="high label caption">
+                  <div class="smls-ignore-click" tabindex="-1">
+                    <i class="material-icons">hotel</i>
+                    <div class="smls-list-main-content">
+                      <p>Quartos</p>
+                      <label>1 quarto</label>
+                    </div>
+                    <div class="smls-list-text">
+                      <i class="material-icons">chevron_right</i>
+                    </div>
+                  </div>
+                </button>
+              </li>
+              <li class="list-group-item">
+                <button type="button" class="high label caption">
+                  <div class="smls-ignore-click" tabindex="-1">
+                    <i class="material-icons">person</i>
+                    <div class="smls-list-main-content">
+                      <p>Hóspedes</p>
+                      <label>1 pessoa adulta</label>
+                    </div>
+                    <div class="smls-list-text">
+                      <i class="material-icons">chevron_right</i>
+                    </div>
+                  </div>
+                </button>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary">Buscar</button>
+          </div>
+        </div>
+        <!-- modal-content -->
+      </div>
+      <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
+  </div>
+</div>

@@ -1,0 +1,70 @@
+.myTravels-travelTips {
+  margin: 72px 15px;
+
+  &-card {
+    min-width: 272px;
+    max-width: 100%;
+    width: 100%;
+    height: 238px;
+    margin: 0 auto;
+    padding: 24px 28px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    p,
+    strong,
+    h1 {
+      color: $color-white100;
+      margin-bottom: 0;
+    }
+
+    &-miniTitle {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &-title {
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.5px;
+    }
+
+    &-text {
+      margin-top: 8px;
+      font-size: 14px;
+      font-family: $regularFontFamily;
+      line-height: 16px;
+      max-width: 216px;
+    }
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    margin: 96px 0;
+
+    &-card {
+      height: 312px;
+      padding: 36px 42px;
+
+      &-title {
+        margin-top: 11px;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      &-text {
+        max-width: 100%;
+        margin-top: 11px;
+      }
+    }
+  }
+}

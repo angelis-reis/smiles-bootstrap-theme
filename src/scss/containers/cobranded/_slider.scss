@@ -1,0 +1,39 @@
+.coBranded-content-slider {
+  display: flex;
+  overflow: hidden;
+
+  @media(min-width: $bkpoint-desktop) {
+    overflow: unset;
+  }
+
+  .coBranded-recommendations-card {
+    display: flex;
+    margin-right: 24px;
+    min-width: 200px;
+
+    img {
+      object-fit: contain;
+    }
+
+    @media(min-width: $bkpoint-desktop) {
+      display: none;
+    }
+  }
+}
+
+.coBranded-cards {
+  width: 100%;
+  position: relative;
+
+  @media(min-width: $bkpoint-large) {
+    width: 884px;
+  }
+
+  .coBranded-card-link:hover {
+    text-decoration: none;
+  }
+  
+  .coBranded-card .coBranded-card-clamp.bold {
+    font-family: $boldFontFamily;
+  }
+}

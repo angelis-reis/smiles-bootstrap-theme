@@ -1,0 +1,110 @@
+.myTravels-userProfile {
+  padding: 0 20px;
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 272px;
+    // max-width: 320px;
+    width: 100%;
+
+    border: 2px solid $color-white95;
+    border-radius: 16px;
+
+    margin: 0 auto;
+    padding: 32px 28px;
+
+    @media  screen and (max-width: $bkpoint-tablet) {
+      margin-bottom: 72px;
+    }
+
+    h1,
+    span,
+    strong {
+      margin-bottom: 0;
+    }
+
+    &-image {
+      width: 72px;
+      height: 72px;
+
+      border-radius: 50%;
+
+      background-image: url('../assets/misc/user-profile.svg');
+      background-position: center;
+      background-size: cover;
+    }
+
+    &-title {
+      margin-top: 24px;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: -0.5px;
+      color: $color-black80;
+      text-transform: capitalize;
+    }
+
+    &-subTitle {
+      margin-top: 8px;
+
+      font-size: 16px;
+      line-height: 24px;
+
+      color: $color-black80;
+    }
+
+    &-line {
+      width: 100%;
+      height: 2px;
+
+      background: $color-white95;
+
+      margin: 24px 0;
+    }
+
+    &-travels {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &-miniTitle {
+        font-size: 14px;
+        line-height: 16px;
+
+        color: $color-black60;
+      }
+
+      &-text {
+        font-size: 16px;
+        line-height: 24px;
+
+        color: $color-black80;
+
+        margin-top: 16px;
+
+        & + & {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $bkpoint-tablet) {
+    &-card {
+      max-width: 324px;
+
+      &-title {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      &-travels {
+        width: 100%;
+        align-items: flex-start;
+      }
+    }
+  }
+}

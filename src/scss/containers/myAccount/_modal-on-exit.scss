@@ -1,0 +1,34 @@
+.smls-my_account-exit-modal{
+  h1 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+  }
+  p {
+    margin-bottom: 56px;
+  }
+  .btn.btn-hyperlink {
+    padding-top: 36px;
+    margin:0px auto;
+  }
+  @media (min-width: $bkpoint-tablet){
+    h1 {
+      margin-bottom: 23px;
+    }
+    p {
+      margin-bottom: 65px;
+    }
+    .btn.btn-hyperlink {
+      padding-top: 48px;
+      margin: 0px;
+    }
+  }
+
+  @media (max-width: $bkpoint-tablet){
+    .btn.btn-primary{
+      width: 100%;
+    }
+  }
+
+}

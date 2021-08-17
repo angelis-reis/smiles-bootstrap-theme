@@ -1,0 +1,91 @@
+.smls-hotel-search-desktop {
+  background-image: url('../../../assets/hotel-search-background.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .wrapper {
+    width: 1128px;
+    box-shadow: 0px 0px 32px 0px #0000001f;
+    border-radius: 16px;
+    background-color: $color-white100;
+    margin: 0px auto;
+    padding: 24px 32px 8px 32px;
+    .top-content {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 32px;
+      .select-button {
+        border: none;
+        background-color: $color-white100;
+        display: flex;
+        flex-direction: row;
+        outline: none;
+        align-items: center;
+        margin-right: 48px;
+        padding: 0px;
+        height: 24px;
+        .material-icons {
+          font-size: 24px;
+          &:first-of-type {
+            color: $primary;
+          }
+        }
+        > p {
+          font-size: 14px;
+          line-height: 18px;
+          color: $color-black80;
+          font-family: $boldFontFamily;
+          margin: 0px;
+          margin-right: 4px;
+          margin-left: 8px;
+        }
+      }
+    }
+    .bottom-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .location-section {
+        display: flex;
+        flex-direction: row;
+        .input-group {
+          max-width: 552px;
+          & > div:not(.input-error) {
+            width: 522px;
+          }
+        }
+      }
+      .date-section {
+        display: flex;
+        flex-direction: row;
+        .input-group {
+          &:first-of-type > div {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            margin-right: -1px;
+          }
+          &:not(:first-of-type) > div {
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+          }
+          > div {
+            max-width: 160px;
+            &:not(:hover) {
+              border-width: 1px;
+            }
+            > .material-icons {
+              color: $color-white60;
+            }
+          }
+        }
+      }
+      .btn-primary {
+        margin-bottom: 24px;
+        max-width: 152px;
+      }
+    }
+  }
+}

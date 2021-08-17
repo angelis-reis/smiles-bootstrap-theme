@@ -1,0 +1,53 @@
+@import 'extra-import';
+
+@import './commons/smiles-fonts';
+@import './commons/loading';
+
+@import "./containers/cobranded/animations/onload";
+
+
+#coBranded-legacy {    
+  width: 100%;
+  max-width: 1279px;
+  margin: 100px auto 60px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  
+  @media(min-width: $bkpoint-desktop) {
+    flex-direction: row;
+    padding: 0;
+  }  
+  
+  .fake-focus {
+    outline: none;
+  }
+
+  a.fake-focus {
+    width: fit-content;
+    text-decoration: none;
+  }
+
+  button.fake-focus {
+    background: transparent;
+    padding: 0;
+    border: 0;
+  }
+
+  @import './commons/typography';
+
+  @import './components/card';
+  // @import './components/button';
+  @import './components/buttons-fake';
+  // @import './components/chip';
+  @import './components/chip-fake';
+
+  @import './containers/cobranded/showcase';
+  @import './containers/cobranded/slider';
+  @import './containers/cobranded/cards';
+  // @import './containers/cobranded/buttons';
+  @import './containers/cobranded/buttons-fake';
+  // @import './containers/cobranded/chips';
+  @import './containers/cobranded/chips-fake';
+  @import './containers/cobranded/pills';
+}

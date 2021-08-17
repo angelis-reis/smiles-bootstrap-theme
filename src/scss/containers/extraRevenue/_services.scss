@@ -1,0 +1,173 @@
+.extraRevenue-page {
+  width: 100%;
+
+  .page-container {
+    width: 100%;
+    max-width: 1279px;
+    margin: inherit auto auto auto;
+    padding: 48px 24px 0 24px;
+
+    @media(min-width: $bkpoint-large) {
+      padding: 0;
+    }  
+  }
+
+  .page-header {
+    min-height: 475px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    position: relative;
+    
+    @media(min-width: $bkpoint-large) {
+      height: 525px;
+    }
+
+    &:after {
+      content: "";
+      height: -webkit-fill-available;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -50vw;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .4) 100%);
+      z-index: 0;
+
+      @media(min-width: $bkpoint-large) {
+        height: 525px;
+      }
+    }
+
+    > img {
+      object-fit: cover;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+    }
+
+    .page-container {
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      
+      @media(min-width: $bkpoint-large) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 100px;
+      }
+    }
+
+    .page-title,
+    .page-subtitle {
+      color: $color-white100;
+      max-width: 550px;
+    }
+
+    .page-title {
+      font-family: $semiBoldFontFamily;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+      
+      @media(min-width: $bkpoint-large) {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1px;
+      }
+    }
+
+    .page-subtitle {
+      font-family: $regularFontFamily;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.5px;
+      margin-bottom: 32px;
+      
+      @media(min-width: $bkpoint-large) {
+        font-family: $lightFontFamily;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 0;
+      }
+    }
+
+    .destination-title {
+      color: $color-white100;
+      font-family: $semiBoldFontFamily;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      
+      > svg {
+        margin: 0 8px;
+      } 
+    }
+
+    .destination-date {
+      color: $color-white100;
+      font-family: $regularFontFamily;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .page-body {
+    .page-container {
+      position: relative;
+      z-index: 1;
+      margin-top: -150px;
+      padding-top: 0;
+      padding-bottom: 40px;
+
+      @media(min-width: $bkpoint-large) {
+        padding-bottom: 0;
+      }
+    }
+
+    .extraRevenue-cards {
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 32px;
+      
+      @media(min-width: $bkpoint-tablet) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(256px, 1fr));
+        grid-template-rows: auto;
+        gap: 24px 24px;
+        margin-bottom: 66px;
+      }
+
+      @media(min-width: $bkpoint-desktop) {
+        grid-template-columns: repeat(3, minmax(256px, 1fr));
+      }
+
+      @media(min-width: $bkpoint-large) {
+        grid-template-columns: repeat(4, minmax(256px, 1fr));
+      }
+
+      .extraRevenue-card {
+        width: inherit;
+        
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+        
+        @media(min-width: $bkpoint-large) {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

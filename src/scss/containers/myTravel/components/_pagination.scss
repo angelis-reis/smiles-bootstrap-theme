@@ -1,0 +1,52 @@
+nav {
+  &.sml-pagination {
+    width: 100%;
+    ul {
+      &.pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline-start: 0px;
+        margin-block-end: 0;
+        margin-block-start: 0;
+        li {
+          &.page-item {
+            a {
+              &.page-link {
+                font-family: $boldFontFamily;
+                color: $color-black80;
+                letter-spacing: 0.5px;
+                line-height: 18px;
+                border: 2px solid transparent;
+                border-radius: 8px;
+                padding: 11px 16px;
+                box-sizing: border-box;
+                text-decoration: none;
+                margin-right: 16px;
+                font-size: 14px;
+                &:last-child, &:first-child {
+                  margin-right: 0px;
+                }
+              }
+              &.previous, &.next {
+                padding: 0;
+                i {
+                  &.material-icons {
+                    padding: 11px;
+                  }
+                }
+              }
+            }
+            &.active {
+              a {
+                &.page-link {
+                  border-color: $color-black80;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

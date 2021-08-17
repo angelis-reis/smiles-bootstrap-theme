@@ -1,0 +1,23 @@
+.smls-email {
+  .input-group {
+    padding-bottom: 40px;
+
+    @media (min-width: $bkpoint-tablet) {
+      padding-bottom: 80px;
+    }
+  }
+}
+
+.smls-email-modal_error {
+  .smls-modal-button_primary {
+    &.btn:not(.btn-icon):not(.btn-hyperlink) {
+      width: 100%;
+    }
+
+    @media(min-width: $bkpoint-tablet) {
+      &.btn:not(.btn-icon):not(.btn-hyperlink) {
+        width: 264px;
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+.rec.rec-carousel-wrapper.smls-carousel {
+  display: flex;
+  align-items: center;
+  width: 272px;
+
+  @media(min-width: $bkpoint-desktop) {
+    width: 768px;
+    height: 312px;
+  }
+
+  .rec-carousel {
+    position: relative;  
+    
+    > .rec-slider-container {
+      margin: 0;
+    }
+
+    .rec-arrow {
+      background: $color-white100;
+      font-size: 14px;
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+      min-width: auto;
+      border: 1px solid $color-black100;
+      outline: none;
+      box-shadow: unset;
+      position: absolute;
+      z-index: 1;
+      transition: .25s;
+  
+      &:disabled {
+        display: none;
+      }
+  
+      &:hover {
+        background: $color-black100;
+        color: $color-black80;
+      }
+  
+      &:focus:enabled {
+        background: $color-white100;
+        color: $color-black80;
+
+        &:hover {
+          background: $color-black100;
+          color: $color-black80;
+        }
+      }
+    
+      &.rec-arrow-left {
+        left: -10px;
+      }
+    
+      &.rec-arrow-right {
+        right: -10px;
+      }
+
+    }
+  }
+
+  .rec-pagination {
+
+    .rec-dot {
+      box-shadow: none;
+      width: 24px;
+      height: 4px;
+      background-color: $color-white95;
+      border-radius: 0%;
+    }
+
+    .rec-dot_active {
+      background-color: $color-orange;
+    }
+
+  }
+
+  .rec-slider {
+    height: 312px;
+    display: flex;
+    align-items: center;
+
+    > div {
+      .rec-item-wrapper {
+        overflow: visible;
+      }
+    }
+  }
+}
+
+.smls-carousel-card {
+  width: 272px;
+  height: 320px;
+  border-radius: 16px;
+  background-size: 312px 312px;
+
+  font-style: normal;
+  font-weight: normal;
+
+  position:relative; 
+  
+  @media(min-width: $bkpoint-desktop) {
+    width: 312px;
+    height: 312px;
+  }
+
+  > .smls-carousel-icons {
+    padding: 15px;
+  }
+
+  >.card-text-box{
+    position:absolute;                  
+    padding-left: 20px;
+    bottom: 25px;
+
+    >.card-text {
+      width: 232px;
+      color: $color-white100;
+
+      >.highlight {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+        color: $color-white100;
+      }
+
+      >.small-highlight{
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 26px;
+      }
+    }
+
+  }
+}

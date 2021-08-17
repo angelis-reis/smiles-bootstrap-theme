@@ -1,0 +1,72 @@
+---
+headerTitle: HotelSearchDesktop
+layout: base.html
+version: 1.0.0
+---
+
+<div class="smls-hotel-search-desktop">
+  <div class="wrapper" onclick="moveToTop()">
+    <div class="top-content">
+      <button class="select-button">
+        <i class="material-icons">dns</i>
+        <p>Ganhar milhas</p>
+        <i class="material-icons">arrow_drop_down</i>
+      </button>
+      <button class="select-button">
+        <i class="material-icons">hotel</i>
+        <p>1 quarto</p>
+        <i class="material-icons">arrow_drop_down</i>
+      </button>
+      <button class="select-button">
+        <i class="material-icons">person</i>
+        <p>2 pessoas</p>
+        <i class="material-icons">arrow_drop_down</i>
+      </button>
+    </div>
+    <div class="bottom-content">
+      <div class="location-section">
+        <div class="autocomplete-search input-group">
+          <div class="dropdown">
+            <div class="dropdown-toggle">
+              <input
+                placeholder="Digite um local ou hotel"
+                autocomplete="false"
+                type="text"
+                class="form-control"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="input-error"></div>
+        </div>
+      </div>
+      <div class="date-section">
+        <div class="input-group icon">
+          <div>
+            <input
+              placeholder="Entrada"
+              autocomplete="off"
+              type="text"
+              class="form-control"
+            /><i class="material-icons">event</i>
+          </div>
+          <div class="input-error"></div>
+        </div>
+        <div class="input-group icon">
+          <div>
+            <input
+              placeholder="Saída"
+              autocomplete="off"
+              type="text"
+              class="form-control"
+            /><i class="material-icons">event</i>
+          </div>
+          <div class="input-error"></div>
+        </div>
+      </div>
+      <button type="button" text="Smiles" class="animation btn btn-primary">
+        <span tabindex="-1">Buscar</span>
+      </button>
+    </div>
+  </div>
+</div>

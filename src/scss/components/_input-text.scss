@@ -1,0 +1,164 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  label {
+    font-size: 14px;
+    height: $small;
+    letter-spacing: 0.3px;
+    color: $color-black80;
+    margin: 0;
+  }
+
+  label:first-child {
+    font-family: $boldFontFamily;
+    margin-bottom: $small;
+  }
+
+  label:last-child {
+    opacity: 0;
+    font-family: $regularFontFamily;
+    margin-top: $x-small;
+  }
+
+  input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding-left: 24px;
+    outline: none;
+
+    &:disabled {
+      background-color: $color-white100;
+    }
+  }
+
+  &:not(.disabled):not(.error) > div:first-of-type:hover {
+    border: 2px solid $color-orange;
+  }
+
+  & > div:not(.input-error) {
+    display: flex;
+    align-items: center;
+    font-family: $regularFontFamily;
+    border: 2px solid $color-white80;
+    border-radius: 8px;
+    height: 64px;
+    width: 272px;
+    font-size: $small;
+    background-color: $color-white100;
+  }
+
+  &.input-outline:not(.typing):not(.filled) {
+    & > div {
+      position: relative;
+      border-color: $color-orange;
+
+      &::after:not(.input-error) {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: -8px;
+        bottom: -8px;
+        left: -8px;
+        right: -8px;
+        border-radius: 16px;
+        border: 2px solid $color-white60;
+      }
+    }
+  }
+
+  &.typing {
+    label {
+      color: $color-black80;
+    }
+
+    & > div:not(.input-error) {
+      border: 2px solid $color-white95;
+    }
+  }
+
+  &.filled:not(.typing):not(.error) {
+    & > div:not(.input-error) {
+      border: 2px solid $color-white80;
+    }
+  }
+
+  &.error:not(.typing) {
+    label,
+    i,
+    svg {
+      color: $color-wine;
+    }
+
+    label:last-child {
+      opacity: 1;
+    }
+
+    div {
+      border-color: $color-wine;
+    }
+  }
+
+  &.disabled {
+    label {
+      color: $color-black60;
+    }
+
+    div:first-of-type {
+      border: 2px solid $color-white95;
+    }
+  }
+
+  &.icon {
+    i {
+      color: $color-black60;
+    }
+    div {
+      padding-right: 24px;
+    }
+  }
+
+  .input-error {
+    min-height: 24px;
+    height: auto;
+    border: 0;
+    padding-top: 8px;
+    display: flex;
+    align-items: flex-start;
+    label {
+      opacity: 1;
+      margin: 0;
+      margin-left: 8px;
+      line-height: normal;
+      color: $color-wine;
+      height: auto;
+    }
+    svg,
+    i {
+      margin: 0 !important;
+      font-size: 16px;
+      display: block;
+      padding-top: 1px;
+    }
+    color: $color-wine;
+  }
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}

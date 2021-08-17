@@ -1,0 +1,75 @@
+@mixin mx-font-family($mobile, $desktop) {
+  font-family: $mobile;
+
+  @media (min-width: $bkpoint-tablet) {
+    font-family: $desktop;
+  }
+}
+
+@mixin mx-font-size($mobile, $desktop) {
+  font-size: $mobile;
+
+  @media (min-width: $bkpoint-tablet) {
+    font-size: $desktop;
+  }
+}
+
+@mixin mx-line-height($mobile, $desktop) {
+  line-height: $mobile;
+  @media (min-width: $bkpoint-tablet) {
+    line-height: $desktop;
+  }
+}
+
+@mixin mx-letter-spacing($mobile, $desktop) {
+  letter-spacing: $mobile;
+
+  @media (min-width: $bkpoint-tablet) {
+    letter-spacing: $desktop;
+  }
+}
+@mixin mx-height($mobile, $desktop, $largest) {
+  height: $mobile;
+
+  @media (min-width: $bkpoint-tablet) {
+    height: $desktop;
+  }
+
+  @media (min-width: $bkpoint-largest) {
+    height: $largest;
+  }
+}
+@mixin mx-width($mobile, $desktop, $largest) {
+  width: $mobile;
+
+  @media (min-width: $bkpoint-tablet) {
+    width: $desktop;
+  }
+
+  @media (min-width: $bkpoint-largest) {
+    width: $largest;
+  }
+}
+
+@mixin mx-max-width($mobile, $desktop, $largest) {
+  max-width: $mobile;
+
+  @media (min-width: $bkpoint-tablet) {
+    max-width: $desktop;
+  }
+
+  @media (min-width: $bkpoint-largest) {
+    max-width: $largest;
+  }
+}
+
+@mixin mx-logos() {
+  b, strong {
+    opacity: 0;
+  }
+  position: relative;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

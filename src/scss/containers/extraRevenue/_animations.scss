@@ -1,0 +1,105 @@
+@keyframes light-gradient {
+  0% {
+    background: radial-gradient(circle at center, rgba(242, 242, 242, 0) 0%, $color-white100 0%, $color-white100 100%);
+  }
+  25% {
+    background: radial-gradient(circle at center, rgba(242, 242, 242, 0.25) 24%, $color-white100 25%, $color-white100 100%);
+  }
+  50% {
+    background: radial-gradient(circle at center, rgba(242, 242, 242, 0.5) 49%, $color-white100 50%, $color-white100 100%);
+  }
+  75% {
+    background: radial-gradient(circle at center, rgba(242, 242, 242, 0.75) 74%, $color-white100 75%, $color-white100 100%);
+  }
+  100% {
+    background: radial-gradient(circle at center, rgba(242, 242, 242, 1) 99%, $color-white100 100%, $color-white100 100%);
+  }
+}
+
+@keyframes loadFirstStep {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  10% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadSecondStep {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  10% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadThirdStep {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadFourthStep {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loadFirstStep { animation: 450ms loadFirstStep; }
+.loadSecondStep { animation: 900ms loadSecondStep; }
+.loadThirdStep { animation: 900ms loadThirdStep; }
+.loadFourthStep { animation: 900ms loadFourthStep; }
+
+#showcase-skeleton.side-text {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto 50px auto;
+  width: 100%;
+  max-width: 1279px;
+
+  @media(min-width: $bkpoint-desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px auto 100px auto;
+  }
+
+  .extraRevenue-cards {
+    margin-top: 50px;
+    overflow-x: hidden;
+
+    @media(min-width: $bkpoint-desktop) {
+      margin-top: 0;
+    }
+  }
+}

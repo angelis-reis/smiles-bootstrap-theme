@@ -1,0 +1,57 @@
+.smls-my-account-common {
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+  }
+
+  .input-group div,
+  .btn:not(.btn-icon):not(.btn-hyperlink) {
+    width: 100%;
+  }
+
+  .input-group {
+    margin-bottom: 24px;
+  }
+
+  .btn-primary:not(.btn-icon):not(.btn-hyperlink) {
+    font-family: $boldFontFamily;
+    width: 100%;
+  }
+
+  .btn-hyperlink {
+    font-family: $boldFontFamily;
+    padding-top: 36px;
+  }
+
+  .checkbox-optional {
+    margin-bottom: 84px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black60;
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    h1 {
+      margin-bottom: 32px;
+    }
+
+    .input-group {
+      margin-bottom: 8px;
+    }
+
+    .btn-primary:not(.btn-icon):not(.btn-hyperlink)  {
+      width: 264px;
+    }
+
+    .btn-hyperlink {
+      padding-top: 40px;
+      padding-left: 0;
+      width: fit-content;
+    }
+  }
+}

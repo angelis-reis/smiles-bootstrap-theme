@@ -1,0 +1,16 @@
+.smls-register-name {
+  &.btn:not(.btn-icon):not(.btn-hyperlink) {
+    width: 100%;
+    @media (min-width: $bkpoint-tablet) {
+      width: auto;
+    }
+  }
+
+  .input-group {
+    padding-bottom: 40px;
+
+    @media (min-width: $bkpoint-tablet) {
+      padding-bottom: 80px;
+    }
+  }
+}

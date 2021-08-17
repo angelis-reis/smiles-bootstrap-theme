@@ -1,0 +1,125 @@
+---
+headerTitle: Profile
+layout: base.html
+version: 1.0.0
+---
+<div class="smls-profile">
+  <div class="smls-home-header">
+    <div style="display: flex; flex-direction: row; align-items: center;"><a href="https://www.smiles.com.br/home"><span
+          class="smls-logos smiles"><b>Smiles</b></span></a>
+    </div>
+  </div>
+  <div class="smls-profile-content">
+    <aside class="smls-profile-header">
+      <div class="smls-profile-image smls-icon-profile"> </div>
+      <div class="show-loading-animation text-row"
+        style="height: 10px; width: 96px; margin: 11px 0 0 0; background: rgba(167, 167, 167, 0.9);"></div>
+      <div class="show-loading-animation text-row"
+        style="height: 10px; width: 128px; margin: 8px 0 0 0; background: rgba(221, 221, 221, 0.9);"></div>
+    </aside>
+    <div class="smls-column">
+      <ul class="smls-list">
+        <li>
+          <button id="btn_contactDetails" type="button" class="smls-list-range">
+            <div class="smls-list-text"><label id="lbl_internationalSmiles">Nome</label>
+              <p id="lbl_contactInternationalSmiles">Erick Kenji Sugahara</p>
+            </div><i class="material-icons">keyboard_arrow_right</i>
+          </button>
+        </li>
+        <li>
+          <button id="btn_contactDetails" type="button" class="smls-list-range">
+            <div class="smls-list-text"><label id="lbl_internationalSmiles">E-mail</label>
+              <p id="lbl_contactInternationalSmiles">teste.email@teste.com</p>
+            </div><i class="material-icons">keyboard_arrow_right</i>
+          </button>
+        </li>
+        <li>
+          <button id="btn_contactDetails" type="button" class="smls-list-range">
+            <div class="smls-list-text"><label id="lbl_internationalSmiles">Smiles Internacional</label>
+              <p id="lbl_contactInternationalSmiles">Inglês e Espanhol - 24h<br></br>Custo de ligação local</p>
+            </div><i class="material-icons">keyboard_arrow_right</i>
+          </button>
+        </li>
+        <li>
+          <button id="btn_contactDetails" type="button" class="smls-list-range">
+            <div class="smls-list-text"><label id="lbl_internationalSmiles">Smiles Internacional</label>
+              <p id="lbl_contactInternationalSmiles">Inglês e Espanhol - 24h<br></br>Custo de ligação local</p>
+            </div><i class="material-icons">keyboard_arrow_right</i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div tabindex="-1" style="visibility: hidden;">
+    <div class="">
+      <div class="modal fade show" role="dialog" tabindex="-1" style="display: block;">
+        <div class="modal-dialog smls-modal-change-password right" role="document">
+          <div class="modal-content">
+            <div class="modal-header"><button type="button" class="smls-btn-close" data-dismiss="modal"
+                aria-label="Close"><i class="material-icons">close</i></button></div>
+            <div class="modal-body">
+              <h1>Digite sua senha atual</h1>
+              <div class="input-group icon password">
+                <div>
+                  <input id="ipt_password" type="password" class="form-control" value=""><i id=""
+                    class="material-icons">visibility_off</i><i id="" class="material-icons">visibility</i><span
+                    id="mask" data-mask="oooo">
+                  </span></div>
+              </div>
+              <button type="button" id="" text="Continuar" class="btn btn-primary">Continuar</button>
+              <button type="button" class="btn btn-hyperlink">Regras de segurança</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-backdrop fade show"></div>
+    </div>
+  </div>
+  <div tabindex="-1" style="visibility: hidden;">
+    <div class="">
+      <div class="modal fade show" role="dialog" tabindex="-1" style="display: block;">
+        <div class="modal-dialog smls-modal-change-password right" role="document">
+          <div class="modal-content">
+            <div class="modal-header"><button type="button" class="smls-btn-close" data-dismiss="modal"
+                aria-label="Close"><i class="material-icons">close</i></button></div>
+            <div class="modal-body">
+              <h1>Opa, senha incorreta!</h1>
+              <p>
+                Você deve digitar a mesma senha que usou pra entrar na sua conta. Vamos cadastrar uma nova depois,
+                certo?
+              </p>
+              <button type="button" id="" text="Tentar novamente" class="btn btn-primary">Tentar Novamente</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-backdrop fade show"></div>
+    </div>
+  </div>
+  <div tabindex="-1" style="position: relative; z-index: 1050; display: block;">
+    <div tabindex="-1" style="visibility: hidden;">
+      <div class="">
+        <div class="modal fade show" role="dialog" tabindex="-1" style="display: block;">
+          <div class="modal-dialog smls-modal-change-password right" role="document">
+            <div class="modal-content">
+              <div class="modal-header"><button type="button" class="smls-btn-close" data-dismiss="modal"
+                  aria-label="Close"><i class="material-icons">close</i></button></div>
+              <div class="modal-body">
+                <h1>Sua senha não deve conter:</h1>
+                <ul>
+                  <li>Menos de 4 dígitos;</li>
+                  <li>Números sequenciais (ex: 1234)</li>
+                  <li>Números repetidos (ex: 1111)</li>
+                  <li>Ano ou dia e mês do seu aniversário</li>
+                  <li>Os 4 dígitos das senhas anteriores</li>
+                </ul>
+                <button type="button" id="" text="Tentar novamente" class="btn btn-primary">Tentar Novamente</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-backdrop fade show"></div>
+      </div>
+    </div>
+  </div>

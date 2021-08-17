@@ -1,0 +1,2290 @@
+---
+headerTitle: Calendar Mobile Open
+layout: base.html
+version: 1.0.0
+---
+<div class="container">
+  <div id="calendar-id" class="smls-calendar smls-calendar-mobile open"
+    style="animation-name: animation74; animation-duration: 0.5s; animation-play-state: paused;">
+    <div style="height: 100%; width: 100%; position: absolute; z-index: 1029;">
+      <div class="smls-calendar-mobile-input-container"><button class="smls-calendar-header-input" type="button">
+          <div><input id="teste-1" type="text" class="selected" name="start date" tabindex="-1" placeholder="Check In"
+              readonly="" value=""><input id="teste-2" type="text" class="" name="end date" tabindex="-1"
+              placeholder="Check Out" readonly="" value=""></div>
+        </button><button type="button" class="smls-calendar-header-button"><i class="material-icons notranslate"
+            aria-label="Close" tabindex="-1"></i></button></div>
+      <div
+        class="DayPicker DayPicker_1 DayPicker__verticalScrollable DayPicker__verticalScrollable_2 DayPicker__withBorder DayPicker__withBorder_3">
+        <div>
+          <div class="">
+            <div class="DayPicker_weekHeaders DayPicker_weekHeaders_1" aria-hidden="true" role="presentation">
+              <div
+                class="DayPicker_weekHeader DayPicker_weekHeader_1 DayPicker_weekHeader__vertical DayPicker_weekHeader__vertical_2 DayPicker_weekHeader__verticalScrollable DayPicker_weekHeader__verticalScrollable_3"
+                style="padding: 0px 13px;">
+                <ul class="DayPicker_weekHeader_ul DayPicker_weekHeader_ul_1">
+                  <li class="DayPicker_weekHeader_li DayPicker_weekHeader_li_1" style="width: 39px;"><small>do</small>
+                  </li>
+                  <li class="DayPicker_weekHeader_li DayPicker_weekHeader_li_1" style="width: 39px;"><small>2ª</small>
+                  </li>
+                  <li class="DayPicker_weekHeader_li DayPicker_weekHeader_li_1" style="width: 39px;"><small>3ª</small>
+                  </li>
+                  <li class="DayPicker_weekHeader_li DayPicker_weekHeader_li_1" style="width: 39px;"><small>4ª</small>
+                  </li>
+                  <li class="DayPicker_weekHeader_li DayPicker_weekHeader_li_1" style="width: 39px;"><small>5ª</small>
+                  </li>
+                  <li class="DayPicker_weekHeader_li DayPicker_weekHeader_li_1" style="width: 39px;"><small>6ª</small>
+                  </li>
+                  <li class="DayPicker_weekHeader_li DayPicker_weekHeader_li_1" style="width: 39px;"><small>sá</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="DayPicker_focusRegion DayPicker_focusRegion_1" tabindex="-1" role="application"
+              aria-roledescription="datepicker" aria-label="Calendar">
+              <div
+                class="DayPicker_transitionContainer DayPicker_transitionContainer_1 DayPicker_transitionContainer__vertical DayPicker_transitionContainer__vertical_2 DayPicker_transitionContainer__verticalScrollable DayPicker_transitionContainer__verticalScrollable_3">
+                <div
+                  class="DayPickerNavigation DayPickerNavigation_1 DayPickerNavigation__vertical DayPickerNavigation__vertical_2 DayPickerNavigation__verticalDefault DayPickerNavigation__verticalDefault_3 DayPickerNavigation__verticalScrollable DayPickerNavigation__verticalScrollable_4 DayPickerNavigation__verticalScrollableDefault DayPickerNavigation__verticalScrollableDefault_5 DayPickerNavigation__verticalScrollable_prevNav DayPickerNavigation__verticalScrollable_prevNav_6">
+                  <div role="button" tabindex="0"
+                    class="DayPickerNavigation_button DayPickerNavigation_button_1 DayPickerNavigation_button__default DayPickerNavigation_button__default_2 DayPickerNavigation_button__vertical DayPickerNavigation_button__vertical_3 DayPickerNavigation_button__verticalDefault DayPickerNavigation_button__verticalDefault_4 DayPickerNavigation_prevButton__verticalDefault DayPickerNavigation_prevButton__verticalDefault_5 DayPickerNavigation_prevButton__verticalScrollableDefault DayPickerNavigation_prevButton__verticalScrollableDefault_6"
+                    aria-label="Move backward to switch to the previous month."><svg
+                      class="DayPickerNavigation_svg__vertical DayPickerNavigation_svg__vertical_1" focusable="false"
+                      viewBox="0 0 1000 1000">
+                      <path
+                        d="M32 713l453-453c11-11 21-11 32 0l453 453c5 5 7 10 7 16 0 13-10 23-22 23-7 0-12-2-16-7L501 309 64 745c-4 5-9 7-15 7-7 0-12-2-17-7-9-11-9-21 0-32z">
+                      </path>
+                    </svg></div>
+                </div>
+                <div
+                  class="CalendarMonthGrid CalendarMonthGrid_1 CalendarMonthGrid__vertical_scrollable CalendarMonthGrid__vertical_scrollable_2"
+                  style="transform: translateY(0px); width: 300px;">
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile" style="text-transform: capitalize;">junho</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_4"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. terça-feira, 1 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">1</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_4"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. quarta-feira, 2 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">2</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_4"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. quinta-feira, 3 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">3</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_4"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. sexta-feira, 4 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">4</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_4 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_5"
+                              role="button" aria-disabled="true" aria-label="Not available. sábado, 5 de junho de 2021"
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_4 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_5"
+                              role="button" aria-disabled="true" aria-label="Not available. domingo, 6 de junho de 2021"
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_4"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. segunda-feira, 7 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">7</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_4"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. terça-feira, 8 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">8</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_4"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. quarta-feira, 9 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">9</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_4"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. quinta-feira, 10 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">10</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_4"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. sexta-feira, 11 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">11</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_4 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_5"
+                              role="button" aria-disabled="true" aria-label="Not available. sábado, 12 de junho de 2021"
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_4 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_5"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. domingo, 13 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">13</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_4"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. segunda-feira, 14 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">14</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__defaultCursor CalendarDay__defaultCursor_2 CalendarDay__default CalendarDay__default_3 CalendarDay__blocked_out_of_range CalendarDay__blocked_out_of_range_4"
+                              role="button" aria-disabled="true"
+                              aria-label="Not available. terça-feira, 15 de junho de 2021" tabindex="-1"
+                              style="width: 39px; height: 38px;">15</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__today CalendarDay__today_3 CalendarDay__highlighted_calendar CalendarDay__highlighted_calendar_4"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 16 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="0" style="width: 39px; height: 38px;">16</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__highlighted_calendar CalendarDay__highlighted_calendar_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 17 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 18 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3 CalendarDay__highlighted_calendar CalendarDay__highlighted_calendar_4"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 19 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 20 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 21 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 22 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 23 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 24 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__highlighted_calendar CalendarDay__highlighted_calendar_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 25 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3 CalendarDay__highlighted_calendar CalendarDay__highlighted_calendar_4"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 26 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3 CalendarDay__highlighted_calendar CalendarDay__highlighted_calendar_4"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 27 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 28 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 29 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 30 de junho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <ul class="smls-calendar-month-icon">
+                        <li><span>16 - teste</span></li>
+                        <li><span>17 - teste</span></li>
+                        <li><span>19 - teste</span></li>
+                        <li><span>25 - Dia do teste</span></li>
+                        <li><span>26 - teste</span></li>
+                        <li><span>27 - teste</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile" style="text-transform: capitalize;">julho</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 1 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 2 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 3 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 4 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 5 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 6 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 7 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 8 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 9 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 10 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 11 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 12 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 13 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 14 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 15 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 16 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 17 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 18 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 19 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 20 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 21 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 22 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 23 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 24 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 25 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 26 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 27 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 28 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 29 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 30 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 31 de julho de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">31</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile" style="text-transform: capitalize;">agosto</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 1 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 2 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 3 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 4 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 5 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 6 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 7 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 8 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 9 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 10 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 11 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 12 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 13 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 14 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 15 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__highlighted_calendar CalendarDay__highlighted_calendar_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 16 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 17 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 18 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 19 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 20 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 21 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 22 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 23 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 24 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 25 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 26 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 27 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3 CalendarDay__highlighted_calendar CalendarDay__highlighted_calendar_4"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 28 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 29 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 30 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 31 de agosto de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <ul class="smls-calendar-month-icon">
+                        <li><span>28 - teste</span></li>
+                        <li><span>16 - teste</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile"
+                          style="text-transform: capitalize;">setembro</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 1 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 2 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 3 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 4 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 5 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 6 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 7 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 8 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 9 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 10 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 11 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 12 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 13 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 14 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 15 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 16 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 17 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 18 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 19 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 20 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 21 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 22 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 23 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 24 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 25 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 26 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 27 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 28 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 29 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 30 de setembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile" style="text-transform: capitalize;">outubro</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 1 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 2 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 3 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 4 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 5 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 6 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 7 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 8 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 9 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 10 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 11 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 12 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 13 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 14 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 15 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 16 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 17 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 18 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 19 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 20 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 21 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 22 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 23 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 24 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 25 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 26 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 27 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 28 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 29 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 30 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 31 de outubro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile"
+                          style="text-transform: capitalize;">novembro</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 1 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 2 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 3 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 4 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 5 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 6 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 7 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 8 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 9 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 10 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 11 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 12 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 13 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 14 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 15 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 16 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 17 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 18 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 19 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 20 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 21 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 22 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 23 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 24 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 25 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 26 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 27 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 28 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 29 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 30 de novembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile"
+                          style="text-transform: capitalize;">dezembro</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 1 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 2 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 3 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 4 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 5 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 6 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 7 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 8 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 9 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 10 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 11 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 12 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 13 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 14 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 15 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 16 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 17 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 18 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 19 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 20 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 21 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 22 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 23 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 24 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 25 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 26 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 27 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 28 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 29 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 30 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 31 de dezembro de 2021 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">31</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <div class="smls-calendar-header-mobile"><strong
+                            style="text-transform: capitalize; margin-right: 6px;">janeiro</strong><span
+                            style="font-weight: 400;">2022</span></div>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 1 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 2 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 3 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 4 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 5 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 6 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 7 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 8 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 9 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 10 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 11 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 12 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 13 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 14 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 15 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 16 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 17 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 18 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 19 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 20 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 21 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 22 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 23 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 24 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 25 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 26 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 27 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 28 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 29 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 30 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 31 de janeiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile"
+                          style="text-transform: capitalize;">fevereiro</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 1 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 2 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 3 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 4 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 5 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 6 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 7 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 8 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 9 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 10 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 11 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 12 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 13 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 14 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 15 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 16 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 17 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 18 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 19 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 20 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 21 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 22 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 23 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 24 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 25 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 26 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 27 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 28 de fevereiro de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile" style="text-transform: capitalize;">março</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 1 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 2 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 3 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 4 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 5 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 6 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 7 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 8 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 9 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 10 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 11 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 12 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 13 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 14 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 15 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 16 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 17 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 18 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 19 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 20 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 21 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 22 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 23 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 24 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 25 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 26 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 27 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 28 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 29 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 30 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 31 de março de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">31</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile" style="text-transform: capitalize;">abril</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 1 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 2 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 3 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 4 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 5 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 6 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 7 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 8 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 9 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 10 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 11 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 12 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 13 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 14 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 15 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 16 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 17 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 18 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 19 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 20 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 21 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 22 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 23 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 24 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 25 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 26 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 27 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 28 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 29 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 30 de abril de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile" style="text-transform: capitalize;">maio</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 1 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 2 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 3 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 4 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 5 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 6 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 7 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 8 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 9 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 10 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 11 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 12 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 13 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 14 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 15 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 16 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 17 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 18 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 19 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 20 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 21 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 22 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 23 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 24 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 25 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 26 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 27 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 28 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 29 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 30 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 31 de maio de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="CalendarMonth CalendarMonth_1" data-visible="true" style="padding: 0px 13px;">
+                      <div
+                        class="CalendarMonth_caption CalendarMonth_caption_1 CalendarMonth_caption__verticalScrollable CalendarMonth_caption__verticalScrollable_2">
+                        <strong class="smls-calendar-header-mobile" style="text-transform: capitalize;">junho</strong>
+                        <ul class="smls-calendar-weekday-mobile">
+                          <li>dom</li>
+                          <li>seg</li>
+                          <li>ter</li>
+                          <li>qua</li>
+                          <li>qui</li>
+                          <li>sex</li>
+                          <li>sáb</li>
+                        </ul>
+                      </div>
+                      <table class="CalendarMonth_table CalendarMonth_table_1" role="presentation">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 1 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">1</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 2 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">2</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 3 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">3</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 4 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">4</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 5 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">5</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 6 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">6</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 7 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">7</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 8 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">8</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 9 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">9</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 10 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">10</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 11 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">11</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 12 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">12</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 13 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">13</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 14 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">14</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 15 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">15</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 16 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">16</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 17 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">17</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 18 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">18</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 19 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">19</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 20 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">20</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 21 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">21</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 22 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">22</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 23 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">23</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sexta-feira, 24 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">24</td>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__lastDayOfWeek CalendarDay__lastDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose sábado, 25 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">25</td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2 CalendarDay__firstDayOfWeek CalendarDay__firstDayOfWeek_3"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose domingo, 26 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">26</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose segunda-feira, 27 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">27</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose terça-feira, 28 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">28</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quarta-feira, 29 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">29</td>
+                            <td class="CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2"
+                              role="button" aria-disabled="false"
+                              aria-label="Choose quinta-feira, 30 de junho de 2022 as your check-in date. It’s available."
+                              tabindex="-1" style="width: 39px; height: 38px;">30</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="DayPickerNavigation DayPickerNavigation_1 DayPickerNavigation__vertical DayPickerNavigation__vertical_2 DayPickerNavigation__verticalDefault DayPickerNavigation__verticalDefault_3 DayPickerNavigation__verticalScrollable DayPickerNavigation__verticalScrollable_4 DayPickerNavigation__verticalScrollableDefault DayPickerNavigation__verticalScrollableDefault_5">
+                  <div role="button" tabindex="0"
+                    class="DayPickerNavigation_button DayPickerNavigation_button_1 DayPickerNavigation_button__default DayPickerNavigation_button__default_2 DayPickerNavigation_button__vertical DayPickerNavigation_button__vertical_3 DayPickerNavigation_button__verticalDefault DayPickerNavigation_button__verticalDefault_4 DayPickerNavigation_nextButton__verticalDefault DayPickerNavigation_nextButton__verticalDefault_5 DayPickerNavigation_nextButton__verticalScrollableDefault DayPickerNavigation_nextButton__verticalScrollableDefault_6"
+                    aria-label="Move forward to switch to the next month."><svg
+                      class="DayPickerNavigation_svg__vertical DayPickerNavigation_svg__vertical_1" focusable="false"
+                      viewBox="0 0 1000 1000">
+                      <path
+                        d="M968 289L514 741c-11 11-21 11-32 0L29 289c-4-5-6-11-6-16 0-13 10-23 23-23 6 0 11 2 15 7l437 436 438-436c4-5 9-7 16-7 6 0 11 2 16 7 9 10 9 21 0 32z">
+                      </path>
+                    </svg></div>
+                </div>
+              </div>
+              <div><button
+                  class="DayPickerKeyboardShortcuts_buttonReset DayPickerKeyboardShortcuts_buttonReset_1 DayPickerKeyboardShortcuts_show DayPickerKeyboardShortcuts_show_2 DayPickerKeyboardShortcuts_show__topRight DayPickerKeyboardShortcuts_show__topRight_3"
+                  type="button" aria-label="Open the keyboard shortcuts panel."><span
+                    class="DayPickerKeyboardShortcuts_showSpan DayPickerKeyboardShortcuts_showSpan_1 DayPickerKeyboardShortcuts_showSpan__topRight DayPickerKeyboardShortcuts_showSpan__topRight_2">?</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="smls-input-data-backdrop open"></div>
+  </div>
+</div>

@@ -1,0 +1,1331 @@
+/* Ref.: 
+    https://github.com/twolfson/spritesheet-templates
+    https://www.npmjs.com/package/gulp.spritesmith#handlebars-template
+*/ 
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+.smls-flags {
+  font-size: 16px;
+}
+.smls-flags {
+  &:before {
+    content:' ';
+    border-radius: 2px;
+    display: inline-block;
+    margin-top: -3px;
+    vertical-align: middle;
+    background-image: url(./img/country-flags.png?v=20210508);
+    background-repeat: no-repeat;
+    background-size: 296px 287px;
+    transform: scale(0.8);
+  }
+  &.mid {
+    &:before {
+      transform: scale(1); 
+    }
+  }
+  &.big {
+    &:before {
+      transform: scale(1.2); 
+    }
+  }
+  &.ad:before {
+    background-position: -22px -16px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ae:before {
+    background-position: -44px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.af:before {
+    background-position: -44px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ag:before {
+    background-position: 0px -32px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ai:before {
+    background-position: -21px -32px;
+    width: 21px;
+    height: 15px;
+  }
+  &.al:before {
+    background-position: -42px -32px;
+    width: 21px;
+    height: 15px;
+  }
+  &.am:before {
+    background-position: 0px -47px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ao:before {
+    background-position: -21px -47px;
+    width: 21px;
+    height: 15px;
+  }
+  &.aq:before {
+    background-position: 0px 0px;
+    width: 22px;
+    height: 16px;
+  }
+  &.ar:before {
+    background-position: -42px -47px;
+    width: 21px;
+    height: 15px;
+  }
+  &.as:before {
+    background-position: -65px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.at:before {
+    background-position: -65px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.au:before {
+    background-position: -65px -30px;
+    width: 21px;
+    height: 15px;
+  }
+  &.aw:before {
+    background-position: -65px -45px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ax:before {
+    background-position: 0px -62px;
+    width: 21px;
+    height: 15px;
+  }
+  &.az:before {
+    background-position: -21px -62px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ba:before {
+    background-position: -42px -62px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bb:before {
+    background-position: -63px -62px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bd:before {
+    background-position: -86px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.be:before {
+    background-position: -86px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bf:before {
+    background-position: -86px -30px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bg:before {
+    background-position: -86px -45px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bh:before {
+    background-position: -86px -60px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bi:before {
+    background-position: 0px -77px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bj:before {
+    background-position: -21px -77px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bl:before {
+    background-position: -42px -77px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bm:before {
+    background-position: -63px -77px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bn:before {
+    background-position: -84px -77px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bo:before {
+    background-position: 0px -92px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bq:before {
+    background-position: -22px 0px;
+    width: 22px;
+    height: 16px;
+  }
+  &.br:before {
+    background-position: -21px -92px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bs:before {
+    background-position: -42px -92px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bt:before {
+    background-position: -63px -92px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bv:before {
+    background-position: -84px -92px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bw:before {
+    background-position: -107px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.by:before {
+    background-position: -107px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.bz:before {
+    background-position: -107px -30px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ca:before {
+    background-position: -107px -45px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cc:before {
+    background-position: -107px -60px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cd:before {
+    background-position: -107px -75px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cf:before {
+    background-position: -107px -90px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cg:before {
+    background-position: 0px -107px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ch:before {
+    background-position: -21px -107px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ci:before {
+    background-position: -42px -107px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ck:before {
+    background-position: -63px -107px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cl:before {
+    background-position: -84px -107px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cm:before {
+    background-position: -105px -107px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cn:before {
+    background-position: -128px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.co:before {
+    background-position: -128px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cr:before {
+    background-position: -128px -30px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cu:before {
+    background-position: -128px -45px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cv:before {
+    background-position: -128px -60px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cw:before {
+    background-position: -128px -75px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cx:before {
+    background-position: -128px -90px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cy:before {
+    background-position: -128px -105px;
+    width: 21px;
+    height: 15px;
+  }
+  &.cz:before {
+    background-position: 0px -122px;
+    width: 21px;
+    height: 15px;
+  }
+  &.de:before {
+    background-position: -21px -122px;
+    width: 21px;
+    height: 15px;
+  }
+  &.dj:before {
+    background-position: -42px -122px;
+    width: 21px;
+    height: 15px;
+  }
+  &.dk:before {
+    background-position: -63px -122px;
+    width: 21px;
+    height: 15px;
+  }
+  &.dm:before {
+    background-position: -84px -122px;
+    width: 21px;
+    height: 15px;
+  }
+  &.do:before {
+    background-position: -105px -122px;
+    width: 21px;
+    height: 15px;
+  }
+  &.dz:before {
+    background-position: -126px -122px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ec:before {
+    background-position: -149px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ee:before {
+    background-position: -149px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.eg:before {
+    background-position: -149px -30px;
+    width: 21px;
+    height: 15px;
+  }
+  &.eh:before {
+    background-position: 0px -16px;
+    width: 22px;
+    height: 16px;
+  }
+  &.er:before {
+    background-position: -149px -45px;
+    width: 21px;
+    height: 15px;
+  }
+  &.es:before {
+    background-position: -149px -60px;
+    width: 21px;
+    height: 15px;
+  }
+  &.et:before {
+    background-position: -149px -75px;
+    width: 21px;
+    height: 15px;
+  }
+  &.eu:before {
+    background-position: -149px -90px;
+    width: 21px;
+    height: 15px;
+  }
+  &.fi:before {
+    background-position: -149px -105px;
+    width: 21px;
+    height: 15px;
+  }
+  &.fj:before {
+    background-position: -149px -120px;
+    width: 21px;
+    height: 15px;
+  }
+  &.fk:before {
+    background-position: 0px -137px;
+    width: 21px;
+    height: 15px;
+  }
+  &.fm:before {
+    background-position: -21px -137px;
+    width: 21px;
+    height: 15px;
+  }
+  &.fo:before {
+    background-position: -42px -137px;
+    width: 21px;
+    height: 15px;
+  }
+  &.fr:before {
+    background-position: -63px -137px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ga:before {
+    background-position: -84px -137px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gb-eng:before {
+    background-position: -105px -137px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gb-nir:before {
+    background-position: -126px -137px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gb-sct:before {
+    background-position: -147px -137px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gb-wls:before {
+    background-position: 0px -152px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gb-zet:before {
+    background-position: -21px -152px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gb:before {
+    background-position: -42px -152px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gd:before {
+    background-position: -63px -152px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ge:before {
+    background-position: -84px -152px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gf:before {
+    background-position: -105px -152px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gg:before {
+    background-position: -126px -152px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gh:before {
+    background-position: -147px -152px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gi:before {
+    background-position: -170px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gl:before {
+    background-position: -170px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gm:before {
+    background-position: -170px -30px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gn:before {
+    background-position: -170px -45px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gp:before {
+    background-position: -170px -60px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gq:before {
+    background-position: -170px -75px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gr:before {
+    background-position: -170px -90px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gs:before {
+    background-position: -170px -105px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gt:before {
+    background-position: -170px -120px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gu:before {
+    background-position: -170px -135px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gw:before {
+    background-position: -170px -150px;
+    width: 21px;
+    height: 15px;
+  }
+  &.gy:before {
+    background-position: 0px -167px;
+    width: 21px;
+    height: 15px;
+  }
+  &.hk:before {
+    background-position: -21px -167px;
+    width: 21px;
+    height: 15px;
+  }
+  &.hm:before {
+    background-position: -42px -167px;
+    width: 21px;
+    height: 15px;
+  }
+  &.hn:before {
+    background-position: -63px -167px;
+    width: 21px;
+    height: 15px;
+  }
+  &.hr:before {
+    background-position: -84px -167px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ht:before {
+    background-position: -105px -167px;
+    width: 21px;
+    height: 15px;
+  }
+  &.hu:before {
+    background-position: -126px -167px;
+    width: 21px;
+    height: 15px;
+  }
+  &.id:before {
+    background-position: -147px -167px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ie:before {
+    background-position: -168px -167px;
+    width: 21px;
+    height: 15px;
+  }
+  &.il:before {
+    background-position: -191px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.im:before {
+    background-position: -191px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.in:before {
+    background-position: -191px -30px;
+    width: 21px;
+    height: 15px;
+  }
+  &.io:before {
+    background-position: -191px -45px;
+    width: 21px;
+    height: 15px;
+  }
+  &.iq:before {
+    background-position: -191px -60px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ir:before {
+    background-position: -191px -75px;
+    width: 21px;
+    height: 15px;
+  }
+  &.is:before {
+    background-position: -191px -90px;
+    width: 21px;
+    height: 15px;
+  }
+  &.it:before {
+    background-position: -191px -105px;
+    width: 21px;
+    height: 15px;
+  }
+  &.je:before {
+    background-position: -191px -120px;
+    width: 21px;
+    height: 15px;
+  }
+  &.jm:before {
+    background-position: -191px -135px;
+    width: 21px;
+    height: 15px;
+  }
+  &.jo:before {
+    background-position: -191px -150px;
+    width: 21px;
+    height: 15px;
+  }
+  &.jp:before {
+    background-position: -191px -165px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ke:before {
+    background-position: 0px -182px;
+    width: 21px;
+    height: 15px;
+  }
+  &.kg:before {
+    background-position: -21px -182px;
+    width: 21px;
+    height: 15px;
+  }
+  &.kh:before {
+    background-position: -42px -182px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ki:before {
+    background-position: -63px -182px;
+    width: 21px;
+    height: 15px;
+  }
+  &.km:before {
+    background-position: -84px -182px;
+    width: 21px;
+    height: 15px;
+  }
+  &.kn:before {
+    background-position: -105px -182px;
+    width: 21px;
+    height: 15px;
+  }
+  &.kp:before {
+    background-position: -126px -182px;
+    width: 21px;
+    height: 15px;
+  }
+  &.kr:before {
+    background-position: -147px -182px;
+    width: 21px;
+    height: 15px;
+  }
+  &.kw:before {
+    background-position: -168px -182px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ky:before {
+    background-position: -189px -182px;
+    width: 21px;
+    height: 15px;
+  }
+  &.kz:before {
+    background-position: 0px -197px;
+    width: 21px;
+    height: 15px;
+  }
+  &.la:before {
+    background-position: -21px -197px;
+    width: 21px;
+    height: 15px;
+  }
+  &.lb:before {
+    background-position: -42px -197px;
+    width: 21px;
+    height: 15px;
+  }
+  &.lc:before {
+    background-position: -63px -197px;
+    width: 21px;
+    height: 15px;
+  }
+  &.lgbt:before {
+    background-position: -84px -197px;
+    width: 21px;
+    height: 15px;
+  }
+  &.li:before {
+    background-position: -105px -197px;
+    width: 21px;
+    height: 15px;
+  }
+  &.lk:before {
+    background-position: -126px -197px;
+    width: 21px;
+    height: 15px;
+  }
+  &.lr:before {
+    background-position: -147px -197px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ls:before {
+    background-position: -168px -197px;
+    width: 21px;
+    height: 15px;
+  }
+  &.lt:before {
+    background-position: -189px -197px;
+    width: 21px;
+    height: 15px;
+  }
+  &.lu:before {
+    background-position: -212px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.lv:before {
+    background-position: -212px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ly:before {
+    background-position: -212px -30px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ma:before {
+    background-position: -212px -45px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mc:before {
+    background-position: -212px -60px;
+    width: 21px;
+    height: 15px;
+  }
+  &.md:before {
+    background-position: -212px -75px;
+    width: 21px;
+    height: 15px;
+  }
+  &.me:before {
+    background-position: -212px -90px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mf:before {
+    background-position: -212px -105px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mg:before {
+    background-position: -212px -120px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mh:before {
+    background-position: -212px -135px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mk:before {
+    background-position: -212px -150px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ml:before {
+    background-position: -212px -165px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mm:before {
+    background-position: -212px -180px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mn:before {
+    background-position: -212px -195px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mo:before {
+    background-position: 0px -212px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mp:before {
+    background-position: -21px -212px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mq:before {
+    background-position: -42px -212px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mr:before {
+    background-position: -63px -212px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ms:before {
+    background-position: -84px -212px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mt:before {
+    background-position: -105px -212px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mu:before {
+    background-position: -126px -212px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mv:before {
+    background-position: -147px -212px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mw:before {
+    background-position: -168px -212px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mx:before {
+    background-position: -189px -212px;
+    width: 21px;
+    height: 15px;
+  }
+  &.my:before {
+    background-position: -210px -212px;
+    width: 21px;
+    height: 15px;
+  }
+  &.mz:before {
+    background-position: -233px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.na:before {
+    background-position: -233px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.nc:before {
+    background-position: -233px -30px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ne:before {
+    background-position: -233px -45px;
+    width: 21px;
+    height: 15px;
+  }
+  &.nf:before {
+    background-position: -233px -60px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ng:before {
+    background-position: -233px -75px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ni:before {
+    background-position: -233px -90px;
+    width: 21px;
+    height: 15px;
+  }
+  &.nl:before {
+    background-position: -233px -105px;
+    width: 21px;
+    height: 15px;
+  }
+  &.no:before {
+    background-position: -233px -120px;
+    width: 21px;
+    height: 15px;
+  }
+  &.np:before {
+    background-position: -233px -135px;
+    width: 21px;
+    height: 15px;
+  }
+  &.nr:before {
+    background-position: -233px -150px;
+    width: 21px;
+    height: 15px;
+  }
+  &.nu:before {
+    background-position: -233px -165px;
+    width: 21px;
+    height: 15px;
+  }
+  &.nz:before {
+    background-position: -233px -180px;
+    width: 21px;
+    height: 15px;
+  }
+  &.om:before {
+    background-position: -233px -195px;
+    width: 21px;
+    height: 15px;
+  }
+  &.pa:before {
+    background-position: -233px -210px;
+    width: 21px;
+    height: 15px;
+  }
+  &.pe:before {
+    background-position: 0px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.pf:before {
+    background-position: -21px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.pg:before {
+    background-position: -42px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ph:before {
+    background-position: -63px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.pk:before {
+    background-position: -84px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.pl:before {
+    background-position: -105px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.pm:before {
+    background-position: -126px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.pn:before {
+    background-position: -147px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.pr:before {
+    background-position: -168px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ps:before {
+    background-position: -189px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.pt:before {
+    background-position: -210px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.pw:before {
+    background-position: -231px -227px;
+    width: 21px;
+    height: 15px;
+  }
+  &.py:before {
+    background-position: -254px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.qa:before {
+    background-position: -254px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.re:before {
+    background-position: -254px -30px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ro:before {
+    background-position: -254px -45px;
+    width: 21px;
+    height: 15px;
+  }
+  &.rs:before {
+    background-position: -254px -60px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ru:before {
+    background-position: -254px -75px;
+    width: 21px;
+    height: 15px;
+  }
+  &.rw:before {
+    background-position: -254px -90px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sa:before {
+    background-position: -254px -105px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sb:before {
+    background-position: -254px -120px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sc:before {
+    background-position: -254px -135px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sd:before {
+    background-position: -254px -150px;
+    width: 21px;
+    height: 15px;
+  }
+  &.se:before {
+    background-position: -254px -165px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sg:before {
+    background-position: -254px -180px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sh:before {
+    background-position: -254px -195px;
+    width: 21px;
+    height: 15px;
+  }
+  &.si:before {
+    background-position: -254px -210px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sj:before {
+    background-position: -254px -225px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sk:before {
+    background-position: 0px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sl:before {
+    background-position: -21px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sm:before {
+    background-position: -42px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sn:before {
+    background-position: -63px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.so:before {
+    background-position: -84px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sr:before {
+    background-position: -105px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ss:before {
+    background-position: -126px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.st:before {
+    background-position: -147px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sv:before {
+    background-position: -168px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sx:before {
+    background-position: -189px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sy:before {
+    background-position: -210px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.sz:before {
+    background-position: -231px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tc:before {
+    background-position: -252px -242px;
+    width: 21px;
+    height: 15px;
+  }
+  &.td:before {
+    background-position: 0px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tf:before {
+    background-position: -21px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tg:before {
+    background-position: -42px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.th:before {
+    background-position: -63px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tj:before {
+    background-position: -84px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tk:before {
+    background-position: -105px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tl:before {
+    background-position: -126px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tm:before {
+    background-position: -147px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tn:before {
+    background-position: -168px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.to:before {
+    background-position: -189px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tr:before {
+    background-position: -210px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tt:before {
+    background-position: -231px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tv:before {
+    background-position: -252px -257px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tw:before {
+    background-position: -275px 0px;
+    width: 21px;
+    height: 15px;
+  }
+  &.tz:before {
+    background-position: -275px -15px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ua:before {
+    background-position: -275px -30px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ug:before {
+    background-position: -275px -45px;
+    width: 21px;
+    height: 15px;
+  }
+  &.um:before {
+    background-position: -275px -60px;
+    width: 21px;
+    height: 15px;
+  }
+  &.us-ca:before {
+    background-position: -275px -75px;
+    width: 21px;
+    height: 15px;
+  }
+  &.us:before {
+    background-position: -275px -90px;
+    width: 21px;
+    height: 15px;
+  }
+  &.uy:before {
+    background-position: -275px -105px;
+    width: 21px;
+    height: 15px;
+  }
+  &.uz:before {
+    background-position: -275px -120px;
+    width: 21px;
+    height: 15px;
+  }
+  &.va:before {
+    background-position: -275px -135px;
+    width: 21px;
+    height: 15px;
+  }
+  &.vc:before {
+    background-position: -275px -150px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ve:before {
+    background-position: -275px -165px;
+    width: 21px;
+    height: 15px;
+  }
+  &.vg:before {
+    background-position: -275px -180px;
+    width: 21px;
+    height: 15px;
+  }
+  &.vi:before {
+    background-position: -275px -195px;
+    width: 21px;
+    height: 15px;
+  }
+  &.vn:before {
+    background-position: -275px -210px;
+    width: 21px;
+    height: 15px;
+  }
+  &.vu:before {
+    background-position: -275px -225px;
+    width: 21px;
+    height: 15px;
+  }
+  &.wf:before {
+    background-position: -275px -240px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ws:before {
+    background-position: -275px -255px;
+    width: 21px;
+    height: 15px;
+  }
+  &.xk:before {
+    background-position: 0px -272px;
+    width: 21px;
+    height: 15px;
+  }
+  &.ye:before {
+    background-position: -21px -272px;
+    width: 21px;
+    height: 15px;
+  }
+  &.yt:before {
+    background-position: -42px -272px;
+    width: 21px;
+    height: 15px;
+  }
+  &.za:before {
+    background-position: -63px -272px;
+    width: 21px;
+    height: 15px;
+  }
+  &.zm:before {
+    background-position: -84px -272px;
+    width: 21px;
+    height: 15px;
+  }
+  &.zw:before {
+    background-position: -105px -272px;
+    width: 21px;
+    height: 15px;
+  }
+}

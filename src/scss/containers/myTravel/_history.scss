@@ -1,0 +1,215 @@
+.smls-my-travels-panel {
+  @media screen and (min-width: $bkpoint-desktop) {
+    .mytravels-disabled-slideContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .mytravels-disabled-slideContainer-card {
+        width: 100%;
+        max-width: 360px;
+
+        & + .mytravels-disabled-slideContainer-card {
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+
+  .btn-travel-history {
+    margin-left: 7%;
+
+    @media screen and (min-width: $bkpoint-desktop) {
+      margin-left: 10%;
+      right: 15px;
+      position: absolute;
+    }
+
+    div {
+      color: $color-black88;
+      font-family: $boldFontFamily;
+    }
+  }
+
+  .smls-my-travels-history {
+    padding: 0 24px;
+
+    &__sorting {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 24px;
+
+      h3 {
+        font-size: 20px;
+        color: $color-black80;
+      }
+
+      button {
+        font-size: 14px;
+        color: $color-black100;
+        font-family: $lightFontFamily;
+        border: 1px solid $color-white90;
+        background-color: $color-white100;
+        border-radius: 14px;
+        padding: 3px 10px;
+        align-self: end;
+        position: absolute;
+        right: 24px;
+        outline: none;
+
+        span {
+          vertical-align: middle;
+          margin-right: 7px;
+        }
+      }
+
+      @media screen and (min-width: $bkpoint-desktop) {
+        h3 {
+          font-size: 24px;
+        }
+
+        button {
+          padding: 5px 10px;
+          right: 38px;
+        }
+      }
+    }
+
+    .myTravels-nextTravels {
+      @media screen and (max-width: $bkpoint-desktop) {
+        padding: 0;
+      }
+
+      .mytravels-slideContainer {
+        &-list,
+        &-top {
+          margin-top: 0px;
+
+          .myTravels-nextTravels-card.compact {
+            .three-destinations {
+              margin-top: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.travel-history {
+  &-header {
+    width: 100%;
+    padding: 24px 0 40px 24px;
+
+    background: #ffeade;
+
+    @media screen and (max-width: 768px) {
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 24px 0 25px 24px;
+
+      &-content {
+        padding: 0 !important;
+      }
+    }
+
+    &-back {
+      width: 24px;
+      height: 24px;
+
+      margin: 0 0 0 8px;
+
+      cursor: pointer;
+    }
+
+    &-content {
+      display: flex;
+      align-items: flex-end;
+      padding: 40px 0 60px 0;
+
+      &-title,
+      &-button {
+        background: transparent;
+        border: 0 !important;
+        outline: 0 !important;
+      }
+
+      &-title {
+        min-width: 100px;
+
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+
+        color: #000;
+
+        resize: none;
+        overflow: hidden;
+      }
+
+      &-title-history {
+        font-weight: $semiBoldFontFamily;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0px;
+
+        @media (max-width: $bkpoint-tablet) {
+          font-size: 24px;
+        }
+      }
+
+      &-button {
+        align-self: flex-end;
+        text-align: right;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: $color-black88;
+
+        margin-left: 30px;
+      }
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      padding: 40px 0 48px 56px;
+      margin-bottom: 60px;
+
+      &-back {
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid #000;
+        border-radius: 50%;
+
+        margin: 0;
+      }
+
+      &-content {
+        padding: 64px 0 0;
+
+        &-title {
+          width: auto;
+          min-width: 340px;
+          max-width: 100%;
+
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+.order-options {
+  align-items: center;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,11 @@
+.smls-register-error-modal {
+  @media (max-width: $bkpoint-tablet) {
+    .btn.btn-primary {
+      width: 100%;
+    }
+    .btn-hyperlink {
+      margin: 48px auto 0px;
+      font-family: $boldFontFamily;
+    }
+  }
+}

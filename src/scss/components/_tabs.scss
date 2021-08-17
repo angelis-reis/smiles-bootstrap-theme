@@ -1,0 +1,66 @@
+.smls-tabs {
+  border: none;
+  height: 4.3125rem;
+
+  .nav-item {
+    padding-top: 1rem;
+    display: flex;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+    .nav-link {
+      font-size: 0.875rem;
+      line-height: 1rem;
+      padding: 0;
+      margin: 0;
+      height: 2rem;
+      background-color: transparent;
+      color: $color-black60;
+      transition: ease 300ms all;
+
+      &.active {
+        padding: 0;
+        padding-bottom: 1.1875rem;
+        border: 2px solid transparent;
+        border-bottom: 2px solid $primary;
+        color: $color-black100;
+      }
+
+      &:hover {
+        border-bottom: 2px solid $primary;
+      }
+
+      &:hover:not(.active) {
+        padding: 0;
+        padding-bottom: 1.1875rem;
+        border: 2px solid transparent;
+      }
+
+      &:focus:not(.active) {
+        padding: 0;
+        padding-bottom: 1.1875rem;
+        border: 2px solid transparent;
+      }
+
+      &.disabled {
+        padding: 0;
+        padding-bottom: 1.1875rem;
+        border: 2px solid transparent;
+      }
+    }
+  }
+
+  &.dark {
+    .nav-item {
+      .nav-link {
+        &.dark {
+          color: $color-white60;
+        }
+
+        &.active {
+          color: $color-white100;
+        }
+      }
+    }
+  }
+}

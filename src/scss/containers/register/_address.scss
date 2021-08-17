@@ -1,0 +1,214 @@
+.smls-content {
+  &.smls-register-address {
+    padding-bottom: 24px;
+
+    .input-group {
+      margin-bottom: 12px;
+      .dropdown {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      padding-bottom: 80px;
+      .input-group .dropdown {
+        margin-bottom: 0px;
+      }
+    }
+
+    .smls-input-no_error {
+      .input-error {
+        display: none;
+      }
+    }
+
+    .list-group-item {
+      border-radius: 0;
+      padding: 0 24px;
+      @media (max-width: $bkpoint-tablet) {
+        margin: 0px;
+        padding: 0;
+        > div {
+          > div {
+            margin-left: 0px;
+          }
+        }
+      }
+      list-style: none;
+      @media (max-width: $bkpoint-tablet) {
+        &:not(:last-child)::after {
+          width: 100%;
+        }
+      }
+
+      label {
+        font-size: 20px;
+        letter-spacing: -0.5px;
+        color: $color-black100;
+        @media (max-width: $bkpoint-tablet) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        & + p {
+          color: $color-black60;
+        }
+      }
+      p {
+        @media (max-width: $bkpoint-tablet) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .smls-content-loading {
+      display: flex;
+      justify-content: center;
+      div {
+        width: 40px;
+      }
+    }
+
+    .smls-content-symbol {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 360px;
+      margin: auto;
+      margin-top: 83px;
+
+      div {
+        transform: rotate(180deg);
+      }
+      p {
+        text-align: center;
+        padding-top: 40px;
+      }
+      @media (max-width: $bkpoint-tablet) {
+        margin-top: 0;
+        div {
+          display: none;
+        }
+        p {
+          padding-top: 17px;
+        }
+      }
+    }
+
+    .dropdown {
+      border: none !important;
+    }
+
+    .btn-primary {
+      margin-top: 32px;
+
+      @media (min-width: $bkpoint-tablet) {
+        margin-top: 48px;
+      }
+    }
+
+    .smls-container-edit-address {
+      .primary-text {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-black100;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      .secondary-text {
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-black60;
+        max-width: 450px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      @media (min-width: $bkpoint-tablet) {
+        .primary-text {
+          font-size: 20px;
+          line-height: 32px;
+          margin-bottom: 0;
+        }
+      }
+
+      .smls-divider {
+        margin: 36px 0;
+        height: 0;
+        border: 1px solid $color-white95;
+
+        @media (min-width: $bkpoint-tablet) {
+          margin: 52px 0 58px;
+          height: 1px;
+          border: 1px solid $color-white60;
+        }
+      }
+
+      .row {
+        justify-content: space-between;
+        margin: 0;
+      }
+
+      .edit {
+        border: 2px solid $color-black100;
+        width: 141px;
+        height: 40px;
+        margin: 10px 0px;
+        padding: 0;
+        border-radius: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        span {
+          line-height: 1.125rem;
+          font-size: 0.7778rem;
+          width: 100%;
+          margin-top: 0px;
+          padding-top: 0px;
+        }
+      }
+    }
+    .modal-content {
+      .modal-body {
+        align-items: center;
+
+        .btn-primary {
+          width: 100%;
+        }
+
+        .smls-row {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        @media (min-width: $bkpoint-tablet) {
+          .btn-primary {
+            width: auto;
+          }
+          .smls-row {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.smls-register-address {
+  .smls-flags:before {
+    margin: 0 0 10px 4px;
+  }
+
+  .hyperlink-no-border {
+    justify-content: start;
+    font-weight: bold;
+    margin-top: 44px;
+    &:focus:not(:active) {
+      &::after {
+        border: none;
+      }
+    }
+
+    padding: 0;
+  }
+}

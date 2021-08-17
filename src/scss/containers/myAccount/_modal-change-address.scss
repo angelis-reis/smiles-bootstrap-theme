@@ -1,0 +1,46 @@
+.smls-my_account-change-address-modal {
+  padding: 24px;
+  h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  > p {
+    color: $color-black60;
+    margin-bottom: 40px;
+  }
+  .input-group {
+    margin-bottom: 8px;
+    > div {
+      width: 100%;
+    }
+  }
+  .custom-checkbox {
+    margin-top: 32px;
+  }
+
+  .btn.btn-primary {
+    margin-top: 68px;
+    @media (max-width: $bkpoint-tablet) {
+      width: 100%;
+    }
+  }
+  @media (min-width: $bkpoint-tablet) {
+    padding: 40px 56px;
+    h4 {
+      margin-bottom: 23px;
+    }
+    > p {
+      margin-bottom: 45px;
+    }
+    .custom-checkbox {
+      margin-top: 20px;
+      margin-left: 20px;
+      label {
+        font-size: 16px;
+      }
+    }
+    .btn.btn-primary {
+      margin-top: 28px;
+    }
+  }
+}

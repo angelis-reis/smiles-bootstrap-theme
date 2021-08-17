@@ -1,0 +1,164 @@
+.smls-my_account-upload-user-document-modal {
+  .modal-header.left button {
+    margin-right: auto;
+    .material-icons {
+      font-size: 24px;
+    }
+  }
+  .form_message {
+    padding: 24px;
+    h4 {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+    p {
+      color: $color-black60;
+      margin-bottom: 33px;
+    }
+    ul {
+      padding-left: 20px;
+      li {
+        font-family: $boldFontFamily;
+        color: $color-black60;
+      }
+    }
+    .btn {
+      margin-top: 120px;
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      padding: 0px 56px;
+      h4 {
+        margin-top: 40px;
+        margin-bottom: 24px;
+      }
+      p {
+        margin-bottom: 24px;
+      }
+      .btn {
+        margin-top: 64px;
+      }
+    }
+    @media (max-width: $bkpoint-tablet) {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  .upload-files-form {
+    padding: 24px;
+    h4 {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+    p {
+      margin-bottom: 33px;
+    }
+    .btn {
+      margin-top: 48px;
+      @media (max-width: $bkpoint-tablet) {
+        width: 100%;
+      }
+    }
+
+    ul {
+      padding-left: 0px;
+      li.selected-file-item {
+        width: 100%;
+        padding: 15px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $color-white95;
+        > div > p {
+          font-family: $boldFontFamily;
+          margin-bottom: 8px;
+          flex: 1;
+        }
+        & button {
+          background: none;
+          border: none;
+          i {
+            font-size: 16px;
+          }
+        }
+        & span {
+          font-size: 14px;
+        }
+        & span.error {
+          i {
+            font-size: 16px;
+            margin-right: 8px;
+          }
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          color: $color-wine;
+          line-height: 15px;
+        }
+      }
+    }
+
+    @media (min-width: $bkpoint-tablet) {
+      padding: 40px 56px 72px;
+      h4 {
+        margin-bottom: 23px;
+      }
+      ul {
+        margin-bottom: 32px;
+        li.selected-file-item {
+          padding: 19px 0px;
+        }
+      }
+      .btn {
+        margin-top: 64px;
+      }
+    }
+
+    .file-loader {
+      border: 2px solid $color-white90;
+      border-top: 2px solid $color-orange;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 2s linear infinite;
+    }
+  }
+}
+.smls-my_account-exit-upload-document-modal {
+  padding: 24px 24px 44px;
+  h4 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  > p {
+    color: $color-black60;
+  }
+  .btn.btn-primary {
+    margin-top: 56px;
+  }
+  .btn.btn-hyperlink {
+    margin: 36px auto 0px;
+  }
+
+  @media (max-width: $bkpoint-tablet) {
+    .btn.btn-primary {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $bkpoint-tablet) {
+    padding: 40px 56px 76px;
+    h4 {
+      margin-bottom: 23px;
+    }
+    .btn.btn-primary {
+      margin-top: 65px;
+    }
+    .btn.btn-hyperlink {
+      margin: 48px 0px 0px;
+    }
+  }
+}

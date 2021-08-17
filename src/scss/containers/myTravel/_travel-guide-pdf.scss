@@ -1,0 +1,131 @@
+.guide-pdf {
+  margin-bottom: 8vh;
+  margin-top: 8vh;
+
+  &-header {
+    color: $color-black100;
+
+    h1 {
+      letter-spacing: initial;
+      font-size: 16px;
+      line-height: 16px;
+      font-family: $regularFontFamily;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .logo-smiles {
+      background-image: url('../assets/logos/smiles/lg-smiles-orange.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50px;
+      height: 20px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+
+  .smls-divider {
+    border-color: $color-black80;
+  }
+
+  .travelGuide-events-day-list {
+    margin-top: 20px;
+  }
+
+  .travelGuide-events-day-top-title h1 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .travelGuide-events-day-list-item-content {
+    width: calc(100% - 20px);
+    padding: 20px 25px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .travelGuide-events-day-list-item-content::before {
+    top: 28px;
+  }
+
+  .travelGuide-events-day-list-item-content-title {
+    font-size: 16px;
+    display: inline-block;
+    line-height: 16px;
+  }
+
+  .travelGuide-events-day-list-item-content-text {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .travelGuide-events-day-list-item::before {
+    width: 1px;
+    top: 0;
+    left: 2px;
+    height: calc(100% + 8px);
+  }
+
+  .travelGuide-events-day-list-item-dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .travelGuide-events-day-list-item-content-top-title-hour {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .travelGuide-events-day-list-item:nth-of-type(n + 2) {
+    margin-top: 8px;
+  }
+
+  .travelGuide-events-day-list-item-content-top-title-icon {
+    width: 18px;
+    height: 18px;
+
+    i {
+      font-size: 18px;
+    }
+  }
+
+  .travelGuide-events-day-list-item:last-child {
+    &::before {
+      content: '';
+      height: calc(100%);
+    }
+  }
+}
+
+@media print {
+  @page {
+    size: auto;
+  }
+
+  .guide-pdf {
+    -webkit-print-color-adjust: exact;
+    forced-color-adjust: exact;
+    color-adjust: exact;
+    margin: 4vh 0 4vh;
+  }
+
+  .travelGuide-events-day-list-item,
+  .travelGuide-events-day-top {
+    page-break-inside: avoid;
+  }
+
+  .main-pdf .travelGuide-events-day-list-item:nth-child(4n) {
+    page-break-after: always;
+  }
+}

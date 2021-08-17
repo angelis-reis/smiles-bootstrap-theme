@@ -1,0 +1,124 @@
+// Default
+* {
+  font-family: $regularFontFamily;
+  font-size: 16px;
+  line-height: 24px;
+
+  &::-moz-selection {
+    background-color: $primary;
+  }
+
+  &::selection {
+    background-color: $primary;
+  }
+}
+
+// Heading 1
+h1 {
+  @include mx-font-family($semiBoldFontFamily, $regularFontFamily);
+  @include mx-font-size(2.5rem, 4.5rem);
+  @include mx-line-height(3rem, 4.5rem);
+  @include mx-letter-spacing(-1px, -2px);
+  color: $color-black80;
+}
+
+// Heading 2
+h2 {
+  font-family: $semiBoldFontFamily;
+  @include mx-font-size(2rem, 3rem);
+  @include mx-line-height(2.5rem, 3rem);
+  @include mx-letter-spacing(-0.5px, -1px);
+  color: $color-black80;
+}
+
+// Heading 3
+h3 {
+  font-family: $semiBoldFontFamily;
+  @include mx-font-size(1.5rem, 2rem);
+  @include mx-line-height(2rem, 2.5rem);
+  @include mx-letter-spacing(-0.5px, -1px);
+  color: $color-black80;
+}
+
+// Heading 4
+h4 {
+  font-family: $semiBoldFontFamily;
+  @include mx-font-size(1.25rem, 1.5rem);
+  @include mx-line-height(1.625rem, 2rem);
+  letter-spacing: -0.5px;
+  color: $color-black80;
+}
+
+// Heading 5
+h5 {
+  @include mx-font-family($regularFontFamily, $lightFontFamily);
+  @include mx-font-size(1.25rem, 1.5rem);
+  @include mx-line-height(1.625rem, 2rem);
+  letter-spacing: -0.5px;
+  color: $color-black80;
+}
+
+// Heading 6
+h6 {
+  @include mx-font-family($regularFontFamily, $lightFontFamily);
+  @include mx-font-size(1.125rem, 1.25rem);
+  line-height: 1.5rem;
+  letter-spacing: -0.5px;
+  color: $color-black80;
+}
+
+// Link Small
+a {
+  color: $color-black80;
+  font-family: $boldFontFamily;
+
+  small {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+a.link--card {
+  small {
+    font-family: $boldFontFamily;
+  }
+}
+
+p {
+  small {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+}
+
+p.caption--card {
+  small {
+    line-height: 1.125rem;
+  }
+}
+
+// Icons
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}

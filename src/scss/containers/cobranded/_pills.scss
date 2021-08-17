@@ -1,0 +1,44 @@
+.fake-focus {
+  &:hover .btn.btn-pills.with-fill.btn-icon,
+  &:focus:not(:active) .btn.btn-pills.with-fill.btn-icon {
+    transform: translateY(calc(-50% - 10px));
+  }
+
+  &:hover .btn.btn-pills.with-fill.btn-icon.previous i,
+  &:focus:not(:active) .btn.btn-pills.with-fill.btn-icon.previous i {
+    transform: rotate(90deg);
+  }
+
+  &:hover .btn.btn-pills.with-fill.btn-icon.next i,
+  &:focus:not(:active) .btn.btn-pills.with-fill.btn-icon.next i {
+    transform: rotate(-90deg);
+  }
+
+  .btn.btn-pills.with-fill.btn-icon {
+    position: absolute;
+    top: calc(50%);
+    transform: translateY(calc(-50% - 10px));
+    display: none;
+    transition: all 250ms;
+  
+    @media(min-width: $bkpoint-desktop) {
+      display: flex;
+    }
+  
+    &.previous {
+      left: -25px;
+  
+      i  {
+        transform: rotate(90deg);
+      }
+    }
+  
+    &.next {
+      right: -25px;
+  
+      i {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
