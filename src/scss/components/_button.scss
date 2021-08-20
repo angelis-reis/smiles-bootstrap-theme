@@ -25,7 +25,6 @@
   @media screen and (max-width: $bkpoint-tablet) {
     width: 224px;
   }
-
 }
 
 .btn {
@@ -108,7 +107,7 @@
       color: $color-white100;
     }
 
-    &:not(:disabled):not(.disabled):active{
+    &:not(:disabled):not(.disabled):active {
       background-color: $primary;
       color: $color-black100;
     }
@@ -120,7 +119,7 @@
         background-color: $color-white100;
         color: $color-black80;
       }
-      &:active:not(.smls-btn-loading)  {
+      &:active:not(.smls-btn-loading) {
         color: $color-black100;
       }
       &:disabled {
@@ -150,7 +149,7 @@
       color: $color-white100;
     }
 
-    &:not(:disabled):not(.disabled):active{
+    &:not(:disabled):not(.disabled):active {
       cursor: inherit;
       border: 2px solid $primary;
       background-color: transparent;
@@ -177,7 +176,7 @@
         }
       }
 
-      &:not(:disabled):not(.disabled):active{
+      &:not(:disabled):not(.disabled):active {
         cursor: inherit;
         border: 2px solid $primary;
         background-color: transparent;

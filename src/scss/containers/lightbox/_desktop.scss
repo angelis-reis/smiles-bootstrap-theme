@@ -1,134 +1,72 @@
 $desktop-margin: 56px;
 $mobile-margin: 24px;
 
-// .width-472 .modal-dialog.right {
-//   // border: 1px solid rgb(0, 0, 0);
-//   @include mx-width(100%, 472px, 472px);
-//   @include mx-max-width(100%, 472px, 472px);
-// }
-
 .width-664 .modal-dialog.right {
-  // border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(243, 38, 38);
   @include mx-width(100%, 664px, 664px);
   @include mx-max-width(100%, 664px, 664px);
 }
 
 .modal-header {
-  // border: 1px solid rgb(92, 91, 91);
+  border: 1px solid rgb(92, 91, 91);
+  // height: 88px;
+  margin-bottom: 56px;
 }
 
 .modal-logo {
-  // border: 1px solid red;
-  margin-top: $desktop-margin;
+  //   border: 1px solid red;
   margin-left: $desktop-margin;
   margin-right: $desktop-margin;
   width: 193px;
   height: 24px;
+  margin-bottom: 16px;
 }
 .modal-title {
-  // border: 1px solid rgb(236, 222, 19);
+  border: 1px solid rgb(236, 222, 19);
   margin-left: $desktop-margin;
   margin-right: $desktop-margin;
-  margin-top: 16px;
 }
 .modal-html-content {
-  // border: 1px solid rgb(61, 231, 19);
+  border: 1px solid rgb(61, 231, 19);
   margin-left: $desktop-margin;
   margin-right: $desktop-margin;
   margin-top: 16px;
 }
 
 .modal-cards {
-  // border: 1px solid rgb(9, 108, 221);
-  margin-left: $desktop-margin;
-  margin-right: $desktop-margin;
-  margin-top: 48px;
-  display: inline-flex;
-  //   justify-content: space-between;
   width: auto;
-}
+  border: 1px solid rgb(9, 108, 221);
+  margin-left: $desktop-margin;
+  //   margin-right: 40px;
+  margin-top: 48px;
 
-.rules-checkbox {
-  // border: 1px solid rgb(182, 13, 233);
   display: flex;
-  flex-direction: row;
-  margin-left: $desktop-margin;
-  margin-right: $desktop-margin;
-  margin-top: 36px;
-  padding-right: 20px;
-  .modal-rules-checkbox {
-    width: 15px;
-    margin-left: 24px;
-  }
-  .modal-rules-checkbox-text {
-    align-self: center;
-  }
-}
-
-.modal-confirm-button {
-  // border: 1px solid rgb(34, 8, 18);
-  margin-left: $desktop-margin;
-  background-color: $shadow-level-100;
-  margin-top: 60px;
-}
-
-// criar uma class para cada opção de cores
-.color-product-club {
-  color: $color-white100;
-  background-color: $color-product-club;
-  border-color: $color-product-club;
-  &:hover:not(:disabled):not(.smls-btn-loading) {
-    background-color: $color-black100;
-    color: $color-white100;
-  }
-  &:not(:disabled):not(.disabled):active {
-    background-color: red;
-    color: $color-black100;
-  }
-}
-
-.modal-help-button {
-  // border: 1px solid rgb(118, 146, 121);
-  margin-left: $desktop-margin;
-  margin-right: $desktop-margin;
-  margin-top: 43px;
-}
-
-.modal-opt-out-checkbox {
-  // border: 1px solid rgb(67, 101, 145);
-  margin-left: $desktop-margin;
-  margin-right: $desktop-margin;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  gap: 24px;
+  height: 340px;
 }
 
 .promotional-card {
-  // border: 1px solid rgb(255, 255, 255);
+  //   border: 2px solid rgb(255, 0, 0);
   width: 264px;
   height: 336px;
   border-radius: 16px;
-  //   background-color: #b8c0ec;
   display: grid;
   place-items: center;
   background-repeat: no-repeat;
   background-size: 264px 336px;
-  margin-right: 24px;
 }
 
 .card-image {
-  //   background: transparent;
   position: relative;
 }
 
 .card-wrapper {
-  // border: 1px solid rgb(0, 0, 0);
-  //   margin-right: 24px;
-  //   margin-top: 24px;
-  //   margin-bottom: 24px;
-  //   margin-left: 24px;
+  border: 1px solid rgb(0, 0, 0);
   height: 288px;
   width: 216px;
   display: grid;
+  margin-left: $mobile-margin;
+  margin-right: $mobile-margin;
   grid-template-rows: 5fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -143,8 +81,74 @@ $mobile-margin: 24px;
   }
 }
 
+.rules-checkbox {
+  border: 1px solid rgb(182, 13, 233);
+  display: flex;
+  flex-direction: row;
+  margin-left: $desktop-margin;
+  margin-right: $desktop-margin;
+  margin-top: 36px;
+  margin-bottom: 60px;
+  span a {
+    text-decoration: none;
+  }
+
+  padding-right: 20px;
+  .modal-rules-checkbox {
+    width: 15px;
+    margin-left: 24px;
+  }
+  .modal-rules-checkbox-text {
+    align-self: center;
+  }
+}
+
+.modal-confirm-button {
+  border: 1px solid rgb(34, 8, 18);
+  margin-left: $desktop-margin;
+  margin-bottom: 36px;
+  margin-top: 60px;
+  width: 272px;
+}
+
+// criar uma class para cada opção de cores
+.color-product-club {
+  span {
+    color: $color-white100;
+  }
+  background-color: $color-product-club;
+  border-color: $color-product-club;
+}
+
+.modal-help-button {
+  border: 1px solid rgb(118, 146, 121);
+  margin-left: $desktop-margin;
+  //   margin-top: 43px;
+  max-width: 240px;
+  //   text-align: start;
+}
+
+.hyperlink-no-border {
+  justify-content: start;
+  &:focus:not(:active) {
+    &::after {
+      border: none;
+    }
+  }
+}
+
+.modal-opt-out-checkbox {
+  border: 1px solid rgb(67, 101, 145);
+  margin-left: $desktop-margin;
+  margin-right: $desktop-margin;
+  margin-top: 44px;
+  width: 275px;
+
+  //   margin-bottom: 60px;
+}
+
 .card-icon {
-  //   // border: 1px solid rgb(46, 255, 9);
+  //   border: 1px solid rgb(46, 255, 9);
   grid-area: card-icon;
   width: 36px;
   height: 36px;
@@ -169,7 +173,7 @@ $mobile-margin: 24px;
 }
 .card-origin {
   grid-area: card-origin;
-  //   // border: 1px solid rgb(25, 9, 255);
+  //   border: 1px solid rgb(25, 9, 255);
   font-family: Nunito;
   font-size: 16px;
   font-style: normal;
@@ -181,7 +185,7 @@ $mobile-margin: 24px;
 }
 .card-destiny {
   grid-area: card-destiny;
-  //   // border: 1px solid rgb(157, 9, 255);
+  //   border: 1px solid rgb(157, 9, 255);
   font-family: Nunito;
   font-size: 16px;
   font-style: normal;
@@ -193,7 +197,7 @@ $mobile-margin: 24px;
 }
 .card-text {
   grid-area: card-text;
-  //   // border: 1px solid rgb(239, 255, 9);
+  //   border: 1px solid rgb(239, 255, 9);
   font-family: Nunito;
   font-size: 14px;
   font-style: normal;
@@ -205,7 +209,7 @@ $mobile-margin: 24px;
 }
 .card-price {
   grid-area: card-price;
-  //   // border: 1px solid rgb(255, 9, 42);
+  //   border: 1px solid rgb(255, 9, 42);
   font-family: Nunito;
   font-size: 14px;
   font-style: normal;
@@ -216,43 +220,17 @@ $mobile-margin: 24px;
   align-self: end;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: $bkpoint-tablet) {
-  .modal .modal-dialog.right {
-    @include mx-width(100%, 992px, 992px);
-    @include mx-max-width(100%, 992px, 992px);
+  .width-664 .modal-dialog.right {
+    // height: auto;
+    // overflow: auto;
+  }
+  .modal-header {
+    // height: 64px;
+    margin-bottom: 24px;
   }
 
   .modal-logo {
-    margin-top: $mobile-margin;
     margin-left: $mobile-margin;
     margin-right: $mobile-margin;
   }
@@ -263,60 +241,51 @@ $mobile-margin: 24px;
   .modal-html-content {
     margin-left: $mobile-margin;
     margin-right: $mobile-margin;
-    margin-top: 16px;
   }
 
   .modal-cards {
     margin-left: $mobile-margin;
-    margin-right: $mobile-margin;
+    gap: 0px;
+    // overflow: auto hidden;
+  }
+  .promotional-card {
+    margin-right: 16px;
   }
 
   .rules-checkbox {
     margin-left: $mobile-margin;
     margin-right: $mobile-margin;
-    margin-top: 44px;
-    padding-right: 20px;
+    margin-bottom: 0px;
+
     .modal-rules-checkbox {
       width: 15px;
-      margin-left: 24px;
+      margin-left: 0px;
     }
     .modal-rules-checkbox-text {
-      align-self: center;
+      align-self: start;
     }
   }
 
   .modal-confirm-button {
-    // border: 1px solid rgb(34, 8, 18);
-    margin-left: $mobile-margin;
-    background-color: $shadow-level-100;
-    margin-top: 76px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
   }
 
-  // criar uma class para cada opção de cores
-  .color-product-club {
-    color: $color-white100;
-    background-color: $color-product-club;
-    border-color: $color-product-club;
-    &:hover:not(:disabled):not(.smls-btn-loading) {
-      background-color: $color-black100;
-      color: $color-white100;
-    }
-    &:not(:disabled):not(.disabled):active {
-      background-color: red;
-      color: $color-black100;
-    }
+  .btn:not(.btn-icon):not(.btn-hyperlink) {
+    margin-left: auto;
+    margin-right: auto;
+    // width: 100%;
   }
 
   .modal-help-button {
     margin-left: $mobile-margin;
     margin-right: $mobile-margin;
-    margin-top: 43px;
+    margin-bottom: 44px;
   }
 
   .modal-opt-out-checkbox {
     margin-left: $mobile-margin;
     margin-right: $mobile-margin;
-    margin-top: 60px;
-    margin-bottom: 60px;
   }
 }
