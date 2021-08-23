@@ -47,11 +47,32 @@ $mobile-margin: 24px;
   //   border: 2px solid rgb(255, 0, 0);
   width: 264px;
   height: 336px;
+  overflow: hidden;
+
   border-radius: 16px;
   display: grid;
   place-items: center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 264px 336px;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    background-size: 106% 106%;
+
+    .card-origin {
+      margin-bottom: 08px;
+    }
+    .card-destiny {
+      margin-bottom: 08px;
+    }
+    .card-text {
+      margin-bottom: 08px;
+    }
+    .card-price {
+      margin-bottom: 08px;
+    }
+  }
 }
 
 .card-image {
@@ -77,6 +98,10 @@ $mobile-margin: 24px;
   span {
     color: rgb(255, 255, 255);
   }
+}
+
+.card-link {
+  text-decoration: none;
 }
 
 .rules-checkbox {
@@ -119,7 +144,7 @@ $mobile-margin: 24px;
 }
 
 .modal-help-button {
-//   border: 1px solid rgb(118, 146, 121);
+  //   border: 1px solid rgb(118, 146, 121);
   margin-left: $desktop-margin;
   max-width: 240px;
 }
@@ -176,7 +201,10 @@ $mobile-margin: 24px;
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
-  align-self: start;
+  //   align-self: start;
+  align-self: end;
+
+  transition: all 0.4s ease-in-out;
 }
 .card-destiny {
   grid-area: card-destiny;
@@ -188,7 +216,10 @@ $mobile-margin: 24px;
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
-  align-self: start;
+  //   align-self: start;
+  align-self: end;
+
+  transition: all 0.4s ease-in-out;
 }
 .card-text {
   grid-area: card-text;
@@ -201,6 +232,7 @@ $mobile-margin: 24px;
   letter-spacing: 0px;
   text-align: left;
   align-self: end;
+  transition: all 0.4s ease-in-out;
 }
 .card-price {
   grid-area: card-price;
@@ -213,11 +245,12 @@ $mobile-margin: 24px;
   letter-spacing: 0.5px;
   text-align: left;
   align-self: end;
+  transition: all 0.4s ease-in-out;
 }
 
 @media (max-width: $bkpoint-tablet) {
   .width-664 .modal-dialog.right {
-    // height: auto;
+    // height: 100vh;
     // overflow: auto;
   }
   .modal-header {
