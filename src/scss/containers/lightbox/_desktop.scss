@@ -2,13 +2,13 @@ $desktop-margin: 56px;
 $mobile-margin: 24px;
 
 .width-664 .modal-dialog.right {
-  border: 1px solid rgb(243, 38, 38);
+  //   border: 1px solid rgb(243, 38, 38);
   @include mx-width(100%, 664px, 664px);
   @include mx-max-width(100%, 664px, 664px);
 }
 
 .modal-header {
-  border: 1px solid rgb(92, 91, 91);
+  //   border: 1px solid rgb(92, 91, 91);
   // height: 88px;
   margin-bottom: 56px;
 }
@@ -22,12 +22,12 @@ $mobile-margin: 24px;
   margin-bottom: 16px;
 }
 .modal-title {
-  border: 1px solid rgb(236, 222, 19);
+  //   border: 1px solid rgb(236, 222, 19);
   margin-left: $desktop-margin;
   margin-right: $desktop-margin;
 }
 .modal-html-content {
-  border: 1px solid rgb(61, 231, 19);
+  //   border: 1px solid rgb(61, 231, 19);
   margin-left: $desktop-margin;
   margin-right: $desktop-margin;
   margin-top: 16px;
@@ -35,11 +35,9 @@ $mobile-margin: 24px;
 
 .modal-cards {
   width: auto;
-  border: 1px solid rgb(9, 108, 221);
+  //   border: 1px solid rgb(9, 108, 221);
   margin-left: $desktop-margin;
-  //   margin-right: 40px;
   margin-top: 48px;
-
   display: flex;
   gap: 24px;
   height: 340px;
@@ -61,7 +59,7 @@ $mobile-margin: 24px;
 }
 
 .card-wrapper {
-  border: 1px solid rgb(0, 0, 0);
+  //   border: 1px solid rgb(0, 0, 0);
   height: 288px;
   width: 216px;
   display: grid;
@@ -82,13 +80,13 @@ $mobile-margin: 24px;
 }
 
 .rules-checkbox {
-  border: 1px solid rgb(182, 13, 233);
+  //   border: 1px solid rgb(182, 13, 233);
   display: flex;
   flex-direction: row;
   margin-left: $desktop-margin;
   margin-right: $desktop-margin;
   margin-top: 36px;
-  margin-bottom: 60px;
+  //   margin-bottom: 60px;
   span a {
     text-decoration: none;
   }
@@ -104,7 +102,7 @@ $mobile-margin: 24px;
 }
 
 .modal-confirm-button {
-  border: 1px solid rgb(34, 8, 18);
+  //   border: 1px solid rgb(34, 8, 18);
   margin-left: $desktop-margin;
   margin-bottom: 36px;
   margin-top: 60px;
@@ -121,11 +119,9 @@ $mobile-margin: 24px;
 }
 
 .modal-help-button {
-  border: 1px solid rgb(118, 146, 121);
+//   border: 1px solid rgb(118, 146, 121);
   margin-left: $desktop-margin;
-  //   margin-top: 43px;
   max-width: 240px;
-  //   text-align: start;
 }
 
 .hyperlink-no-border {
@@ -138,13 +134,12 @@ $mobile-margin: 24px;
 }
 
 .modal-opt-out-checkbox {
-  border: 1px solid rgb(67, 101, 145);
+  //   border: 1px solid rgb(67, 101, 145);
   margin-left: $desktop-margin;
   margin-right: $desktop-margin;
   margin-top: 44px;
+  margin-bottom: 40px;
   width: 275px;
-
-  //   margin-bottom: 60px;
 }
 
 .card-icon {
@@ -269,7 +264,7 @@ $mobile-margin: 24px;
   .modal-confirm-button {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 80px;
   }
 
   .btn:not(.btn-icon):not(.btn-hyperlink) {
