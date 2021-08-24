@@ -253,9 +253,15 @@ $mobile-margin: 24px;
     // height: 100vh;
     // overflow: auto;
   }
+
+  .modal-content-wrapper {
+    overflow-x: hidden;
+    z-index: 999;
+  }
+
   .modal-header {
     // height: 64px;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
   }
 
   .modal-logo {
@@ -274,7 +280,9 @@ $mobile-margin: 24px;
   .modal-cards {
     margin-left: $mobile-margin;
     gap: 0px;
-    // overflow: auto hidden;
+    scroll-behavior: smooth;
+    overflow: auto hidden;
+    // overflow-x: auto;
   }
   .promotional-card {
     margin-right: 16px;
